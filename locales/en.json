@@ -1377,7 +1377,27 @@
     },
     "cardOwner": "{player}'s {cardName}",
     "listSeparator": ", ",
-    "harvestHeatingProgress": "{paid}/{required} fuel · Newly sick {sick}"
+    "harvestHeatingProgress": "{paid}/{required} fuel · Newly sick {sick}",
+    "publicEvents": {
+      "resourceSeparator": " · ",
+      "roundTarget": "round {round}",
+      "resourcesExchanged": "Resources exchanged: {paid} -> {gained}",
+      "resourcesPaid": "Resources paid: {paid}",
+      "actionAccumulated": "Action accumulated: {action} + {resources}",
+      "resourceAccumulated": "Resource accumulated: {target} + {resources}",
+      "actionRevealed": "Action revealed: {action}",
+      "actionReserved": "Action reserved: {action}",
+      "actionReservationCleared": "Action reservation cleared: {action}",
+      "futureWorkerQueued": "Future worker queued: {card}",
+      "futureWorkerRemoved": "Future worker removed: {card}",
+      "futureWorkerResolved": "Future worker resolved: {card}",
+      "newbornPromoted": "Newborn worker promoted: {worker}",
+      "cardNote": "Card note: {card}: {text}",
+      "cardResources": "Card resources: {card} {sign} {resources}",
+      "cardSwapped": "Card swapped: {from} -> {to}",
+      "cardReturned": "Card returned: {card}",
+      "fencesUpdated": "Farm fences updated"
+    }
   },
   "moor": {
     "specialActions": {

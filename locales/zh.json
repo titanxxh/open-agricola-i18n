@@ -1377,7 +1377,27 @@
     },
     "cardOwner": "{player} 的 {cardName}",
     "listSeparator": "、",
-    "harvestHeatingProgress": "{paid}/{required} 燃料 · 新增生病 {sick}"
+    "harvestHeatingProgress": "{paid}/{required} 燃料 · 新增生病 {sick}",
+    "publicEvents": {
+      "resourceSeparator": " · ",
+      "roundTarget": "第 {round} 回合",
+      "resourcesExchanged": "资源交换：{paid} -> {gained}",
+      "resourcesPaid": "支付资源：{paid}",
+      "actionAccumulated": "行动格积累：{action} + {resources}",
+      "resourceAccumulated": "资源积累：{target} + {resources}",
+      "actionRevealed": "行动格已揭示：{action}",
+      "actionReserved": "行动格被保留：{action}",
+      "actionReservationCleared": "行动格保留已清除：{action}",
+      "futureWorkerQueued": "已安排未来工人：{card}",
+      "futureWorkerRemoved": "移除未来工人：{card}",
+      "futureWorkerResolved": "未来工人执行：{card}",
+      "newbornPromoted": "新生工人成年：{worker}",
+      "cardNote": "卡牌标记：{card}：{text}",
+      "cardResources": "卡牌资源：{card} {sign} {resources}",
+      "cardSwapped": "卡牌交换：{from} -> {to}",
+      "cardReturned": "卡牌归还：{card}",
+      "fencesUpdated": "农场围栏已更新"
+    }
   },
   "moor": {
     "specialActions": {
