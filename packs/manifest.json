@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "defaultLocale": "zh",
+  "languages": [
+    {
+      "id": "en",
+      "name": "English",
+      "file": "en.02ff28d72e6a0875.json",
+      "sha256": "02ff28d72e6a087565a93db37c18ff68cfe8dcd8e44fac7d67c7880431447088",
+      "sourceSha256": "83083e38621714c351e2a85e5c580fb7762f227573ec1f52c3773e1de88c096a"
+    },
+    {
+      "id": "zh",
+      "name": "简体中文",
+      "file": "zh.ee7f89d0adf07f38.json",
+      "sha256": "ee7f89d0adf07f3876cbef13eb98974b5e06ff0a6d670f2a9aaa97030b1c1435",
+      "sourceSha256": "fde8b46a8a3f0c4945d7b3254bba671cdfea541935a65a83085b9697dbf41ff0"
+    }
+  ]
+}
