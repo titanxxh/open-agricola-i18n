@@ -4093,6 +4093,7 @@
       "not-applicable": "This selected card is unavailable for these player or expansion settings.",
       "community-takeover": "This card now comes from the built-in community deck. Review its source."
     },
-    "actionCompleted": "Action completed. Continue when ready."
+    "actionCompleted": "Action completed. Continue when ready.",
+    "workshopRequiresCommunity": "Enable community cards to use the selected Workshop cards, or deselect them."
   }
 }
