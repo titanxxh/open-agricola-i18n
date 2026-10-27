@@ -1428,6 +1428,12 @@
       "cardChoiceMarketTile": "{card} · 格子（{row},{col}）· 公共卡",
       "cardChoiceBorrowed": "{card} · 向 {player} 借用，支付 2 食物",
       "cardChoiceBorrowedTile": "{card} · 格子（{row},{col}）· 向 {player} 借用，支付 2 食物"
+    },
+    "solo": {
+      "keepCurrent": "继续使用当前牌",
+      "replaceCurrent": "沉底并换一张",
+      "retain": "支付 2 食物留牌",
+      "discard": "不保留并弃置"
     }
   },
   "prompt": {
@@ -7516,6 +7522,7 @@
       "load-failed": "此卡牌暂时无法加载，可保留选择并重试。",
       "not-applicable": "此已选卡牌不适用于当前人数或扩展设置。",
       "community-takeover": "此卡牌已由内置社区牌接管，请检查来源。"
-    }
+    },
+    "actionCompleted": "行动已完成，准备好后点击继续。"
   }
 }

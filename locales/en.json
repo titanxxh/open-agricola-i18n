@@ -1428,6 +1428,12 @@
       "cardChoiceMarketTile": "{card} · tile ({row},{col}) · public card",
       "cardChoiceBorrowed": "{card} · borrow from {player} for 2 food",
       "cardChoiceBorrowedTile": "{card} · tile ({row},{col}) · borrow from {player} for 2 food"
+    },
+    "solo": {
+      "keepCurrent": "Keep the current card",
+      "replaceCurrent": "Put underneath and draw one",
+      "retain": "Pay 2 food to keep",
+      "discard": "Discard the card"
     }
   },
   "prompt": {
@@ -4084,6 +4090,7 @@
       "load-failed": "This card could not be loaded. You can retry without removing it.",
       "not-applicable": "This selected card is unavailable for these player or expansion settings.",
       "community-takeover": "This card now comes from the built-in community deck. Review its source."
-    }
+    },
+    "actionCompleted": "Action completed. Continue when ready."
   }
 }
