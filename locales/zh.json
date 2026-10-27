@@ -1427,7 +1427,9 @@
       "cardChoiceMarket": "{card} · 公共卡",
       "cardChoiceMarketTile": "{card} · 格子（{row},{col}）· 公共卡",
       "cardChoiceBorrowed": "{card} · 向 {player} 借用，支付 2 食物",
-      "cardChoiceBorrowedTile": "{card} · 格子（{row},{col}）· 向 {player} 借用，支付 2 食物"
+      "cardChoiceBorrowedTile": "{card} · 格子（{row},{col}）· 向 {player} 借用，支付 2 食物",
+      "cardChoiceCurrent": "{card} · 当前牌",
+      "cardChoiceCurrentTile": "{card} · 格位 ({row},{col}) · 当前牌"
     },
     "solo": {
       "keepCurrent": "继续使用当前牌",

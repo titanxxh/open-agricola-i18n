@@ -1427,7 +1427,9 @@
       "cardChoiceMarket": "{card} · public card",
       "cardChoiceMarketTile": "{card} · tile ({row},{col}) · public card",
       "cardChoiceBorrowed": "{card} · borrow from {player} for 2 food",
-      "cardChoiceBorrowedTile": "{card} · tile ({row},{col}) · borrow from {player} for 2 food"
+      "cardChoiceBorrowedTile": "{card} · tile ({row},{col}) · borrow from {player} for 2 food",
+      "cardChoiceCurrent": "{card} · current card",
+      "cardChoiceCurrentTile": "{card} · tile ({row},{col}) · current card"
     },
     "solo": {
       "keepCurrent": "Keep the current card",
