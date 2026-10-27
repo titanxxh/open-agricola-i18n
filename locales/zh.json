@@ -7037,7 +7037,24 @@
     "inviteCopyFailure": "无法复制邀请链接，请手动复制后重试。",
     "roomIdLabel": "房间 ID：",
     "playerLabel": "玩家 {index}：{name}",
-    "retry": "重试"
+    "retry": "重试",
+    "playerAccountId": "我的玩家 ID",
+    "copyPlayerId": "复制玩家 ID",
+    "playerIdCopied": "已复制玩家 ID",
+    "playerIdCopyFailed": "复制失败，请选中玩家 ID 手动复制。",
+    "roomAccessLabel": "谁可以进入",
+    "roomAccessPublic": "公开",
+    "roomAccessInvited": "仅邀请玩家",
+    "invitedPlayerIdsLabel": "受邀玩家 ID",
+    "invitedPlayerIdsHint": "输入玩家 ID 的前两个字符即可下拉选择。请选择其他 {count} 位玩家，粘贴多个 ID 时用逗号分隔。玩家可在设置中复制自己的 ID。活动房间只有你和这些玩家可见、可进入，完赛回放仍公开。",
+    "invitedPlayerCountError": "请填写 {count} 个不同的其他玩家 ID。房主已自动包含。",
+    "invalidRoomAccess": "请为其余每个座位填写一个不同的受邀玩家 ID。",
+    "invitedPlayerUnavailable": "受邀玩家 ID 不存在或账号不可用，请核对 ID 后重新创建房间。",
+    "roomAccessDenied": "当前账号无权进入此房间，请使用受邀账号登录。",
+    "invitedPlayerMatches": "匹配的玩家",
+    "invitedPlayerSearchLoading": "正在查找玩家…",
+    "invitedPlayerSearchFailed": "查找失败，请重试或粘贴完整玩家 ID。",
+    "invitedPlayerSearchEmpty": "没有匹配的玩家，请核对玩家 ID。"
   },
   "cards": {
     "D051_Archway": {

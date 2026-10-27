@@ -3605,7 +3605,24 @@
     "inviteCopyFailure": "Could not copy the invite link. Copy it manually and try again.",
     "roomIdLabel": "Room ID: ",
     "playerLabel": "Player {index}: {name}",
-    "retry": "Retry"
+    "retry": "Retry",
+    "playerAccountId": "My player ID",
+    "copyPlayerId": "Copy player ID",
+    "playerIdCopied": "Player ID copied",
+    "playerIdCopyFailed": "Could not copy. Select and copy your player ID manually.",
+    "roomAccessLabel": "Who can enter",
+    "roomAccessPublic": "Public",
+    "roomAccessInvited": "Invited players only",
+    "invitedPlayerIdsLabel": "Invited player IDs",
+    "invitedPlayerIdsHint": "Type at least two characters of a player ID to find and select players. Add {count} other players; separate IDs with commas when pasting. Players can copy their ID in Settings. Only you and these players can see or enter the active room. Completed replays remain public.",
+    "invitedPlayerCountError": "Enter exactly {count} different player IDs. Your own ID is included automatically.",
+    "invalidRoomAccess": "Enter one different invited player ID for each other seat.",
+    "invitedPlayerUnavailable": "An invited player ID was not found or the account is unavailable. Check the IDs and create the room again.",
+    "roomAccessDenied": "This account does not have permission to enter this room. Sign in with an invited account.",
+    "invitedPlayerMatches": "Matching players",
+    "invitedPlayerSearchLoading": "Finding players…",
+    "invitedPlayerSearchFailed": "Could not find players. Try again or paste a complete player ID.",
+    "invitedPlayerSearchEmpty": "No matching players. Check the player ID."
   },
   "cards": {
     "D051_Archway": {
