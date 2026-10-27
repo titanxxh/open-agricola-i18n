@@ -7021,7 +7021,9 @@
       "color_unavailable": "这个颜色已被其他玩家选择，请换一个。",
       "color_locked": "游戏已开始，不能再更改颜色。",
       "invalid_color": "请选择可用的颜色。",
-      "color_save_failed": "颜色保存失败，请重试。"
+      "color_save_failed": "颜色保存失败，请重试。",
+      "color_confirmation_unavailable": "请等待最后入场的玩家确认颜色。",
+      "color_confirmation_failed": "未能开局，请重试。"
     },
     "playerColors": {
       "red": "红色",
@@ -7054,7 +7056,9 @@
     "invitedPlayerMatches": "匹配的玩家",
     "invitedPlayerSearchLoading": "正在查找玩家…",
     "invitedPlayerSearchFailed": "查找失败，请重试或粘贴完整玩家 ID。",
-    "invitedPlayerSearchEmpty": "没有匹配的玩家，请核对玩家 ID。"
+    "invitedPlayerSearchEmpty": "没有匹配的玩家，请核对玩家 ID。",
+    "confirmColorAndStart": "确认颜色并开始",
+    "waitingForColorConfirmation": "等待 {player} 确认颜色后开始"
   },
   "cards": {
     "D051_Archway": {

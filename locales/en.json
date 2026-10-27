@@ -3589,7 +3589,9 @@
       "color_unavailable": "Another player has chosen this color. Choose a different one.",
       "color_locked": "Colors are locked after the game starts.",
       "invalid_color": "Choose one of the available colors.",
-      "color_save_failed": "Could not save your color. Try again."
+      "color_save_failed": "Could not save your color. Try again.",
+      "color_confirmation_unavailable": "The final arriving player must confirm their color.",
+      "color_confirmation_failed": "Could not start the game. Try again."
     },
     "playerColors": {
       "red": "Red",
@@ -3622,7 +3624,9 @@
     "invitedPlayerMatches": "Matching players",
     "invitedPlayerSearchLoading": "Finding players…",
     "invitedPlayerSearchFailed": "Could not find players. Try again or paste a complete player ID.",
-    "invitedPlayerSearchEmpty": "No matching players. Check the player ID."
+    "invitedPlayerSearchEmpty": "No matching players. Check the player ID.",
+    "confirmColorAndStart": "Confirm color and start",
+    "waitingForColorConfirmation": "Waiting for {player} to confirm their color before starting"
   },
   "cards": {
     "D051_Archway": {
