@@ -1434,7 +1434,7 @@
     "solo": {
       "keepCurrent": "Keep the current card",
       "replaceCurrent": "Put underneath and draw one",
-      "retain": "Pay 2 food to keep",
+      "retain": "Keep the card",
       "discard": "Discard the card"
     }
   },
@@ -4080,7 +4080,7 @@
     "moorNotRetained": "Not kept for this round",
     "moorPreparation": "Prepare your special action card",
     "moorRetention": "Keep this special action card?",
-    "moorRetentionHint": "Keeping costs 2 food. You currently have {food} food. Available exchanges remain accessible.",
+    "moorRetentionHint": "Food available: {food}. You can exchange before deciding.",
     "groups": {
       "occupation": "Occupations",
       "minor": "Minor improvements",
