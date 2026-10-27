@@ -1434,7 +1434,7 @@
     "solo": {
       "keepCurrent": "继续使用当前牌",
       "replaceCurrent": "沉底并换一张",
-      "retain": "支付 2 食物留牌",
+      "retain": "保留此牌",
       "discard": "不保留并弃置"
     }
   },
@@ -7512,7 +7512,7 @@
     "moorNotRetained": "本轮尚未付费留牌",
     "moorPreparation": "准备特殊行动牌",
     "moorRetention": "是否保留这张特殊行动牌？",
-    "moorRetentionHint": "保留需支付 2 食物。你当前有 {food} 食物，仍可使用合法兑换。",
+    "moorRetentionHint": "当前有 {food} 食物，可先进行可用的兑换。",
     "groups": {
       "occupation": "职业",
       "minor": "普通小改良",
