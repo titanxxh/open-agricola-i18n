@@ -7525,6 +7525,7 @@
       "not-applicable": "此已选卡牌不适用于当前人数或扩展设置。",
       "community-takeover": "此卡牌已由内置社区牌接管，请检查来源。"
     },
-    "actionCompleted": "行动已完成，准备好后点击继续。"
+    "actionCompleted": "行动已完成，准备好后点击继续。",
+    "workshopRequiresCommunity": "请开启社区卡以使用已选工坊卡，或取消这些选卡。"
   }
 }
