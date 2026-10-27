@@ -3615,18 +3615,20 @@
     "roomAccessLabel": "Who can enter",
     "roomAccessPublic": "Public",
     "roomAccessInvited": "Invited players only",
-    "invitedPlayerIdsLabel": "Invited player IDs",
-    "invitedPlayerIdsHint": "Type at least two characters of a player ID to find and select players. Add {count} other players; separate IDs with commas when pasting. Players can copy their ID in Settings. Only you and these players can see or enter the active room. Completed replays remain public.",
-    "invitedPlayerCountError": "Enter exactly {count} different player IDs. Your own ID is included automatically.",
+    "invitedPlayerIdsLabel": "Invited players",
+    "invitedPlayerIdsHint": "Type at least two letters or Chinese characters of a username or display name, then select a player. Choose {count} other players. Only you and these players can see or enter the active room. Completed replays remain public.",
+    "invitedPlayerCountError": "Select exactly {count} different other players from the suggestions. You are included automatically.",
     "invalidRoomAccess": "Enter one different invited player ID for each other seat.",
-    "invitedPlayerUnavailable": "An invited player ID was not found or the account is unavailable. Check the IDs and create the room again.",
+    "invitedPlayerUnavailable": "An invited player is no longer available. Select the players again and retry.",
     "roomAccessDenied": "This account does not have permission to enter this room. Sign in with an invited account.",
     "invitedPlayerMatches": "Matching players",
     "invitedPlayerSearchLoading": "Finding players…",
-    "invitedPlayerSearchFailed": "Could not find players. Try again or paste a complete player ID.",
-    "invitedPlayerSearchEmpty": "No matching players. Check the player ID.",
+    "invitedPlayerSearchFailed": "Could not find players. Try again.",
+    "invitedPlayerSearchEmpty": "No matching players. Check the username or display name.",
     "confirmColorAndStart": "Confirm color and start",
-    "waitingForColorConfirmation": "Waiting for {player} to confirm their color before starting"
+    "waitingForColorConfirmation": "Waiting for {player} to confirm their color before starting",
+    "gameStartedAt": "Started",
+    "roomCreatedAt": "Created"
   },
   "cards": {
     "D051_Archway": {
