@@ -3154,6 +3154,8 @@
     "enableParentCards": "Enable Parent Cards expansion",
     "enableThroughTheSeasons": "Enable Through the Seasons expansion",
     "enableFarmersOfTheMoor": "Enable Farmers of the Moor expansion",
+    "moorBalanceRules": "Moor balance rules",
+    "moorBalanceRulesHint": "Apply BGA's optional balance rules to the affected cards.",
     "allowIncompleteFarmersOfTheMoorMinorDeal": "Allow an incomplete Farmers of the Moor minor improvement pool",
     "loading": "Loading...",
     "loadStep": {

@@ -6586,6 +6586,8 @@
     "enableParentCards": "启用父母卡扩展",
     "enableThroughTheSeasons": "启用四季扩展",
     "enableFarmersOfTheMoor": "启用沼泽农夫扩展",
+    "moorBalanceRules": "Moor 平衡规则",
+    "moorBalanceRulesHint": "按 BGA 的可选平衡规则调整相关卡牌。",
     "allowIncompleteFarmersOfTheMoorMinorDeal": "允许沼泽农夫小改良池不完整",
     "loading": "加载中...",
     "loadStep": {
