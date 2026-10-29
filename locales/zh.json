@@ -1406,6 +1406,15 @@
       "loading": "正在加载二维码…",
       "unavailable": "群二维码暂不可用，请稍后重试。",
       "retry": "重试"
+    },
+    "feishuCommunity": {
+      "label": "飞书玩家群",
+      "title": "加入飞书玩家群",
+      "hint": "使用飞书扫描二维码加入玩家群。",
+      "imageAlt": "飞书玩家群二维码",
+      "loading": "正在加载二维码…",
+      "unavailable": "群二维码暂不可用，请稍后重试。",
+      "retry": "重试"
     }
   },
   "moor": {
