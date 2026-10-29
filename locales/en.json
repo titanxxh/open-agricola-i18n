@@ -142,6 +142,8 @@
     "farmTitle": "Player Farm",
     "publicFarms": "Public farms",
     "startPlayer": "Start Player",
+    "openingOrder": "Opening turn order",
+    "you": "You",
     "nextStartPlayer": "Next Round Start Player",
     "activePlayer": "Active Player",
     "legendStart": "Start Player",
@@ -251,6 +253,9 @@
     },
     "defaultPlayerName": "Player {number}",
     "draft": {
+      "selecting": "Choosing cards",
+      "submitted": "Confirmed",
+      "waitingForPlayers": "Waiting for: {players}",
       "dialog": "Card draft",
       "title": "Draft — Round {round} / {total}",
       "prompt": {

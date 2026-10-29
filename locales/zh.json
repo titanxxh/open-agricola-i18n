@@ -142,6 +142,8 @@
     "farmTitle": "玩家农场",
     "publicFarms": "公开农场",
     "startPlayer": "起始玩家",
+    "openingOrder": "开局顺位",
+    "you": "你",
     "nextStartPlayer": "下回合起始玩家",
     "activePlayer": "当前行动",
     "legendStart": "起始玩家",
@@ -251,6 +253,9 @@
     },
     "defaultPlayerName": "玩家 {number}",
     "draft": {
+      "selecting": "选牌中",
+      "submitted": "已确认",
+      "waitingForPlayers": "正在等待：{players}",
       "dialog": "卡牌轮抽",
       "title": "轮抽 — 第 {round} / {total} 轮",
       "prompt": {
