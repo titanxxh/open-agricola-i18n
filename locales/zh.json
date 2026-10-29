@@ -1397,6 +1397,15 @@
       "cardSwapped": "卡牌交换：{from} -> {to}",
       "cardReturned": "卡牌归还：{card}",
       "fencesUpdated": "农场围栏已更新"
+    },
+    "wechatCommunity": {
+      "label": "微信玩家群",
+      "title": "加入微信玩家群",
+      "hint": "使用微信扫码，或保存图片后在微信中从相册识别。",
+      "imageAlt": "微信玩家群二维码",
+      "loading": "正在加载二维码…",
+      "unavailable": "群二维码暂不可用，请稍后重试。",
+      "retry": "重试"
     }
   },
   "moor": {
