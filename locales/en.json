@@ -1397,6 +1397,15 @@
       "cardSwapped": "Card swapped: {from} -> {to}",
       "cardReturned": "Card returned: {card}",
       "fencesUpdated": "Farm fences updated"
+    },
+    "wechatCommunity": {
+      "label": "WeChat player group",
+      "title": "Join the WeChat player group",
+      "hint": "Scan with WeChat, or save the image and scan it from your album.",
+      "imageAlt": "WeChat player group QR code",
+      "loading": "Loading QR code...",
+      "unavailable": "The group QR code is unavailable. Please try again later.",
+      "retry": "Retry"
     }
   },
   "moor": {
