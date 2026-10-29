@@ -1406,6 +1406,15 @@
       "loading": "Loading QR code...",
       "unavailable": "The group QR code is unavailable. Please try again later.",
       "retry": "Retry"
+    },
+    "feishuCommunity": {
+      "label": "Feishu player group",
+      "title": "Join the Feishu player group",
+      "hint": "Scan this QR code with Feishu to join the player group.",
+      "imageAlt": "Feishu player group QR code",
+      "loading": "Loading QR code...",
+      "unavailable": "The group QR code is unavailable. Please try again later.",
+      "retry": "Retry"
     }
   },
   "moor": {
