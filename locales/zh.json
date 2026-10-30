@@ -1452,7 +1452,11 @@
         "pointsMinPlaceholder": "最低",
         "pointsMaxPlaceholder": "最高",
         "pointsRangeTo": "至",
-        "pointsHint": "包含上下界，支持负数与小数；不计算对局得分"
+        "pointsHint": "包含上下界，支持负数与小数；不计算对局得分",
+        "pointsAtLeast": "固定分 ≥ {score}",
+        "pointsAtMost": "固定分 ≤ {score}",
+        "active": "已选条件",
+        "remove": "移除条件：{name}"
       },
       "groups": {
         "deck": "{deck} 牌组",
