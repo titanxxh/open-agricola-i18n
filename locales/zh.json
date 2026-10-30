@@ -477,6 +477,7 @@
     "interactionAnimalReorg": "在农场重新分配动物",
     "interactionAnimalReorgConfirm": "确认",
     "interactionAnimalReorgCancel": "取消",
+    "interactionDiscardGoods": "选择要退回公共供应的物资",
     "interactionResourceQuantitySelect": "选择数量",
     "interactionResourceQuantityConfirm": "确认",
     "interactionResourceQuantityCancel": "取消",
@@ -2087,6 +2088,10 @@
     "emitChoice": {
       "description": "获得 {resources_desc}",
       "name": "选择获得"
+    },
+    "discard-goods": {
+      "description": "将个人供应中的物资退回公共供应",
+      "name": "丢弃物资"
     },
     "exchange": {
       "description": "兑换资源",
@@ -6602,6 +6607,8 @@
     "parentMotherScheduled": "{player} 的 {cardId}：第 {round} 回合获得 {reward}",
     "parentMotherRewardField": "田地",
     "parentMotherRewardStable": "畜栏",
+    "discardGoods": "{player} 将 {resources} 丢回公共供应",
+    "discardGoodsFail": "无法丢弃这些物资",
     "reorganizeDiscard": "{player} 丢弃 {resources}",
     "gains": "获得 {resources}",
     "seasonalGains": "{season}额外获得 {resources}",
