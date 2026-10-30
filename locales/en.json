@@ -477,6 +477,7 @@
     "interactionAnimalReorg": "Reassign animals on your farm",
     "interactionAnimalReorgConfirm": "Confirm",
     "interactionAnimalReorgCancel": "Cancel",
+    "interactionDiscardGoods": "Choose goods to return to the general supply",
     "interactionResourceQuantitySelect": "Select quantity",
     "interactionResourceQuantityConfirm": "Confirm",
     "interactionResourceQuantityCancel": "Cancel",
@@ -2088,6 +2089,10 @@
       "description": "Gain {resources_desc}",
       "name": "Choose to Gain"
     },
+    "discard-goods": {
+      "description": "Return goods from your supply to the general supply",
+      "name": "Discard goods"
+    },
     "exchange": {
       "description": "Exchange resources",
       "name": "Exchange"
@@ -3170,6 +3175,8 @@
     "parentMotherScheduled": "{player}'s {cardId}: gains {reward} in round {round}",
     "parentMotherRewardField": "Field",
     "parentMotherRewardStable": "Stable",
+    "discardGoods": "{player} discards {resources} to the general supply",
+    "discardGoodsFail": "Those goods cannot be discarded",
     "reorganizeDiscard": "{player} discards {resources}",
     "gains": "Gains {resources}",
     "seasonalGains": "{season} extra gain {resources}",
