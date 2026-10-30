@@ -7093,7 +7093,24 @@
     "confirmColorAndStart": "确认颜色并开始",
     "waitingForColorConfirmation": "等待 {player} 确认颜色后开始",
     "gameStartedAt": "开始于",
-    "roomCreatedAt": "创建于"
+    "roomCreatedAt": "创建于",
+    "gameEnd": {
+      "controls": "结束对局",
+      "propose": "提议结束对局",
+      "proposeRematch": "结束并再来一局",
+      "confirmEnd": "确认提前结束本局？多人局需要其他所有玩家同意。结束后回放将公开，包含所有手牌；本局不产生正式成绩。",
+      "confirmRematch": "确认结束本局并再来一局？多人局需要其他所有玩家同意。旧局回放将公开，包含所有手牌，不产生正式成绩。新局保留所有玩家的座位。",
+      "proposal": "{player} 提议结束对局，已同意 {agreed}/{total}。",
+      "rematchProposal": "{player} 提议结束并再来一局，已同意 {agreed}/{total}。",
+      "publicReplay": "结束后公开回放及所有手牌。全员同意前仍可继续游戏。",
+      "agree": "同意",
+      "agreed": "已同意",
+      "reject": "不同意",
+      "withdraw": "撤回提议",
+      "terminated": "协商结束",
+      "history": "最近结束的对局",
+      "viewReplay": "查看回放"
+    }
   },
   "cards": {
     "D051_Archway": {
