@@ -3661,7 +3661,24 @@
     "confirmColorAndStart": "Confirm color and start",
     "waitingForColorConfirmation": "Waiting for {player} to confirm their color before starting",
     "gameStartedAt": "Started",
-    "roomCreatedAt": "Created"
+    "roomCreatedAt": "Created",
+    "gameEnd": {
+      "controls": "End game",
+      "propose": "Propose ending the game",
+      "proposeRematch": "End and start a new game",
+      "confirmEnd": "End this game early? In multiplayer games, every other player must agree. The replay will be public, including all hands. This game will not receive an official score.",
+      "confirmRematch": "End this game and start a new one? In multiplayer games, every other player must agree. The old replay will be public, including all hands, without an official score. All players keep their seats in the new game.",
+      "proposal": "{player} proposes ending the game. Agreed: {agreed}/{total}.",
+      "rematchProposal": "{player} proposes ending this game and starting a new one. Agreed: {agreed}/{total}.",
+      "publicReplay": "Ending the game publishes its replay, including all hands. Play continues until everyone agrees.",
+      "agree": "Agree",
+      "agreed": "Agreed",
+      "reject": "Reject",
+      "withdraw": "Withdraw proposal",
+      "terminated": "Ended by agreement",
+      "history": "Recent ended games",
+      "viewReplay": "View replay"
+    }
   },
   "cards": {
     "D051_Archway": {
