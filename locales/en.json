@@ -1420,6 +1420,121 @@
       "loading": "Loading QR code...",
       "unavailable": "The group QR code is unavailable. Please try again later.",
       "retry": "Retry"
+    },
+    "encyclopedia": {
+      "title": "Card Encyclopedia",
+      "description": "Look up official cards, parent cards, and expansion rules.",
+      "search": {
+        "label": "Search cards",
+        "placeholder": "Search names, numbers, or card text…",
+        "examples": "Try A004, fireplace, or wood",
+        "bilingual": "Searches both Chinese and English",
+        "clear": "Clear search"
+      },
+      "searchAliases": {
+        "wood": "Wood",
+        "stable": "Stable"
+      },
+      "filters": {
+        "title": "Filters",
+        "titleWithCount": "Filters ({count})",
+        "dialogTitle": "Filter cards",
+        "close": "Close filters",
+        "clear": "Clear filters",
+        "showResults": "Show results ({count})",
+        "group": "Deck or expansion",
+        "type": "Card type",
+        "cost": "Printed cost resources",
+        "costHint": "Matches if any printed cost option uses a selected resource",
+        "points": "Fixed points",
+        "pointsMin": "Minimum fixed points",
+        "pointsMax": "Maximum fixed points",
+        "pointsMinPlaceholder": "Min",
+        "pointsMaxPlaceholder": "Max",
+        "pointsRangeTo": "to",
+        "pointsHint": "Bounds are inclusive; negatives and decimals are allowed. Game scores are not calculated."
+      },
+      "groups": {
+        "deck": "Deck {deck}",
+        "majorStandard": "Standard Major Improvements",
+        "major56": "5–6 Player Major Improvements",
+        "majorMoor": "Moor Major Improvements",
+        "moor": "Farmers of the Moor"
+      },
+      "types": {
+        "major": "Major Improvement",
+        "moorSpecialAction": "Moor Special Action",
+        "moorStart": "Starting Terrain",
+        "season": "Season Rule"
+      },
+      "results": {
+        "count": "Results: {count}",
+        "open": "View {name}"
+      },
+      "pagination": {
+        "label": "Pagination",
+        "previous": "Previous page",
+        "next": "Next page",
+        "status": "Page {page} of {total}"
+      },
+      "detail": {
+        "cardText": "Card text",
+        "points": "Points",
+        "players": "Players",
+        "staticNote": "Static card data. It doesn't reflect playability, actual payment, or scoring in a current game.",
+        "copyLink": "Copy card link",
+        "copied": "Card link copied",
+        "copyFailed": "Couldn't copy the link",
+        "backToResults": "Back to results",
+        "close": "Close details"
+      },
+      "cost": {
+        "printed": "Printed resource cost",
+        "unlisted": "No resource cost listed",
+        "notApplicable": "Cost not applicable",
+        "or": "or",
+        "upgradeReturn": "Upgrade by returning a card"
+      },
+      "points": {
+        "fixed": "Fixed points: {score}",
+        "unlisted": "No fixed points listed",
+        "bonus": "Marked with bonus points",
+        "notApplicable": "Points not applicable"
+      },
+      "empty": {
+        "title": "No matching cards",
+        "hint": "Try a card name or number, or remove some filters.",
+        "clear": "Clear search and filters"
+      },
+      "unknown": {
+        "title": "Not in the encyclopedia",
+        "body": "The linked entry isn't in the current catalog.",
+        "back": "Back to catalog"
+      },
+      "loadError": {
+        "title": "Couldn't load the encyclopedia",
+        "body": "Your search and filters are kept."
+      },
+      "fallback": {
+        "english": "Not translated; shown in English",
+        "missing": "Not available in either language"
+      },
+      "image": {
+        "missing": "Image unavailable"
+      },
+      "moorStart": {
+        "name": "Starting Terrain {number}",
+        "layout": "Starting terrain layout"
+      },
+      "icons": {
+        "score": "Points"
+      },
+      "inGame": {
+        "open": "Look up cards",
+        "attention": "Your action is needed",
+        "backToGame": "Back to game",
+        "close": "Close encyclopedia"
+      }
     }
   },
   "moor": {
@@ -3376,6 +3491,7 @@
     },
     "tabLobby": "Lobby",
     "tabWorkshop": "Workshop",
+    "tabEncyclopedia": "Cards",
     "tabSettings": "Settings",
     "mainNavigation": "Main navigation",
     "settingsTitle": "Account Settings",

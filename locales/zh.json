@@ -1420,6 +1420,121 @@
       "loading": "正在加载二维码…",
       "unavailable": "群二维码暂不可用，请稍后重试。",
       "retry": "重试"
+    },
+    "encyclopedia": {
+      "title": "卡牌百科",
+      "description": "查找官方卡牌、父母卡与扩展规则。",
+      "search": {
+        "label": "搜索卡牌",
+        "placeholder": "搜索卡名、编号、牌面文字…",
+        "examples": "例如 A004、fireplace、木头",
+        "bilingual": "中英文同时检索",
+        "clear": "清空查询"
+      },
+      "searchAliases": {
+        "wood": "木头",
+        "stable": "马厩"
+      },
+      "filters": {
+        "title": "筛选",
+        "titleWithCount": "筛选（{count}）",
+        "dialogTitle": "筛选资料",
+        "close": "关闭筛选",
+        "clear": "清空条件",
+        "showResults": "查看 {count} 条结果",
+        "group": "牌组或扩展",
+        "type": "牌型",
+        "cost": "印刷费用资源",
+        "costHint": "任一印刷费用方案含所选资源即可",
+        "points": "固定分",
+        "pointsMin": "最低固定分",
+        "pointsMax": "最高固定分",
+        "pointsMinPlaceholder": "最低",
+        "pointsMaxPlaceholder": "最高",
+        "pointsRangeTo": "至",
+        "pointsHint": "包含上下界，支持负数与小数；不计算对局得分"
+      },
+      "groups": {
+        "deck": "{deck} 牌组",
+        "majorStandard": "标准主要改良",
+        "major56": "5–6 人补充主要改良",
+        "majorMoor": "泥沼主要改良",
+        "moor": "泥沼"
+      },
+      "types": {
+        "major": "主要改良",
+        "moorSpecialAction": "泥沼特殊行动",
+        "moorStart": "开局地形",
+        "season": "季节规则"
+      },
+      "results": {
+        "count": "{count} 条结果",
+        "open": "查看 {name}"
+      },
+      "pagination": {
+        "label": "分页",
+        "previous": "上一页",
+        "next": "下一页",
+        "status": "第 {page} / {total} 页"
+      },
+      "detail": {
+        "cardText": "牌面文字",
+        "points": "分值",
+        "players": "人数",
+        "staticNote": "以上为静态卡牌资料，不代表当前对局中的可打出性、实际支付或得分。",
+        "copyLink": "复制单卡链接",
+        "copied": "已复制单卡链接",
+        "copyFailed": "无法复制链接",
+        "backToResults": "返回结果",
+        "close": "关闭详情"
+      },
+      "cost": {
+        "printed": "印刷资源费用",
+        "unlisted": "未列资源费用",
+        "notApplicable": "费用不适用",
+        "or": "或",
+        "upgradeReturn": "可退牌升级"
+      },
+      "points": {
+        "fixed": "固定 {score} 分",
+        "unlisted": "未列固定分",
+        "bonus": "标有额外加分",
+        "notApplicable": "分值不适用"
+      },
+      "empty": {
+        "title": "没有找到匹配资料",
+        "hint": "试试卡名或编号，或减少筛选条件。",
+        "clear": "清空查询与筛选"
+      },
+      "unknown": {
+        "title": "未收录这条资料",
+        "body": "链接指向的资料不在当前目录中。",
+        "back": "回到目录"
+      },
+      "loadError": {
+        "title": "百科资料暂时无法加载",
+        "body": "查询和筛选已保留。"
+      },
+      "fallback": {
+        "english": "此项暂无中文，显示英文",
+        "missing": "中英文均暂缺"
+      },
+      "image": {
+        "missing": "图片暂缺"
+      },
+      "moorStart": {
+        "name": "开局地形 {number}",
+        "layout": "开局地形布局"
+      },
+      "icons": {
+        "score": "分"
+      },
+      "inGame": {
+        "open": "查卡百科",
+        "attention": "需要你操作",
+        "backToGame": "返回对局",
+        "close": "关闭百科"
+      }
     }
   },
   "moor": {
@@ -6808,6 +6923,7 @@
     },
     "tabLobby": "大厅",
     "tabWorkshop": "工坊",
+    "tabEncyclopedia": "百科",
     "tabSettings": "设置",
     "mainNavigation": "主导航",
     "settingsTitle": "账户设置",
