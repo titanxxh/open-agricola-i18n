@@ -1452,7 +1452,11 @@
         "pointsMinPlaceholder": "Min",
         "pointsMaxPlaceholder": "Max",
         "pointsRangeTo": "to",
-        "pointsHint": "Bounds are inclusive; negatives and decimals are allowed. Game scores are not calculated."
+        "pointsHint": "Bounds are inclusive; negatives and decimals are allowed. Game scores are not calculated.",
+        "pointsAtLeast": "Fixed points ≥ {score}",
+        "pointsAtMost": "Fixed points ≤ {score}",
+        "active": "Selected filters",
+        "remove": "Remove filter: {name}"
       },
       "groups": {
         "deck": "Deck {deck}",
