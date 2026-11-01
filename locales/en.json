@@ -1540,6 +1540,10 @@
         "backToGame": "Back to game",
         "close": "Close encyclopedia"
       }
+    },
+    "actionReference": {
+      "unavailable": "Preview could not load. Close and open it to retry.",
+      "invalid": "Unknown action reference. Check the target identifier."
     }
   },
   "moor": {
@@ -2193,11 +2197,11 @@
     },
     "Major_Moor_PeatCharcoalKiln": {
       "name": "Peat-charcoal Kiln",
-      "description": "[Special action: __Cut Peat__]\n+1<FUEL> if you have 0<HORSE>; +2<FUEL> if you have at least 1<HORSE>.\n[Scoring]\n3/5<FUEL> <ARROW-1X> 1/2<SCORE>"
+      "description": "[Special action: __moor:cut-peat|Cut Peat__]\n+1<FUEL> if you have 0<HORSE>; +2<FUEL> if you have at least 1<HORSE>.\n[Scoring]\n3/5<FUEL> <ARROW-1X> 1/2<SCORE>"
     },
     "Major_Moor_ForestersLodge": {
       "name": "Forester's Lodge",
-      "description": "[Special action: __Fell Trees__]\nGain 1 extra <WOOD>, or 2 extra <WOOD> if you have at least 1<HORSE>.\n[Scoring]\nGain 1 <SCORE> for each <FOREST> in your farmyard."
+      "description": "[Special action: __moor:fell-trees|Fell Trees__]\nGain 1 extra <WOOD>, or 2 extra <WOOD> if you have at least 1<HORSE>.\n[Scoring]\nGain 1 <SCORE> for each <FOREST> in your farmyard."
     },
     "Major_Moor_RidingStables": {
       "name": "Riding Stables",
@@ -2295,11 +2299,11 @@
     },
     "A023_StoneCompany": {
       "name": "Stone Company",
-      "description": "Immediately after each time you use a __Quarry__ accumulation space, you get a __Major or Minor Improvement__ action during which you must spend at least 1 <STONE>."
+      "description": "Immediately after each time you use a __space:western-quarry,eastern-quarry|Quarry__ accumulation space, you get a __Major or Minor Improvement__ action during which you must spend at least 1 <STONE>."
     },
     "A028_ForestSchool": {
       "name": "Forest School",
-      "description": "You can consider the __Lessons__ action spaces not occupied. You can replace each <FOOD> that an occupation costs with <WOOD>."
+      "description": "You can consider the __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action spaces not occupied. You can replace each <FOOD> that an occupation costs with <WOOD>."
     },
     "A029_AleBenches": {
       "name": "Ale-Benches",
@@ -2355,7 +2359,7 @@
     },
     "A072_CalciumFertilizers": {
       "name": "Calcium Fertilizers",
-      "description": "Each time you use a __Quarry__ accumulation space, add 1 additional good of the respective type to each of your planted fields growing a single type of crop."
+      "description": "Each time you use a __space:western-quarry,eastern-quarry|Quarry__ accumulation space, add 1 additional good of the respective type to each of your planted fields growing a single type of crop."
     },
     "A074_StableTree": {
       "name": "Stable Tree",
@@ -2395,7 +2399,7 @@
     },
     "B019_MoldboardPlow": {
       "name": "Moldboard Plow",
-      "description": "Place 2 field tiles on this card. Twice this game, when you use the __Farmland__ action space, you can also plow 1 field from this card."
+      "description": "Place 2 field tiles on this card. Twice this game, when you use the __space:farmland|Farmland__ action space, you can also plow 1 field from this card."
     },
     "B002_MiniPasture": {
       "name": "Mini Pasture",
@@ -2487,14 +2491,15 @@
     },
     "C019_SwingPlow": {
       "name": "Swing Plow",
-      "description": "Place 4 field tiles on this card. Each time you use the __Farmland__ action space, you can also plow up to 2 fields from this card."
+      "description": "Place 4 field tiles on this card. Each time you use the __space:farmland|Farmland__ action space, you can also plow up to 2 fields from this card."
     },
     "C022_BasketChair": {
-      "rules": "Only an adult person can be moved to this card; a newborn remains on its action space."
+      "rules": "Only an adult person can be moved to this card; a newborn remains on its action space.",
+      "description": "When you play this card, you can immediately move the first person you placed this work phase to this card (unless it is on __space:meeting-place|Meeting Place__). If you do, immediately afterward, you can place another person."
     },
     "C023_JobContract": {
       "name": "Job Contract",
-      "description": "If both are unoccupied, you can use the __Day Laborer__ and the adjacent __Lessons__ action space with a single person (in that order). Afterward, both spaces are considered occupied."
+      "description": "If both are unoccupied, you can use the __space:day-laborer|Day Laborer__ and the adjacent __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space with a single person (in that order). Afterward, both spaces are considered occupied."
     },
     "C024_BedintheGrainField": {
       "name": "Bed in the Grain Field",
@@ -2522,7 +2527,7 @@
     },
     "C051_FishingNet": {
       "name": "Fishing Net",
-      "description": "Each time another player uses the __Fishing__ accumulation space, they must first pay you 1 <FOOD>. Then, in the returning home phase of that round, place 2 <FOOD> on __Fishing__."
+      "description": "Each time another player uses the __space:fishing|Fishing__ accumulation space, they must first pay you 1 <FOOD>. Then, in the returning home phase of that round, place 2 <FOOD> on __space:fishing|Fishing__."
     },
     "C052_HuntsmansHat": {
       "name": "Huntsman's Hat",
@@ -2570,7 +2575,7 @@
     },
     "D020_TurnwrestPlow": {
       "name": "Turnwrest Plow",
-      "description": "Place 2 field tiles on this card. Each time you use the __Farmland__ or __Cultivation__ action space, you can also plow up to 2 fields from this card."
+      "description": "Place 2 field tiles on this card. Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can also plow up to 2 fields from this card."
     },
     "D022_WorkPermit": {
       "name": "Work Permit",
@@ -2626,7 +2631,7 @@
     },
     "D074_RoyalWood": {
       "name": "Royal Wood",
-      "description": "At the end of each turn in which you use the __Farm Expansion__ action space or build an improvement, you get 1 <WOOD> back for every 2 <WOOD> paid during those actions (rounded down)."
+      "description": "At the end of each turn in which you use the __space:farm-expansion|Farm Expansion__ action space or build an improvement, you get 1 <WOOD> back for every 2 <WOOD> paid during those actions (rounded down)."
     },
     "D092_ChildOmbudsman": {
       "name": "Child Ombudsman",
@@ -2634,7 +2639,7 @@
     },
     "E010_StrawHat": {
       "name": "Straw Hat",
-      "description": "At the end of the work phases of rounds 3 and 6, you can move your person from the __Farmland__ action space to an unoccupied action space and take that action, or get 1 <FOOD>."
+      "description": "At the end of the work phases of rounds 3 and 6, you can move your person from the __space:farmland|Farmland__ action space to an unoccupied action space and take that action, or get 1 <FOOD>."
     },
     "E016_BriarHedge": {
       "name": "Briar Hedge",
@@ -2670,7 +2675,7 @@
     },
     "E051_WhaleOil": {
       "name": "Whale Oil",
-      "description": "Each time you use __Fishing__, place 1 <FOOD> from the general supply on this card. Each time before you play an occupation, you get <FOOD> equal to the amount on this card."
+      "description": "Each time you use __space:fishing|Fishing__, place 1 <FOOD> from the general supply on this card. Each time before you play an occupation, you get <FOOD> equal to the amount on this card."
     },
     "E052_Cubbyhole": {
       "name": "Cubbyhole",
@@ -2722,7 +2727,7 @@
     },
     "E082_Profiteering": {
       "name": "Profiteering",
-      "description": "When you play this card, you immediately get 1 <FOOD>. Each time you use the __Day Laborer__ action space, you can exchange 1 building resource for another building resource."
+      "description": "When you play this card, you immediately get 1 <FOOD>. Each time you use the __space:day-laborer|Day Laborer__ action space, you can exchange 1 building resource for another building resource."
     },
     "E084_DollysMother": {
       "name": "Dolly's Mother",
@@ -2730,6 +2735,267 @@
     },
     "M027_GardenPath": {
       "rules": "During scoring, the player holding the __Garden Path__ token loses 1 <SCORE>. There is only one token: each time this card is played, move it to the player to the left. The previous holder no longer has it."
+    },
+    "A018_WheelPlow": {
+      "description": "Once this game, when you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space with the first person you place in a round, you can plow 2 additional <FIELD>."
+    },
+    "A024_ThreshingBoard": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you get an additional __Bake Bread__ action."
+    },
+    "A025_Bassinet": {
+      "description": "You can place a(nother) person on the first non-accumulating action space used in each work phase, if there is only 1 person, including newborns, on that space. (There can never be two people on __space:meeting-place|Meeting Place__.)"
+    },
+    "A026_SleepingCorner": {
+      "description": "You can use any __space:wish-children,urgent-wish-children,modest-wish-children-56|Wish for Children__ action space even if it is occupied by one other player's person."
+    },
+    "A035_SwimmingClass": {
+      "description": "In the returning home phase of each round, if you return a person from the __space:fishing|Fishing__ accumulation space, you get 2 bonus <SCORE> for each newborn that you return home."
+    },
+    "A042_ForestLakeHut": {
+      "description": "Each time you use the __space:fishing|Fishing__/__space:forest|Forest__ accumulation space, you also get 1 <WOOD>/<FOOD>."
+    },
+    "A046_ClawKnife": {
+      "description": "Each time you use the __space:sheep-market|Sheep Market__ accumulation space, place 1 <FOOD> on each of the next 2 round spaces. At the start of these rounds, you get the <FOOD>."
+    },
+    "A049_NestSite": {
+      "description": "Each time 1 <REED> is placed on a non-empty __space:reed-bank|Reed Bank__ accumulation space during the preparation phase, you get 1 <FOOD>."
+    },
+    "A050_MilkJug": {
+      "description": "Each time any player (including you) uses the __space:cattle-market|Cattle Market__ accumulation space, you get 3 <FOOD>, and each other player gets 1 <FOOD>."
+    },
+    "A051_DriftNetBoat": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you get an additional 2 <FOOD>."
+    },
+    "A052_ThrowingAxe": {
+      "description": "Each time you use a <WOOD> accumulation space while there is at least 1 <PIG> on the __space:pig-market|Pig Market__ accumulation space, you also get 2 <FOOD>."
+    },
+    "A067_CornScoop": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you get 1 additional <GRAIN>."
+    },
+    "A077_Hod": {
+      "description": "When you play this card, you immediately get 1 <CLAY>. Each time any player (including you) uses the __space:pig-market|Pig Market__ accumulation space, you immediately get 2 <CLAY>."
+    },
+    "A078_Canoe": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you get an additional 1 <FOOD> and 1 <REED>."
+    },
+    "B024_Lasso": {
+      "description": "You can place exactly two people immediately after one another if at least one of them uses the __space:sheep-market|Sheep Market__, __space:pig-market|Pig Market__, or __space:cattle-market|Cattle Market__ accumulation space."
+    },
+    "B026_AgrarianFences": {
+      "description": "Each time you use the __space:grain-utilization|Grain Utilization__ action space, you can take a __Build Fences__ action instead of one of the two actions provide by the action space."
+    },
+    "B028_ForestryStudies": {
+      "description": "Each time after you use the __space:forest|Forest__ accumulation space, you can return 2 <WOOD> to that space to play 1 occupation without paying an occupation costs."
+    },
+    "B029_CookeryLesson": {
+      "description": "Each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space and a cooking improvement on the same turn, you get 1 bonus <SCORE>."
+    },
+    "B040_BreweryPond": {
+      "description": "Each time you use the __space:fishing|Fishing__ or __space:reed-bank|Reed Bank__ accumulation space, you also get 1 <GRAIN> and 1 <WOOD>."
+    },
+    "B043_Chophouse": {
+      "description": "Each time you use the __space:grain-seeds,vegetable-seeds|Grain/Vegetable Seeds__ action space, place 1 <FOOD> on each of the next 3/2 round spaces. At the start of these rounds, you get the <FOOD>."
+    },
+    "B047_HerringPot": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, place 1 <FOOD> on each of the next 3 round spaces. At the start of these rounds, you get the <FOOD>."
+    },
+    "B056_Brook": {
+      "description": "Each time you use one of the four action spaces above the __space:fishing|Fishing__ accumulation space, you get 1 additional <FOOD>."
+    },
+    "B059_FoodChest": {
+      "description": "If you play this card on the __space:major-improvement|Major Improvement__ action space, you immediately get 4 <FOOD>. Otherwise, you get only 2 <FOOD>."
+    },
+    "B060_BrewingWater": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you can pay 1 <GRAIN> to place 1 <FOOD> on each of the next 6 round spaces. At the start of these rounds, you get the <FOOD>."
+    },
+    "B062_Pitchfork": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, if the __space:farmland|Farmland__ action space is occupied you also get 3 <FOOD>."
+    },
+    "B063_Tasting": {
+      "description": "Each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, before paying the occupation cost, you can exchange 1 <GRAIN> for 4 <FOOD>."
+    },
+    "B064_MillWheel": {
+      "description": "Each time you use the __space:grain-utilization|Grain Utilization__ action space while the __space:fishing|Fishing__ accumulation space is occupied, you get an additional 2 <FOOD>."
+    },
+    "B077_LoamPit": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you also get 3 <CLAY>."
+    },
+    "C015_Trellis": {
+      "description": "Each time before you use the __space:pig-market|Pig Market__ accumulation space, you can take a __Build Fences__ action. (You must pay <WOOD> for the <FENCE> as usual.)"
+    },
+    "C020_MolePlow": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can plow 1 additional <FIELD>."
+    },
+    "C021_HeartofStone": {
+      "description": "Each time a __space:western-quarry,eastern-quarry|Quarry__ accumulation space is revealed, if you have room in your house, you can immediately take a __Family Growth__ action without placing a person."
+    },
+    "C026_Flail": {
+      "description": "When you play this card, you immediately get 2 <FOOD>. Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can also take a __Bake Bread__ action."
+    },
+    "C028_TeachersDesk": {
+      "description": "Each time you use the __space:major-improvement|Major Improvement__ or __space:house-redevelopment|House Redevelopment__ action space, you can also play 1 occupation at an occupation cost of 1 <FOOD>."
+    },
+    "C039_StudioBoat": {
+      "description": "Each time you use the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you also get 1 bonus <SCORE>. In games with 1-3 players, this card is considered __space:traveling-players,traveling-players-56|Traveling Players__ (same effect as __space:fishing|Fishing__)."
+    },
+    "C042_RavenousHunger": {
+      "description": "Immediately after each time you use the __space:vegetable-seeds|Vegetable Seeds__ action space, you can place another person on an accumulation space and get 1 additional good of the accumulating type."
+    },
+    "C045_Stew": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, also place 1 <FOOD> on each of the next 4 round spaces. At the start of these rounds, you get the <FOOD>."
+    },
+    "C082_HardwareStore": {
+      "description": "Each time after you use the __space:day-laborer|Day Laborer__ action space, you can pay 2 <FOOD> total to buy 1 <WOOD>, 1 <CLAY>, 1 <REED>, and 1 <STONE>."
+    },
+    "D016_WoodenWheyBucket": {
+      "description": "Each time before you use the __space:sheep-market|Sheep Market__/__space:cattle-market|Cattle Market__ accumulation space, you can build exactly 1 <STABLE> for 1 <WOOD>/at no cost."
+    },
+    "D018_SteamPlow": {
+      "description": "Immediately after each returning home phase, you can pay 2 <WOOD> and 1 <FOOD> to use the __space:farmland|Farmland__ action space without placing a person."
+    },
+    "D028_WritingDesk": {
+      "description": "Each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you can play 1 additional occupation for an occupation cost of 2 <FOOD>."
+    },
+    "D054_TroutPool": {
+      "description": "At the start of each work phase, if there are at least 3 <FOOD> on the __space:fishing|Fishing__ accumulation space, you get 1 <FOOD> from the general supply."
+    },
+    "D068_SmallBasket": {
+      "description": "Each time after you use the __space:reed-bank|Reed Bank__ accumulation space, you can pay 1 <REED> to get 1 <VEGETABLE>. If you do in a game with 4+ players, place that 1 <REED> on the accumulation space."
+    },
+    "D073_SupplyBoat": {
+      "description": "Each time after you use the __space:fishing|Fishing__ accumulation space, you can choose to buy 1 <GRAIN> for 1 <FOOD>, or 1 <VEGETABLE> for 3 <FOOD>."
+    },
+    "D082_HuntingTrophy": {
+      "description": "To play this card, you must return or cook 1 <PIG>.\nImprovements built on __space:house-redevelopment|House Redevelopment__ cost you 1 building resource of your choice less. <FENCE> built on __space:farm-redevelopment|Farm Redevelopment__ cost you a total of 3 <WOOD> less."
+    },
+    "D083_Pigswill": {
+      "description": "Each time you use the __space:fencing|Fencing__ action space, you also get 1 <PIG>."
+    },
+    "E003_TeaTime": {
+      "description": "Immediately return your person on the __space:grain-utilization|Grain Utilization__ action space home; you can place it again later this round."
+    },
+    "E017_SkimmerPlow": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__  action space, you can plow 2 <FIELD> instead of 1. Each time you sow, you must place 1 fewer good on each <FIELD> you sow."
+    },
+    "E019_OxGoad": {
+      "description": "Each time after you use the __space:cattle-market|Cattle Market__ accumulation space, you can pay 2 <FOOD> to plow 1 <FIELD>."
+    },
+    "E020_IronHoe": {
+      "description": "At the end of each work phase, if you occupy both the __space:grain-seeds|Grain Seeds__ and __space:vegetable-seeds|Vegetable Seeds__ action spaces, you can plow 1 <FIELD>."
+    },
+    "E021_SheepRug": {
+      "description": "You can use any __space:wish-children,urgent-wish-children,modest-wish-children-56|Wish for Children__ action space, even if it is occupied by another player's person."
+    },
+    "E038_RodCollection": {
+      "description": "Each time you use __space:fishing|Fishing__, you can place up to 2 <WOOD> on this card, irretrievably. During scoring, each such <WOOD> is worth 1 bonus <SCORE>, except the 1st, 4th, 7th, and 10th."
+    },
+    "E040_BeeStatue": {
+      "description": "Pile (from bottom to top) 1 <VEGETABLE>, 1 <STONE>, 1 <GRAIN>, 1 <STONE>, 1 <GRAIN> on this card. Each time you use the __space:day-laborer|Day Laborer__ action space, you get the top good."
+    },
+    "E055_StoneWeir": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, if there are 0/1/2/3 <FOOD> on the space, you get an additional 4/3/2/1 <FOOD> from the general supply."
+    },
+    "E059_CombandCutter": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you get 1 additional <FOOD> for each <SHEEP> on the __space:sheep-market|Sheep Market__ accumulation space, up to a maximum of 4 additional <FOOD>."
+    },
+    "E066_BarnShed": {
+      "description": "Each time another player (or, in a solo game, you) uses the __space:forest|Forest__ accumulation space, you get 1 <GRAIN>."
+    },
+    "E067_GrainBag": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you get 1 additional <GRAIN> for each <BAKE>-improvement you have."
+    },
+    "M041_CattleCollar": {
+      "description": "Each time after you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space or take the __moor:slash-and-burn|Slash and Burn__ special action, if you have at least 1 <CATTLE>, you can plow 1 additional <FIELD>."
+    },
+    "M042_DeepPlow": {
+      "description": "You can immediately place 1 <MOOR> on an unused farmyard space. Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can also exchange 1 <MOOR> for 1 <FIELD> tile."
+    },
+    "M046_Thicket": {
+      "description": "Choose up to 2 of your <FOREST> and place 1 additional <FOREST> on top of each of them. You cannot take the __moor:slash-and-burn|Slash and Burn__ special action on these farmyard spaces unless you remove a tile with a __moor:fell-trees|Fell Trees__ special action first."
+    },
+    "M047_BogForest": {
+      "description": "Place 1 <FOREST> each on as many of your <MOOR> as you wish. You cannot take the __moor:slash-and-burn|Slash and Burn__ special action or use the covered <MOOR> on these farmyard spaces unless you remove the <FOREST> with a __moor:fell-trees|Fell Trees__ special action first."
+    },
+    "M048_ForestSwamp": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, add 4 to the current round and place 1 <FOREST> on the corresponding round space. At the start of that round, you can place the <FOREST> on an unused farmyard space."
+    },
+    "M054_AgriculturalImplement": {
+      "description": "Immediately after each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can take a face-up special action card. The special action card costs 0 or 2 <FOOD>, as usual."
+    },
+    "M055_ToolShed": {
+      "description": "Once per round, immediately before or after you take the __moor:slash-and-burn|Slash and Burn__ or __moor:cut-peat|Cut Peat__ special action, you can also take the respective other special action."
+    },
+    "M056_PeatCuttingRights": {
+      "description": "Add 4 and 7 to the current round and place 1 <FUEL> on each corresponding round space. At the start of these rounds, you can discard the <FUEL> and take the __moor:cut-peat|Cut Peat__ special action by taking the appropriate special action card."
+    },
+    "M058_PeatFertilizer": {
+      "description": "Each time after you take the __moor:cut-peat|Cut Peat__ special action, you can also take a __Sow__ action."
+    },
+    "M059_NaturesFertilizer": {
+      "description": "Each time after you take the __moor:slash-and-burn|Slash and Burn__ special action, you also get a __Sow__ action for the new <FIELD> only. This also applies when you exchange 1 <MOOR> for 1 <FIELD> tile via a minor improvement."
+    },
+    "M070_MoorArchaeology": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, you can place 1 <FENCE> from your supply on the emptied farmyard space. That space counts as used but it is blocked for the rest of the game. During scoring, it is worth 1 additional bonus <SCORE>."
+    },
+    "M077_DryingField": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, add 3 to the current round and place 2 <FUEL> on the corresponding round space. At the start of that round, you get the <FUEL>."
+    },
+    "M083_CoalSeam": {
+      "description": "When you play this card, you immediately get 1 <FUEL>. Each time you take the __moor:hiring-fair|Hiring Fair__ special action or use the __space:day-laborer|Day Laborer__ action space, you also get 1 <FUEL>."
+    },
+    "M087_PeatBarge": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you also get 2 <FUEL>."
+    },
+    "M092_AridField": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, place 1 <FUEL> and 1 <FOOD> on the emptied farmyard space. This farmyard space is still considered unused. You get the goods once the farmyard space is no longer unused."
+    },
+    "M096_FallowLand": {
+      "description": "Each time you take the __moor:fell-trees|Fell Trees__ or __moor:cut-peat|Cut Peat__ special action, place 1 <FOOD> on the emptied farmyard space. This farmyard space is still considered unused. Once the farmyard space is no longer unused, you get the <FOOD>."
+    },
+    "M098_FishSmokehouse": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you can pay 1 <FUEL> to get an additional 3 <FOOD>."
+    },
+    "M109_Malthouse": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, you can also turn exactly 1 <GRAIN> into 4 <FOOD>."
+    },
+    "M112_PeatAshFertilizer": {
+      "description": "Each time before you take the __moor:cut-peat|Cut Peat__ special action, you can place 1 additional crop of the same type on all <FIELD> and farmyard spaces containing <GRAIN> or <VEGETABLE>. Do not place any crops on empty <FIELD> and farmyard spaces."
+    },
+    "M114_RiversideWoods": {
+      "description": "With this card, each time you use the __space:fishing|Fishing__ accumulation space, you also get 1 <WOOD> for each of your farmyard spaces containing at least 1 <FOREST>, up to a maximum of 3 <WOOD>."
+    },
+    "M116_MoorBirchTrees": {
+      "description": "Each time you take the __moor:cut-peat|Cut Peat__ special action, you also get 2 <WOOD>."
+    },
+    "M118_TimberMill": {
+      "description": "Each time you take the __moor:fell-trees|Fell Trees__ special action or take at least 4 <WOOD> from an accumulation space, you get 1 additional <WOOD>. If you pay 1 <FUEL>, you get 2 additional <WOOD> instead of 1."
+    },
+    "M119_AlderSwamp": {
+      "description": "Each time you take the __moor:fell-trees|Fell Trees__ special action, you also get your choice of 1 <WOOD> or 1 <REED>."
+    },
+    "M120_RiverClay": {
+      "description": "Each time you use the __space:fishing|Fishing__ accumulation space, you also get 2 <CLAY>."
+    },
+    "M121_Loam": {
+      "description": "In each work phase, if you have placed all but one of your people when taking the __moor:hiring-fair|Hiring Fair__ special action, you also get 1 <CLAY>."
+    },
+    "M122_WillowBank": {
+      "description": "Each time you take the __moor:fell-trees|Fell Trees__ special action, you also get 1 <REED>."
+    },
+    "M123_StoneQuarry": {
+      "description": "Place 5 <STONE>--only 3 <STONE> in 3-player games--on this card. Each time you take the __moor:hiring-fair|Hiring Fair__ special action, you also get 1 <STONE> from this card."
+    },
+    "M124_StoneWagon": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you also get 1 <STONE>."
+    },
+    "M127_Wheelbarrow": {
+      "description": "Each time you take at least 4 of the same building resource from an accumulation space, you also get 1 <FUEL>. Each time you take the __moor:cut-peat|Cut Peat__ special action, you also get 1 building resource of your choice."
+    },
+    "M129_PlowhorseMarket": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can also buy exactly 1 <HORSE> for 1 <FOOD>."
+    },
+    "M130_Nosebag": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you also get 1 <HORSE>."
     }
   },
   "occupations": {
@@ -2755,7 +3021,7 @@
     },
     "A119_FirewoodCollector": {
       "name": "Firewood Collector",
-      "description": "Each time you use the __Farmland__, __Grain Seeds__, __Grain Utilization__, or __Cultivation__ action space, at the end of that turn, you get 1 <WOOD>."
+      "description": "Each time you use the __space:farmland|Farmland__, __space:grain-seeds|Grain Seeds__, __space:grain-utilization|Grain Utilization__, or __space:cultivation|Cultivation__ action space, at the end of that turn, you get 1 <WOOD>."
     },
     "A123_FrameBuilder": {
       "name": "Frame Builder",
@@ -2771,7 +3037,7 @@
     },
     "A137_RiverineShepherd": {
       "name": "Riverine Shepherd",
-      "description": "Each time you use the __Sheep Market__ or __Reed Bank__ accumulation space, you can also take 1 good from the respective other accumulation space, if possible."
+      "description": "Each time you use the __space:sheep-market|Sheep Market__ or __space:reed-bank|Reed Bank__ accumulation space, you can also take 1 good from the respective other accumulation space, if possible."
     },
     "A144_Sequestrator": {
       "name": "Sequestrator",
@@ -2783,7 +3049,7 @@
     },
     "A162_ForestTallyman": {
       "name": "Forest Tallyman",
-      "description": "Each time both the __Forest__ and __Clay Pit__ accumulation spaces are occupied, you can use this card as an action space to get 2 <CLAY> and 3 <WOOD>."
+      "description": "Each time both the __space:forest|Forest__ and __space:clay-pit|Clay Pit__ accumulation spaces are occupied, you can use this card as an action space to get 2 <CLAY> and 3 <WOOD>."
     },
     "A165_PigBreeder": {
       "name": "Pig Breeder",
@@ -2808,7 +3074,7 @@
     "A094_LazySowman": {
       "name": "Lazy Sowman",
       "description": "Each time you decline an unconditional __Sow__ action on your turn, you can immediately place another person on an action space of your choice (even if it is occupied).",
-      "rules": "The additional person cannot be placed on __Meeting Place__."
+      "rules": "The additional person cannot be placed on __space:meeting-place|Meeting Place__."
     },
     "A097_Freshman": {
       "name": "Freshman",
@@ -2876,7 +3142,7 @@
     },
     "C138_AnimalFeeder": {
       "name": "Animal Feeder",
-      "description": "On the __Day Laborer__ action space, you also get your choice of 1 <SHEEP> or 1 <GRAIN>. Instead of that good, you can buy 1 <PIG> for 1 <FOOD> or 1 <CATTLE> for 2 <FOOD>."
+      "description": "On the __space:day-laborer|Day Laborer__ action space, you also get your choice of 1 <SHEEP> or 1 <GRAIN>. Instead of that good, you can buy 1 <PIG> for 1 <FOOD> or 1 <CATTLE> for 2 <FOOD>."
     },
     "C135_Constable": {
       "name": "Constable",
@@ -2884,7 +3150,7 @@
     },
     "C142_MarketCrier": {
       "name": "Market Crier",
-      "description": "Each time you use the __Grain Seeds__ action space, you can get an additional 1 <GRAIN> and 1 <VEGETABLE>. If you do, each other player gets 1 <GRAIN>."
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you can get an additional 1 <GRAIN> and 1 <VEGETABLE>. If you do, each other player gets 1 <GRAIN>."
     },
     "C146_WorkshopAssistant": {
       "name": "Workshop Assistant",
@@ -2896,7 +3162,7 @@
     },
     "C156_HoofCaregiver": {
       "name": "Hoof Caregiver",
-      "description": "Immediately add 1 <CATTLE> from the general supply to the __Cattle Market__ accumulation space. Afterward, for each cattle on __Cattle Market__, you get 1 <GRAIN> plus 1 <FOOD>."
+      "description": "Immediately add 1 <CATTLE> from the general supply to the __space:cattle-market|Cattle Market__ accumulation space. Afterward, for each cattle on __space:cattle-market|Cattle Market__, you get 1 <GRAIN> plus 1 <FOOD>."
     },
     "C162_ForestOwner": {
       "name": "Forest Owner",
@@ -2920,7 +3186,7 @@
     },
     "C093_InnerDistrictsDirector": {
       "name": "Inner Districts Director",
-      "description": "Each time you use the __Forest__ or __Clay Pit__ accumulation space, you can place 1 <STONE> from the general supply on the other space. If you do, you can immediately place another person."
+      "description": "Each time you use the __space:forest|Forest__ or __space:clay-pit|Clay Pit__ accumulation space, you can place 1 <STONE> from the general supply on the other space. If you do, you can immediately place another person."
     },
     "C096_Merchant": {
       "name": "Merchant",
@@ -2940,7 +3206,7 @@
     },
     "D101_SugarBaker": {
       "name": "Sugar Baker",
-      "description": "Each time after you use the __Grain Utilization__ action space, you can buy 1 bonus <SCORE> for 1 <FOOD>. Place the <FOOD> on the action space (for the next visitor)."
+      "description": "Each time after you use the __space:grain-utilization|Grain Utilization__ action space, you can buy 1 bonus <SCORE> for 1 <FOOD>. Place the <FOOD> on the action space (for the next visitor)."
     },
     "D102_SampleStableMaker": {
       "name": "Sample Stable Maker",
@@ -2948,7 +3214,7 @@
     },
     "D103_CanalBoatman": {
       "name": "Canal Boatman",
-      "description": "Each time you use __Fishing__ or __Reed Bank__, you can pay 1 <FOOD> to immediately place another person on this card. If you do, you get your choice of 3 <STONE> or 1 <GRAIN> plus 1 <VEGETABLE>."
+      "description": "Each time you use __space:fishing|Fishing__ or __space:reed-bank|Reed Bank__, you can pay 1 <FOOD> to immediately place another person on this card. If you do, you get your choice of 3 <STONE> or 1 <GRAIN> plus 1 <VEGETABLE>."
     },
     "D107_Bellfounder": {
       "name": "Bellfounder",
@@ -2960,7 +3226,7 @@
     },
     "D116_TreeInspector": {
       "name": "Tree Inspector",
-      "description": "This card is a 1 <WOOD> accumulation space for you only. Each time the newly revealed action space card is a __Quarry__ accumulation space, you must discard all <WOOD> from this card."
+      "description": "This card is a 1 <WOOD> accumulation space for you only. Each time the newly revealed action space card is a __space:western-quarry,eastern-quarry|Quarry__ accumulation space, you must discard all <WOOD> from this card."
     },
     "D124_Emissary": {
       "name": "Emissary",
@@ -2984,18 +3250,19 @@
     },
     "D134_OysterEater": {
       "name": "Oyster Eater",
-      "description": "Each time the __Fishing__ accumulation space is used, you get 1 bonus <SCORE> and must skip placing your next person that round. (You can place the person on a later turn.)"
+      "description": "Each time the __space:fishing|Fishing__ accumulation space is used, you get 1 bonus <SCORE> and must skip placing your next person that round. (You can place the person on a later turn.)"
     },
     "D137_TradeTeacher": {
       "name": "Trade Teacher",
-      "description": "Each time after you use a __Lessons__ action space, you can buy up to 2 different goods: <GRAIN>, <STONE>, <SHEEP>, and <PIG> for 1 <FOOD> each; <CATTLE> and <VEGETABLE> for 2 <FOOD> each."
+      "description": "Each time after you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you can buy up to 2 different goods: <GRAIN>, <STONE>, <SHEEP>, and <PIG> for 1 <FOOD> each; <CATTLE> and <VEGETABLE> for 2 <FOOD> each."
     },
     "D150_GodlySpouse": {
       "name": "Godly Spouse",
-      "description": "Each time you take a __Family Growth__ action with the second person you place in a round, return the first person you placed home, unless it is on the __Meeting Place__ action space."
+      "description": "Each time you take a __Family Growth__ action with the second person you place in a round, return the first person you placed home, unless it is on the __space:meeting-place|Meeting Place__ action space."
     },
     "D151_SpinDoctor": {
-      "rules": "No card, including this one, can allow you to use __Meeting Place__ if it is already occupied."
+      "rules": "No card, including this one, can allow you to use __space:meeting-place|Meeting Place__ if it is already occupied.",
+      "description": "Immediately after each time you use the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you can place another person on an action space of your choice, regardless whether or not the action space is occupied."
     },
     "D157_PartyOrganizer": {
       "name": "Party Organizer",
@@ -3016,11 +3283,11 @@
     },
     "D093_SheepInspector": {
       "name": "Sheep Inspector",
-      "description": "Once per work phase, after you complete a person action, you can pay 1 <SHEEP> and 2 <FOOD> to return another person you placed home, unless it is on the __Meeting Place__ action space."
+      "description": "Once per work phase, after you complete a person action, you can pay 1 <SHEEP> and 2 <FOOD> to return another person you placed home, unless it is on the __space:meeting-place|Meeting Place__ action space."
     },
     "D094_HenpeckedHusband": {
       "name": "Henpecked Husband",
-      "description": "Each time you take a __Build Rooms__ action with the second person you place, return the first person you placed home, unless it is on the __Meeting Place__ action space."
+      "description": "Each time you take a __Build Rooms__ action with the second person you place, return the first person you placed home, unless it is on the __space:meeting-place|Meeting Place__ action space."
     },
     "D095_SiteManager": {
       "name": "Site Manager",
@@ -3052,7 +3319,7 @@
     },
     "E130_Overachiever": {
       "name": "Overachiever",
-      "description": "Each time you use a __Wish for Children__ action space, you can play 1 additional improvement by paying its cost minus 1 resource of your choice."
+      "description": "Each time you use a __space:wish-children,urgent-wish-children,modest-wish-children-56|Wish for Children__ action space, you can play 1 additional improvement by paying its cost minus 1 resource of your choice."
     },
     "E133_ChampionBreeder": {
       "name": "Champion Breeder",
@@ -3064,12 +3331,12 @@
     },
     "E148_Lazybones": {
       "name": "Lazybones",
-      "description": "Place (up to) 1 <STABLE> each on __Grain Seeds__, __Farmland__, __Day Laborer__, and __Farm Expansion__. Build the <STABLE> at no cost when another player uses that action space.",
+      "description": "Place (up to) 1 <STABLE> each on __space:grain-seeds|Grain Seeds__, __space:farmland|Farmland__, __space:day-laborer|Day Laborer__, and __space:farm-expansion|Farm Expansion__. Build the <STABLE> at no cost when another player uses that action space.",
       "choice": "Reserve {spaces}"
     },
     "E151_DeliveryNurse": {
       "name": "Delivery Nurse",
-      "description": "Once this game, if you have all types of animals, you can use any __Wish for Children__ action space even without room."
+      "description": "Once this game, if you have all types of animals, you can use any __space:wish-children,urgent-wish-children,modest-wish-children-56|Wish for Children__ action space even without room."
     },
     "E153_StoneSculptor": {
       "name": "Stone Sculptor",
@@ -3093,7 +3360,7 @@
     },
     "E166_Roastmaster": {
       "name": "Roastmaster",
-      "description": "Each time you use the __Traveling Players__ or __Fishing__ accumulation spaces, you can move exactly 1 <FOOD> from that space to the other to get 1 <CATTLE>."
+      "description": "Each time you use the __space:traveling-players,traveling-players-56|Traveling Players__ or __space:fishing|Fishing__ accumulation spaces, you can move exactly 1 <FOOD> from that space to the other to get 1 <CATTLE>."
     },
     "E167_DairyCrier": {
       "name": "Dairy Crier",
@@ -3117,7 +3384,7 @@
     },
     "E092_FieldDoctor": {
       "name": "Field Doctor",
-      "description": "Once this game, if you live in a house with exactly 2 rooms surrounded by 4 field tiles, you can use any __Wish for Children__ action space even without room."
+      "description": "Once this game, if you live in a house with exactly 2 rooms surrounded by 4 field tiles, you can use any __space:wish-children,urgent-wish-children,modest-wish-children-56|Wish for Children__ action space even without room."
     },
     "E093_Motivator": {
       "name": "Motivator",
@@ -3126,6 +3393,297 @@
     "E094_Prophet": {
       "name": "Prophet",
       "description": "When you play this card, immediately take a __Renovation__ action. Afterward, you can take a __Build Fences__ action. (Both actions require their usual cost.)"
+    },
+    "A095_Angler": {
+      "description": "Each time after you use the __space:fishing|Fishing__ Accumulation space while there are at most 2 <FOOD> on that space, you get a __Major or Minor Improvement__ action."
+    },
+    "A113_HeresyTeacher": {
+      "description": "Each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you get 1 <VEGETABLE> in each of your <FIELD> with at least 3 <GRAIN> and no <VEGETABLE>. Place the <VEGETABLE> below the <GRAIN>."
+    },
+    "A114_SeasonalWorker": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you get 1 additional <GRAIN>. From round 6 on, you can choose to get 1 <VEGETABLE> instead."
+    },
+    "A121_ClayPuncher": {
+      "description": "When you play this card and each time after you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space or the __space:clay-pit|Clay Pit__ accumulation space, you get 1 <CLAY>."
+    },
+    "A122_PanBaker": {
+      "description": "Each time you use the __space:grain-utilization|Grain Utilization__ action space, you also get 2 <CLAY> and 1 <WOOD>."
+    },
+    "A128_RiparianBuilder": {
+      "description": "Each time another player uses the __space:reed-bank|Reed Bank__ accumulation space, you can build a room: if you build a <CLAY>/stone room, you get a discount of 1 <CLAY>/2 <STONE>."
+    },
+    "A129_Swagman": {
+      "description": "Immediately after each time you use the __space:farm-expansion|Farm Expansion__ or __space:grain-seeds|Grain Seeds__ action space, you can use the respective other space with the same person (even if it is occupied)."
+    },
+    "A130_MummysBoy": {
+      "description": "Once per round, when placing a person after your first two, you can place it on the action space with your 2nd person and use that space again, unless it is on the __space:meeting-place|Meeting Place__ action space."
+    },
+    "A138_Harpooner": {
+      "description": "Each time you use the __space:fishing|Fishing__ space you can also pay 1 <WOOD> to get 1 <FOOD> for each person you have, and 1 <REED>"
+    },
+    "A139_HollowWarden": {
+      "description": "When you play this card, you immediately get a __Major Improvement__ action to build a Fireplace. Each time you use the __space:hollow,hollow-4,hollow-56|Hollow__ accumulation space, you also get 1 <FOOD>."
+    },
+    "A140_ShovelBearer": {
+      "description": "Each time you use the __space:clay-pit|Clay Pit__ or __space:hollow,hollow-4,hollow-56|Hollow__ accumulation space, you also get a number of <FOOD> equal to the amount of <CLAY> on the respective other accumulation space."
+    },
+    "A141_TurnipFarmer": {
+      "description": "At the start of the returning home phase of each round, if both the __space:day-laborer|Day Laborer__ and __space:grain-seeds|Grain Seeds__ action spaces are occupied, you get 1 <VEGETABLE>."
+    },
+    "A142_Cordmaker": {
+      "description": "Each time any player (including you) takes at least 2 <REED> from the __space:reed-bank|Reed Bank__ accumulation space, you can choose to take 1 <GRAIN> or buy 1 <VEGETABLE> for 2 <FOOD>."
+    },
+    "A147_AnimalDealer": {
+      "description": "Each time you use the __space:sheep-market|Sheep Market__, __space:pig-market|Pig Market__, or __space:cattle-market|Cattle Market__ accumulation space, you can buy 1 additional animal of the respective type for 1 <FOOD>."
+    },
+    "A149_HouseArtist": {
+      "description": "Each time you use the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you also get a __Build Rooms__ action. Each room you build during the action costs you 1 <REED> less."
+    },
+    "A150_Stagehand": {
+      "description": "Each time another player uses the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you can take your choice of a __Build Fences__, __Build Stables__, or __Build Rooms__ action."
+    },
+    "A152_NightSchoolStudent": {
+      "description": "Each returning home phase in which no player returns a person from a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you can play an occupation for an occupation cost of 1 <FOOD>."
+    },
+    "A155_Conjurer": {
+      "description": "Each time you use the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you get an additional 1 <WOOD> and 1 <GRAIN>."
+    },
+    "A157_Bohemian": {
+      "description": "At the start of each returning home phase, if at least one __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space is unoccupied, you get 1 <FOOD>."
+    },
+    "A158_CulinaryArtist": {
+      "description": "Each time another player uses the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you can exchange your choice of 1 <GRAIN>/<SHEEP>/<VEGETABLE> for 4/5/7 <FOOD>."
+    },
+    "A159_JoineroftheSea": {
+      "description": "Each time another player uses the __space:fishing|Fishing__/__space:reed-bank|Reed Bank__ accumulation space, you can give them 1 <WOOD> to get 2 <FOOD>/3 <FOOD> from the general supply."
+    },
+    "A160_Lutenist": {
+      "description": "Each time another player uses the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you get 1 <FOOD> and 1 <WOOD>. Immediately after, you can buy exactly 1 <VEGETABLE> for 2 <FOOD>."
+    },
+    "A163_BuildingExpert": {
+      "description": "Each time you use the __space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|Resource Market__ action space with the 1st/2nd/3rd/4th/5th person you place, you also get 1 <WOOD>/<CLAY>/<REED>/<STONE>/<STONE>."
+    },
+    "A168_AnimalTeacher": {
+      "description": "Immediately after each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you can also buy 1 <SHEEP>/<PIG>/<CATTLE> for 0/1/2 <FOOD>."
+    },
+    "A172_BoatPainter": {
+      "description": "At the end of each work phase, if both the __space:fishing|Fishing__ and __space:traveling-players,traveling-players-56|Traveling Players__ accumulation spaces are occupied, you get your choice of 1 <GRAIN> or 2 <FOOD>."
+    },
+    "A179_MountainShepherd": {
+      "description": "Each time you use either __space:western-quarry,eastern-quarry|Quarry__ accumulation space, you immediately get an additional 1 <SHEEP> from the general supply."
+    },
+    "A180_AnimalBrander": {
+      "description": "Each time you use the __space:animal-market-56|Animal Market__ action space, you can pay 1 <FOOD> to use the same option twice (instead of once)."
+    },
+    "B087_Cottager": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you can also either build exactly 1 room or renovate your house. Either way, you have to pay the cost."
+    },
+    "B090_CooperativePlower": {
+      "description": "Each time you use the __space:farmland|Farmland__ action space while the __space:grain-seeds|Grain Seeds__ action space is occupied, you can plow 1 additional <FIELD>."
+    },
+    "B091_AssistantTiller": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, you can also plow 1 <FIELD>."
+    },
+    "B092_LittleStickKnitter": {
+      "description": "From Round 5 on, each time you use the __space:sheep-market|Sheep Market__ accumulation space, you can also take a __Family Growth with Room Only__ action."
+    },
+    "B094_StockProtector": {
+      "description": "Each time before you use the __space:fencing|Fencing__ action space, you get 2 <WOOD>. Immediately after that __space:fencing|Fencing__ action, you can place another person."
+    },
+    "B116_Shoreforester": {
+      "description": "When you play this card and each time 1 <REED> is placed on an empty __space:reed-bank|Reed Bank__ accumulation space in the preparation phase, you get 1 <WOOD>."
+    },
+    "B121_Geologist": {
+      "description": "Each time you use the __space:forest|Forest__ or __space:reed-bank|Reed Bank__ accumulation space, you also get 1 <CLAY>. In games with 3 or more players, this also applies to the __space:clay-pit|Clay Pit__."
+    },
+    "B128_Plumber": {
+      "description": "Each time after you use the __space:major-improvement|Major Improvement__ action space, you can take a __Renovation__ action, paying 2 <CLAY> or 2 <STONE> less for the renovation."
+    },
+    "B130_FullPeasant": {
+      "description": "Each time after you use the __space:grain-utilization|Grain Utilization__ or __space:fencing|Fencing__ action space while the other is unoccupied, you can pay 1 <FOOD> to use the other space with the same person."
+    },
+    "B142_Greengrocer": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you also get 1 <VEGETABLE>."
+    },
+    "B143_ClayWarden": {
+      "description": "Each time another player uses the __space:hollow,hollow-4,hollow-56|Hollow__ accumulation space, you get 1 <CLAY>. In a 3-/4-player game, you also get 1 additional <CLAY>/<FOOD>."
+    },
+    "B144_Collier": {
+      "description": "Each time after you use the __space:clay-pit|Clay Pit__ or __space:hollow,hollow-4,hollow-56|Hollow__ accumulation space, you get 1 <WOOD>. On __space:clay-pit|Clay Pit__ you also get 1 additional <REED>."
+    },
+    "B150_LargeScaleFarmer": {
+      "description": "Each time after you use the __space:farm-expansion|Farm Expansion__ or __space:major-improvement|Major Improvement__ action space while the other is unoccupied, you can pay 1 <FOOD> to use that other space with the same person."
+    },
+    "B152_JuniorArtist": {
+      "description": "Each time after you use the __space:day-laborer|Day Laborer__ action space, you can pay 1 <FOOD> to use an unoccupied __space:traveling-players,traveling-players-56|Traveling Players__ or __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space with the same person."
+    },
+    "B155_ArtTeacher": {
+      "description": "When you play this card, you immediately get 1 <WOOD> and 1 <REED>. Each time you pay an occupation cost, you can use <FOOD> from the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space."
+    },
+    "B156_StorehouseKeeper": {
+      "description": "Each time you use the __space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|Resource Market__ action space, you also get your choice of 1 <CLAY> or 1 <GRAIN>."
+    },
+    "B158_DistrictManager": {
+      "description": "At the end of each work phase, if you used both the __space:forest|Forest__ and __space:grove,grove-56|Grove__ accumulation spaces, you get 5 <FOOD>."
+    },
+    "B160_PubOwner": {
+      "description": "When you play this card and at the end of each work phase in which the __space:forest|Forest__, __space:clay-pit|Clay Pit__, and __space:reed-bank|Reed Bank__ accumulation spaces are all occupied, you get 1 <GRAIN>."
+    },
+    "B166_CattleFeeder": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you can also buy 1 <CATTLE> for 1 <FOOD>."
+    },
+    "B170_CorralBuilder": {
+      "description": "When the __space:pig-market|Pig Market__ and __space:cattle-market|Cattle Market__ action space cards are each revealed (and placed on the round space), you can immediately <FENCE> exactly 1 farmyard space without playing <WOOD>."
+    },
+    "B171_GreenhouseBuilder": {
+      "description": "This is an action space for you only. It provides a choice of __space:fencing|Fencing__, __space:house-redevelopment|House Redevelopment__, or __space:vegetable-seeds|Vegetable Seeds__ if the corresponding action space is already in play."
+    },
+    "B174_RiverbankGardener": {
+      "description": "Each time you use the __space:riverbank-forest-56|Riverbank Forest__ accumulation space, you also get 1 <VEGETABLE>."
+    },
+    "B176_VillageIdiot": {
+      "description": "The Village Idiot is your lone occupation. Each time another player uses the __space:meeting-place|Meeting Place__ action space, you get 1 <WOOD> and 1 <FOOD>."
+    },
+    "B178_TagAlong": {
+      "description": "Immediately after each time another player uses the __space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|Resource Market__ action space, you can also place a person there to take the action as well."
+    },
+    "C090_FieldWatchman": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you can also plow 1 <FIELD>."
+    },
+    "C091_PlowHero": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space with the first person you place in a round, you can plow 1 additional <FIELD> for 1 <FOOD>."
+    },
+    "C097_SeedResearcher": {
+      "description": "Each time any people return from both the __space:grain-seeds|Grain Seeds__ and __space:vegetable-seeds|Vegetable Seeds__ action spaces, you get 2 <FOOD> and you can play 1 occupation, without paying an occupation cost."
+    },
+    "C112_Thresher": {
+      "description": "Immediately before each time you use the __space:grain-utilization|Grain Utilization__, __space:farmland|Farmland__, or __space:cultivation|Cultivation__ action space, you can buy 1 <GRAIN> for 1 <FOOD>."
+    },
+    "C121_ClayKneader": {
+      "description": "When you play this card, you immediately get 1 <WOOD> and 2 <CLAY>. Each time after you use __space:grain-seeds|Grain Seeds__ or __space:vegetable-seeds|Vegetable Seeds__ action space, you get 1 <CLAY>."
+    },
+    "C126_Excavator": {
+      "description": "Each time after you use the __space:day-laborer|Day Laborer__ action space, you get 1 additional <WOOD> and <CLAY>, and you can buy 1 <STONE> for 1 <FOOD>."
+    },
+    "C129_SecondSpouse": {
+      "description": "You can use the __space:urgent-wish-children|Urgent Wish for Children__ action space (from round 12-13) even if it is occupied by the first person another player placed."
+    },
+    "C130_OutskirtsDirector": {
+      "description": "Each time you use the __space:grove,grove-56|Grove__ or __space:hollow,hollow-4,hollow-56|Hollow__ accumulation space, you can place 2 <REED> from the general supply on the other space. If you do, you can immediately place another person."
+    },
+    "C131_PrivateTeacher": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space when any __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space is occupied, you can also play an occupation for an occupation cost of 1 <FOOD>."
+    },
+    "C141_SheepProvider": {
+      "description": "Each time any player (including you) uses the __space:sheep-market|Sheep Market__ accumulation space, you get 1 <GRAIN>."
+    },
+    "C145_ForestReviewer": {
+      "description": "Each time after any player (including you) uses the unoccupied __space:grove,grove-56|Grove__ or __space:forest|Forest__ accumulation space while the other of the two is occupied, you get 1 <REED>."
+    },
+    "C147_Cowherd": {
+      "description": "Each time you use the __space:cattle-market|Cattle Market__ accumulation space, you get 1 additional <CATTLE>."
+    },
+    "C150_ParrotBreeder": {
+      "description": "On your turn, if you pay 1 <GRAIN> to the general supply, you can use the same action space (unless it is the __space:meeting-place|Meeting Place__ action space) that the player to your right has just used on their turn (not retroactive)."
+    },
+    "C151_SowingDirector": {
+      "description": "Each time after another player uses the __space:grain-utilization|Grain Utilization__ action space, you get a __Sow__ action."
+    },
+    "C152_Puppeteer": {
+      "description": "Each time another player uses the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you can pay them 1 <FOOD> to immediately play an occupation without paying an occupation cost."
+    },
+    "C159_FishermansFriend": {
+      "description": "At the start of each round, if there is more <FOOD> on the __space:traveling-players,traveling-players-56|Traveling Players__ than on the __space:fishing|Fishing__ accumulation space, you get the difference from the general supply."
+    },
+    "C164_GermanHeathKeeper": {
+      "description": "Each time any player (including you) uses the __space:pig-market|Pig Market__ accumulation space, you get 1 <SHEEP> from the general supply."
+    },
+    "C167_CattleBuyer": {
+      "description": "Each time another player uses the __space:fencing|Fencing__ action space, you can buy exactly 1 <SHEEP>/<PIG>/<CATTLE> from the general supply for 1/2/2 <FOOD>."
+    },
+    "C168_AnimalCatcher": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, instead of 2 <FOOD>, you can get 3 different animals from the general supply. If you do, you must pay 1 <FOOD> each harvest left to play."
+    },
+    "C173_TopOuter": {
+      "description": "Each time the __space:house-building-56|House Building__ action space on the game board extension is used, you get all of the <FOOD> from the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space."
+    },
+    "C175_VillageTeacher": {
+      "description": "Immediately after each time you use a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, if this is the 1st/2nd/3rd occupied __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space that round, you get 1 <FOOD>/<GRAIN>/<VEGETABLE>."
+    },
+    "C176_Cleanacre": {
+      "description": "Each time you use the __space:farmland|Farmland__, __space:cultivation|Cultivation__, or __space:farm-supplies-6|Farm Supplies__ action (the latter only being available with 6 players), you also get 2 <CLAY>."
+    },
+    "D090_PlowMaker": {
+      "description": "Each time you use the __space:farmland|Farmland__ or __space:cultivation|Cultivation__ action space, you can pay 1 <FOOD> to plow 1 additional <FIELD>."
+    },
+    "D109_SowingMaster": {
+      "description": "When you play this card, you immediately get 1 <WOOD>. Each time after you use the __space:grain-utilization|Grain Utilization__ or __space:cultivation|Cultivation__ action space, you get 2 <FOOD>."
+    },
+    "D110_FishFarmer": {
+      "description": "Each time there is 1/2/3+ <FOOD> on the __space:fishing|Fishing__ accumulation space, you get an additional 2 <FOOD> on the __space:reed-bank|Reed Bank__/ __space:clay-pit|Clay Pit__/ __space:forest|Forest__ accumulation spaces."
+    },
+    "D112_YoungFarmer": {
+      "description": "Each time you use the __space:major-improvement|Major Improvement__ action space, you also get 1 <GRAIN> and, afterward, you can take a __Sow__ action."
+    },
+    "D130_RecreationalCarpenter": {
+      "description": "At the end of each work phase in which you did not use the __space:meeting-place|Meeting Place__ action space, you can take a __Build Rooms__ action without placing a person."
+    },
+    "D139_Chairman": {
+      "description": "Each time another player uses the __space:meeting-place|Meeting Place__ action space, both they and you get 1 <FOOD> (before taking the actions). If you use it, you get 1 <FOOD>."
+    },
+    "D141_SeedSeller": {
+      "description": "When you play this card, you immediately get 1 <GRAIN>. Each time you use the __space:grain-seeds|Grain Seeds__ action space, you get 1 additional <GRAIN>."
+    },
+    "D142_PotatoPlanter": {
+      "description": "At the end of each work phase in which you occupy the __space:clay-pit|Clay Pit__ or __space:reed-bank|Reed Bank__ accumulation space while the respective other is unoccupied, you get 1 <VEGETABLE>."
+    },
+    "D144_WaterWorker": {
+      "description": "Each time after you use any of the __space:fishing|Fishing__, __space:reed-bank|Reed Bank__, __space:day-laborer|Day Laborer__ spaces or the action space of round 4, you get 1 additional <REED>."
+    },
+    "D147_TrapBuilder": {
+      "description": "Each time you use the __space:day-laborer|Day Laborer__ action space, place 1 <FOOD>, 1 <FOOD>, and 1 <PIG> on the next 3 round spaces, respectively. At the start of these rounds, you get the good."
+    },
+    "D149_CasualWorker": {
+      "description": "Each time another player uses a __space:western-quarry,eastern-quarry|Quarry__ accumulation space, you can choose to get 1 <FOOD> or build a <STABLE> without paying <WOOD>."
+    },
+    "D156_RetailDealer": {
+      "description": "Place 3 <GRAIN> and 3 <FOOD> on this card. Each time you use the __space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|Resource Market__ action space, you also get 1 <GRAIN> and 1 <FOOD> from this card."
+    },
+    "D171_SeniorTeacher": {
+      "description": "Each time another player pays <FOOD> on a __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action space, you get exactly 1 of that <FOOD>."
+    },
+    "D174_LoessGardener": {
+      "description": "Each time you use the __space:clay-pit|Clay Pit__ accumulation space, you can also buy 1 <VEGETABLE> for 1 <FOOD>."
+    },
+    "D178_SubstituteTeacher": {
+      "description": "Each time all three __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|Lessons__ action spaces are occupied, you can use this card with a person to get your choice of 1 building resource or 1 crop of each type."
+    },
+    "E095_Miller": {
+      "description": "You can immediately build a <BAKE>-improvement by paying its cost. Each time another player uses the __space:grain-seeds|Grain Seeds__ action space, you can take a __Bake Bread__ action."
+    },
+    "E115_SeedServant": {
+      "description": "Each time after you use the __space:grain-seeds|Grain Seeds__ action space, you can take a __Bake Bread__ action. Each time after you use the __space:vegetable-seeds|Vegetable Seeds__ action space, you can take a __Sow__ action."
+    },
+    "E121_HillCultivator": {
+      "description": "Each time you use the __space:grain-seeds|Grain Seeds__ or __space:vegetable-seeds|Vegetable Seeds__ action space, you also get 2 or 3 <CLAY>, respectively."
+    },
+    "E129_Imitator": {
+      "description": "If you have a person on the __space:day-laborer|Day Laborer__ action space, you can use non-accumulating round 1-9 action spaces even if they are occupied."
+    },
+    "E131_MarketMaster": {
+      "description": "Immediately after each time you place your last person in a round on the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space, you can play 1 occupation for an occupation cost of 1 <FOOD>."
+    },
+    "E137_FlaxFarmer": {
+      "description": "Each time you use the __space:reed-bank|Reed Bank__ accumulation space, you also get 1 <GRAIN>. Each time you use the __space:grain-seeds|Grain Seeds__ action space, you also get 1 <REED>."
+    },
+    "E141_VegetableVendor": {
+      "description": "Each time you use the __space:major-improvement|Major Improvement__ or __space:vegetable-seeds|Vegetable Seeds__ action space, you also get 1 <VEGETABLE> or a __Major or Minor Improvement__ action, respectively."
+    },
+    "E152_BargainHunter": {
+      "description": "At the start of each round, you can place 1 <FOOD> from your supply on the __space:traveling-players,traveling-players-56|Traveling Players__ accumulation space to play a minor improvement by paying its cost."
+    },
+    "E160_KelpGatherer": {
+      "description": "Each time another player uses the __space:fishing|Fishing__ accumulation space, they get 1 additional <FOOD> and you get 1 <VEGETABLE>."
     }
   },
   "log": {

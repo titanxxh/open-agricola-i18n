@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto'
 import ts from 'typescript'
 import { buildCardsManifest, type CardMeta } from './game-metadata'
 import { flattenDictionary } from './i18n/flatten-dictionary'
+import { preserveActionReferences } from './i18n/action-references'
 import en from '../locales/en.json'
 import zh from '../locales/zh.json'
 
@@ -161,7 +162,13 @@ export function planBgaCardTranslations({ cards, current, english, translations 
     const problem = translationProblem(lines.join(' '), translated)
       ?? ([...translated.matchAll(/__([^_]+)__/g)].some(match => /[a-z]/i.test(match[1]!)) ? 'untranslated-reference' : undefined)
     if (problem) { issues.push({ cardId: card.id, field: 'description', reason: problem, source: sources, proposed: translated }); continue }
-    propose(`${sectionFor(card)}.${card.id}.description`, translated, sources)
+    const path = `${sectionFor(card)}.${card.id}.description`
+    const preserved = preserveActionReferences(current.get(path) ?? '', translated)
+    if (preserved === undefined) {
+      issues.push({ cardId: card.id, field: 'description', reason: 'action-reference-change', proposed: translated })
+      continue
+    }
+    propose(path, preserved, sources)
   }
 
   for (const [path, before] of current) {

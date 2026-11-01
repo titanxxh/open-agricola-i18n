@@ -1540,6 +1540,10 @@
         "backToGame": "返回对局",
         "close": "关闭百科"
       }
+    },
+    "actionReference": {
+      "unavailable": "预览加载失败，请关闭后重新打开。",
+      "invalid": "行动引用目标无效，请检查目标标识。"
     }
   },
   "moor": {
@@ -2193,11 +2197,11 @@
     },
     "Major_Moor_PeatCharcoalKiln": {
       "name": "泥炭炭窑",
-      "description": "[特殊行动：__挖泥炭__]\n拥有0<HORSE>时额外获得1<FUEL>；拥有至少1<HORSE>时额外获得2<FUEL>。\n[计分]\n3/5<FUEL> <ARROW-1X> 1/2<SCORE>"
+      "description": "[特殊行动：__moor:cut-peat|挖泥炭__]\n拥有0<HORSE>时额外获得1<FUEL>；拥有至少1<HORSE>时额外获得2<FUEL>。\n[计分]\n3/5<FUEL> <ARROW-1X> 1/2<SCORE>"
     },
     "Major_Moor_ForestersLodge": {
       "name": "护林人小屋",
-      "description": "[特殊行动：__伐木__]\n额外获得1 <WOOD>；如果你拥有至少1<HORSE>，则额外获得2 <WOOD>。\n[计分]\n你的农场上每有1块<FOREST>，获得1 <SCORE>。"
+      "description": "[特殊行动：__moor:fell-trees|伐木__]\n额外获得1 <WOOD>；如果你拥有至少1<HORSE>，则额外获得2 <WOOD>。\n[计分]\n你的农场上每有1块<FOREST>，获得1 <SCORE>。"
     },
     "Major_Moor_RidingStables": {
       "name": "骑术马厩",
@@ -2285,11 +2289,11 @@
     },
     "A023_StoneCompany": {
       "name": "石材公司",
-      "description": "每次你使用 __采石场__积累行动格后，你获得1个__改良__行动，但你必须在这个行动中花费至少1<STONE>。"
+      "description": "每次你使用 __space:western-quarry,eastern-quarry|采石场__积累行动格后，你获得1个__改良__行动，但你必须在这个行动中花费至少1<STONE>。"
     },
     "A028_ForestSchool": {
       "name": "林中私塾",
-      "description": "__课程__行动格对你而言始终未被占据。在支付职业训练费时，你可以用同等数量的<WOOD>来代替<FOOD>。"
+      "description": "__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格对你而言始终未被占据。在支付职业训练费时，你可以用同等数量的<WOOD>来代替<FOOD>。"
     },
     "A029_AleBenches": {
       "name": "啤酒长凳",
@@ -2351,7 +2355,7 @@
     },
     "A072_CalciumFertilizers": {
       "name": "钙肥",
-      "description": "每次你使用 __采石场__ 累积格时，给你每块仅种一种作物的田额外放置 1 个对应作物。",
+      "description": "每次你使用 __space:western-quarry,eastern-quarry|采石场__ 累积格时，给你每块仅种一种作物的田额外放置 1 个对应作物。",
       "prerequisite": "没有田地板块"
     },
     "A074_StableTree": {
@@ -2390,7 +2394,7 @@
     },
     "B019_MoldboardPlow": {
       "name": "板犁",
-      "description": "在本牌上放 2 块田地板块。游戏中两次，当你使用 __农田__ 行动位时，还可从本牌开垦 1 块田。",
+      "description": "在本牌上放 2 块田地板块。游戏中两次，当你使用 __space:farmland|农田__ 行动位时，还可从本牌开垦 1 块田。",
       "prerequisite": "1 职业"
     },
     "B002_MiniPasture": {
@@ -2483,17 +2487,17 @@
     },
     "C019_SwingPlow": {
       "name": "摆杆步犁",
-      "description": "在本牌上放 4 块田地板块。每当你使用 __农田__ 行动位时，可从本牌额外开垦至多 2 块田。",
+      "description": "在本牌上放 4 块田地板块。每当你使用 __space:farmland|农田__ 行动位时，可从本牌额外开垦至多 2 块田。",
       "prerequisite": "3 职业"
     },
     "C022_BasketChair": {
       "rules": "只能将成人工人移到本牌；新生儿留在原行动格上。",
       "name": "藤椅",
-      "description": "当你打出这张卡时，可立即将你在本次工作阶段放置的首个成员移至这张卡上（除非该成员位于__集会所__行动格上）。如果你如此做，随后你可以立即放置另一个成员。"
+      "description": "当你打出这张卡时，可立即将你在本次工作阶段放置的首个成员移至这张卡上（除非该成员位于__space:meeting-place|集会所__行动格上）。如果你如此做，随后你可以立即放置另一个成员。"
     },
     "C023_JobContract": {
       "name": "工作合同",
-      "description": "你可以派遣1名家庭成员先使用__打零工__行动格，再使用相邻的__课程__行动格，只要这两个行动格都是未被占用的即可。使用后，这两个行动格都视为已被占用。",
+      "description": "你可以派遣1名家庭成员先使用__space:day-laborer|打零工__行动格，再使用相邻的__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格，只要这两个行动格都是未被占用的即可。使用后，这两个行动格都视为已被占用。",
       "prerequisite": "没有职业"
     },
     "C024_BedintheGrainField": {
@@ -2525,7 +2529,7 @@
     },
     "C051_FishingNet": {
       "name": "渔网",
-      "description": "每次其他玩家使用 __捕鱼__积累行动格时，他们必须首先支付给你1<FOOD>。然后在本轮的回家阶段，在 __捕鱼__行动格上放置2<FOOD>。"
+      "description": "每次其他玩家使用 __space:fishing|捕鱼__积累行动格时，他们必须首先支付给你1<FOOD>。然后在本轮的回家阶段，在 __space:fishing|捕鱼__行动格上放置2<FOOD>。"
     },
     "C052_HuntsmansHat": {
       "name": "猎人帽",
@@ -2573,7 +2577,7 @@
     },
     "D020_TurnwrestPlow": {
       "name": "转犁",
-      "description": "在本牌上放 2 块田地板块。每当你使用 __农田__ 或 __耕作__ 行动位时，可从本牌额外开垦至多 2 块田。",
+      "description": "在本牌上放 2 块田地板块。每当你使用 __space:farmland|农田__ 或 __space:cultivation|耕作__ 行动位时，可从本牌额外开垦至多 2 块田。",
       "prerequisite": "2个职业"
     },
     "D022_WorkPermit": {
@@ -2638,11 +2642,11 @@
     },
     "D074_RoyalWood": {
       "name": "皇家木料",
-      "description": "你在回合中使用__扩建农舍__行动格或是打出发展卡时总共每支付2<WOOD>，回合结束时你便获得1<WOOD>。"
+      "description": "你在回合中使用__space:farm-expansion|扩建农舍__行动格或是打出发展卡时总共每支付2<WOOD>，回合结束时你便获得1<WOOD>。"
     },
     "E010_StrawHat": {
       "name": "草帽",
-      "description": "在第3轮和第6轮工作阶段结束时，你可以获得1<FOOD>或移动你在__农田__行动格上的家庭成员到一个未被占用的行动格上执行行动。"
+      "description": "在第3轮和第6轮工作阶段结束时，你可以获得1<FOOD>或移动你在__space:farmland|农田__行动格上的家庭成员到一个未被占用的行动格上执行行动。"
     },
     "E016_BriarHedge": {
       "name": "荆棘篱笆",
@@ -2683,7 +2687,7 @@
     },
     "E051_WhaleOil": {
       "name": "鲸油",
-      "description": "每次你使用__捕鱼__行动格时，从公共供应区放1<FOOD>在此卡上。每次你打出一张职业卡时，你获得与此卡上食物数量相同的<FOOD>。"
+      "description": "每次你使用__space:fishing|捕鱼__行动格时，从公共供应区放1<FOOD>在此卡上。每次你打出一张职业卡时，你获得与此卡上食物数量相同的<FOOD>。"
     },
     "E052_Cubbyhole": {
       "name": "小房间",
@@ -2741,7 +2745,7 @@
     },
     "E082_Profiteering": {
       "name": "投机",
-      "description": "当你打出这张卡时，你立即获得1<FOOD>。每次你使用__打零工__行动格时，你可以将任意1个建筑资源转化为另一个建筑资源。"
+      "description": "当你打出这张卡时，你立即获得1<FOOD>。每次你使用__space:day-laborer|打零工__行动格时，你可以将任意1个建筑资源转化为另一个建筑资源。"
     },
     "E084_DollysMother": {
       "name": "多莉的母亲",
@@ -2804,7 +2808,7 @@
     },
     "A018_WheelPlow": {
       "name": "轮式犁",
-      "description": "本局游戏一次，当你用本回合放置的第一个工人使用__农田__或__耕作__行动空间时，你可以额外开垦2块<FIELD>。",
+      "description": "本局游戏一次，当你用本回合放置的第一个工人使用__space:farmland|农田__或__space:cultivation|耕作__行动空间时，你可以额外开垦2块<FIELD>。",
       "prerequisite": "2张职业牌"
     },
     "A019_Handplow": {
@@ -2823,16 +2827,16 @@
     },
     "A024_ThreshingBoard": {
       "name": "打谷板",
-      "description": "每次你使用__农田__或__耕作__行动格时，你获得额外的一次__烤面包__行动。",
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你获得额外的一次__烤面包__行动。",
       "prerequisite": "2个职业"
     },
     "A025_Bassinet": {
       "name": "摇篮",
-      "description": "在每个工作阶段，你可以放置一位成员到第一个已使用的非积累行动格，只要该格只有一位成员（包括新生儿）。（__集会所__永远不能有两人。）"
+      "description": "在每个工作阶段，你可以放置一位成员到第一个已使用的非积累行动格，只要该格只有一位成员（包括新生儿）。（__space:meeting-place|集会所__永远不能有两人。）"
     },
     "A026_SleepingCorner": {
       "name": "休息角",
-      "description": "你可以使用以被占据的__家庭增长__行动格，只要该格上的家庭成员都来自同一名其他玩家。",
+      "description": "你可以使用以被占据的__space:wish-children,urgent-wish-children,modest-wish-children-56|家庭增长__行动格，只要该格上的家庭成员都来自同一名其他玩家。",
       "prerequisite": "2块谷物田"
     },
     "A027_OvenSite": {
@@ -2865,7 +2869,7 @@
     },
     "A035_SwimmingClass": {
       "name": "游泳课",
-      "description": "在每轮的回家阶段，若你有家庭成员从__捕鱼__积累行动格回家，则本轮你每有1个新生儿回家，你便获得2<SCORE>。",
+      "description": "在每轮的回家阶段，若你有家庭成员从__space:fishing|捕鱼__积累行动格回家，则本轮你每有1个新生儿回家，你便获得2<SCORE>。",
       "prerequisite": "2个职业"
     },
     "A036_FacadesCarving": {
@@ -2880,7 +2884,7 @@
     },
     "A042_ForestLakeHut": {
       "name": "湖心小筑",
-      "description": "每次你使用 __捕鱼__/__森林__积累格时，你获得1<WOOD>/<FOOD>。"
+      "description": "每次你使用 __space:fishing|捕鱼__/__space:forest|森林__积累格时，你获得1<WOOD>/<FOOD>。"
     },
     "A043_FarmyardManure": {
       "name": "农场粪肥",
@@ -2899,7 +2903,7 @@
     },
     "A046_ClawKnife": {
       "name": "剃毛刀",
-      "description": "每次你使用__羊市场__积累行动格时，在接下来的2个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。",
+      "description": "每次你使用__space:sheep-market|羊市场__积累行动格时，在接下来的2个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。",
       "prerequisite": "正好1个牧场"
     },
     "A047_Trellises": {
@@ -2912,20 +2916,20 @@
     },
     "A049_NestSite": {
       "name": "芦苇苗区",
-      "description": "每次1<REED>放置在非空的 __芦苇河岸__积累行动格上时，在准备阶段，你获得1<FOOD>。",
+      "description": "每次1<REED>放置在非空的 __space:reed-bank|芦苇河岸__积累行动格上时，在准备阶段，你获得1<FOOD>。",
       "prerequisite": "1 职业"
     },
     "A050_MilkJug": {
       "name": "牛奶罐",
-      "description": "每当任意一个玩家（包括你在内） 使用__牛市场__积累行动格时，你获得3<FOOD>，其余玩家各获得1<FOOD>。"
+      "description": "每当任意一个玩家（包括你在内） 使用__space:cattle-market|牛市场__积累行动格时，你获得3<FOOD>，其余玩家各获得1<FOOD>。"
     },
     "A051_DriftNetBoat": {
       "name": "流网渔船",
-      "description": "每次你使用 __捕鱼__积累行动格时，你额外获得2<FOOD>。"
+      "description": "每次你使用 __space:fishing|捕鱼__积累行动格时，你额外获得2<FOOD>。"
     },
     "A052_ThrowingAxe": {
       "name": "飞斧",
-      "description": "每当你使用一个<WOOD>累积格，并且__猪市场__累积格上至少有1头<PIG>时，你额外获得2 <FOOD>。",
+      "description": "每当你使用一个<WOOD>累积格，并且__space:pig-market|猪市场__累积格上至少有1头<PIG>时，你额外获得2 <FOOD>。",
       "prerequisite": "在第7轮或之后打出"
     },
     "A054_Credit": {
@@ -2970,7 +2974,7 @@
     },
     "A067_CornScoop": {
       "name": "谷物勺",
-      "description": "每次你使用__谷物种子__行动格时，你获得1个额外的<GRAIN>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你获得1个额外的<GRAIN>。"
     },
     "A068_AsparagusGift": {
       "name": "芦笋礼物",
@@ -2998,11 +3002,11 @@
     },
     "A077_Hod": {
       "name": "砖头背篓",
-      "description": "当你打出这张卡时，你立即获得1<CLAY>。每当任意玩家（包括你）使用__猪市场__积累行动格时，你立即获得2<CLAY>。"
+      "description": "当你打出这张卡时，你立即获得1<CLAY>。每当任意玩家（包括你）使用__space:pig-market|猪市场__积累行动格时，你立即获得2<CLAY>。"
     },
     "A078_Canoe": {
       "name": "独木舟",
-      "description": "每次你使用__捕鱼__积累行动格时，你额外获得1<FOOD>和1<REED>。",
+      "description": "每次你使用__space:fishing|捕鱼__积累行动格时，你额外获得1<FOOD>和1<REED>。",
       "prerequisite": "1 职业"
     },
     "A080_StoneTongs": {
@@ -3079,7 +3083,7 @@
     },
     "B024_Lasso": {
       "name": "套索",
-      "description": "你可以连续放置正好两个家庭成员，如果其中至少一个使用了__羊市场__、__猪市场__或__牛市场__的累积格。"
+      "description": "你可以连续放置正好两个家庭成员，如果其中至少一个使用了__space:sheep-market|羊市场__、__space:pig-market|猪市场__或__space:cattle-market|牛市场__的累积格。"
     },
     "B025_BreadPaddle": {
       "name": "面包托铲",
@@ -3087,7 +3091,7 @@
     },
     "B026_AgrarianFences": {
       "name": "农业栅栏",
-      "description": "每次你使用__谷物利用__行动格时，你可以将该行动格提供的__播种__行动或__烤面包__行动中的一个替换成__围栏__行动。"
+      "description": "每次你使用__space:grain-utilization|谷物利用__行动格时，你可以将该行动格提供的__播种__行动或__烤面包__行动中的一个替换成__围栏__行动。"
     },
     "B027_Toolbox": {
       "name": "工具箱",
@@ -3095,11 +3099,11 @@
     },
     "B028_ForestryStudies": {
       "name": "林业研究",
-      "description": "每次你使用 __森林__积累行动格之后，你能归还2<WOOD> 到该行动格免学费打出1张职业卡。"
+      "description": "每次你使用 __space:forest|森林__积累行动格之后，你能归还2<WOOD> 到该行动格免学费打出1张职业卡。"
     },
     "B029_CookeryLesson": {
       "name": "烹饪课程",
-      "description": "每次你在一个回合里既使用了__课程__行动格，也使用了烹饪发展卡，你便获得1<SCORE>。"
+      "description": "每次你在一个回合里既使用了__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格，也使用了烹饪发展卡，你便获得1<SCORE>。"
     },
     "B030_WoodPalisades": {
       "name": "木篱",
@@ -3140,7 +3144,7 @@
     },
     "B040_BreweryPond": {
       "name": "啤酒厂池塘",
-      "description": "每次你使用 __捕鱼__或者 __芦苇河岸__积累行动格时，你也获得1<GRAIN> 和1<WOOD>。",
+      "description": "每次你使用 __space:fishing|捕鱼__或者 __space:reed-bank|芦苇河岸__积累行动格时，你也获得1<GRAIN> 和1<WOOD>。",
       "prerequisite": "2 职业"
     },
     "B041_Hauberg": {
@@ -3150,7 +3154,7 @@
     },
     "B043_Chophouse": {
       "name": "小餐馆",
-      "description": "每次你使用__谷物种子__/__蔬菜种子__行动格时，在接下来的3/2个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__/__space:vegetable-seeds|蔬菜种子__行动格时，在接下来的3/2个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
     },
     "B044_ChickStable": {
       "name": "雏鸡窝",
@@ -3167,7 +3171,7 @@
     },
     "B047_HerringPot": {
       "name": "烹鱼锅",
-      "description": "每次你使用__捕鱼__积累行动格时，在接下来的3个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
+      "description": "每次你使用__space:fishing|捕鱼__积累行动格时，在接下来的3个轮各放置1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
     },
     "B049_Scales": {
       "name": "天平",
@@ -3199,7 +3203,7 @@
     },
     "B056_Brook": {
       "name": "小溪",
-      "description": "每次你使用__捕鱼__累积格上方的四个行动格之一时，你额外获得1 <FOOD>。",
+      "description": "每次你使用__space:fishing|捕鱼__累积格上方的四个行动格之一时，你额外获得1 <FOOD>。",
       "prerequisite": "工人放置在捕鱼格"
     },
     "B057_Scullery": {
@@ -3212,11 +3216,11 @@
     },
     "B059_FoodChest": {
       "name": "食物箱",
-      "description": "若你通过__主要改良__行动格来打出此卡，你获得4<FOOD>，否则，你只获得2<FOOD>。"
+      "description": "若你通过__space:major-improvement|主要改良__行动格来打出此卡，你获得4<FOOD>，否则，你只获得2<FOOD>。"
     },
     "B060_BrewingWater": {
       "name": "酿酒山泉",
-      "description": "每次你使用__捕鱼__累积格时，你可以支付1 <GRAIN>，将1 <FOOD>放置在接下来的6个回合格上。在这些回合开始时，你获得这些<FOOD>。"
+      "description": "每次你使用__space:fishing|捕鱼__累积格时，你可以支付1 <GRAIN>，将1 <FOOD>放置在接下来的6个回合格上。在这些回合开始时，你获得这些<FOOD>。"
     },
     "B061_ThreeFieldRotation": {
       "name": "三田轮耕法",
@@ -3225,15 +3229,15 @@
     },
     "B062_Pitchfork": {
       "name": "干草叉",
-      "description": "每次你使用__谷物种子__行动格时，如果__农田__行动格被占用，你额外获得3<FOOD>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，如果__space:farmland|农田__行动格被占用，你额外获得3<FOOD>。"
     },
     "B063_Tasting": {
       "name": "品鉴会",
-      "description": "每当你使用__课程__行动格，在支付学费之前，你可以将1<GRAIN>换成4<FOOD>。"
+      "description": "每当你使用__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格，在支付学费之前，你可以将1<GRAIN>换成4<FOOD>。"
     },
     "B064_MillWheel": {
       "name": "水车",
-      "description": "每次你使用 __谷物利用__行动格时，如果 __捕鱼__积累行动格被占用了，你额外获得2<FOOD>。"
+      "description": "每次你使用 __space:grain-utilization|谷物利用__行动格时，如果 __space:fishing|捕鱼__积累行动格被占用了，你额外获得2<FOOD>。"
     },
     "B066_SackCart": {
       "name": "运粮推车",
@@ -3273,7 +3277,7 @@
     },
     "B077_LoamPit": {
       "name": "黏土坑",
-      "description": "每次你使用__打零工__行动格时，你额外获得3<CLAY>。",
+      "description": "每次你使用__space:day-laborer|打零工__行动格时，你额外获得3<CLAY>。",
       "prerequisite": "3 职业"
     },
     "B078_ReedBelt": {
@@ -3347,7 +3351,7 @@
     },
     "C015_Trellis": {
       "name": "网状围栏",
-      "description": "每次在你使用__猪市场__累积格之前，你可以执行一次__围栏__行动。（你必须像往常一样支付<WOOD>来建造<FENCE>。）",
+      "description": "每次在你使用__space:pig-market|猪市场__累积格之前，你可以执行一次__围栏__行动。（你必须像往常一样支付<WOOD>来建造<FENCE>。）",
       "prerequisite": "2 职业"
     },
     "C016_FieldFences": {
@@ -3356,20 +3360,20 @@
     },
     "C020_MolePlow": {
       "name": "开沟犁",
-      "description": "每次你使用__农田__或__耕作__行动格时，你可以额外开垦1块<FIELD>。",
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你可以额外开垦1块<FIELD>。",
       "prerequisite": "在第9轮或之后打出"
     },
     "C021_HeartofStone": {
       "name": "心形石头",
-      "description": "每当__采石场__积累行动格被翻开时，若你家中有居住空间，则你无需派遣家庭成员便可立即执行1次__家庭增长__行动。"
+      "description": "每当__space:western-quarry,eastern-quarry|采石场__积累行动格被翻开时，若你家中有居住空间，则你无需派遣家庭成员便可立即执行1次__家庭增长__行动。"
     },
     "C026_Flail": {
       "name": "连枷",
-      "description": "当你打出这张卡时，你立即得到2<FOOD>。当你使用 __农田__或 __耕作__行动格时，你可以进行一次 __烤面包__行动。"
+      "description": "当你打出这张卡时，你立即得到2<FOOD>。当你使用 __space:farmland|农田__或 __space:cultivation|耕作__行动格时，你可以进行一次 __烤面包__行动。"
     },
     "C028_TeachersDesk": {
       "name": "讲台桌",
-      "description": "每次你使用__主要改良__或__住宅改建__行动格时，你可以支付1<FOOD>作为学费来打出1张职业卡。",
+      "description": "每次你使用__space:major-improvement|主要改良__或__space:house-redevelopment|住宅改建__行动格时，你可以支付1<FOOD>作为学费来打出1张职业卡。",
       "prerequisite": "1 职业"
     },
     "C030_HalfTimberedHouse": {
@@ -3407,7 +3411,7 @@
     },
     "C039_StudioBoat": {
       "name": "工作船",
-      "description": "每次你使用__流浪艺人__积累行动格时，你获得1奖励<SCORE>。在1-3人游戏中，此卡视为全体玩家可用的__流浪艺人__积累行动格（和__捕鱼__行动格一样每轮开始补充1分食物）。",
+      "description": "每次你使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你获得1奖励<SCORE>。在1-3人游戏中，此卡视为全体玩家可用的__space:traveling-players,traveling-players-56|流浪艺人__积累行动格（和__space:fishing|捕鱼__行动格一样每轮开始补充1分食物）。",
       "prerequisite": "1个职业"
     },
     "C040_CanvasSack": {
@@ -3421,7 +3425,7 @@
     },
     "C042_RavenousHunger": {
       "name": "极度饥饿",
-      "description": "每当你使用 __蔬菜种子__行动格后，你可以立即将另一名家庭成员放置在一个积累行动格并获得1个额外的积累资源。"
+      "description": "每当你使用 __space:vegetable-seeds|蔬菜种子__行动格后，你可以立即将另一名家庭成员放置在一个积累行动格并获得1个额外的积累资源。"
     },
     "C043_FarmBuilding": {
       "name": "农场建筑",
@@ -3433,7 +3437,7 @@
     },
     "C045_Stew": {
       "name": "炖菜",
-      "description": "每次你使用 __打零工__行动格时，在接下来的4轮次行动格上各放1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
+      "description": "每次你使用 __space:day-laborer|打零工__行动格时，在接下来的4轮次行动格上各放1<FOOD>。在这些轮次开始时，你获得该<FOOD>。"
     },
     "C046_Mandoline": {
       "name": "刨刀",
@@ -3564,7 +3568,7 @@
     },
     "C082_HardwareStore": {
       "name": "五金商店",
-      "description": "每次在你使用 __打零工__行动格之后，你能支付2<FOOD>购买1<WOOD>，1<CLAY>，1<REED>，和1<STONE>。"
+      "description": "每次在你使用 __space:day-laborer|打零工__行动格之后，你能支付2<FOOD>购买1<WOOD>，1<CLAY>，1<REED>，和1<STONE>。"
     },
     "C083_EarlyCattle": {
       "name": "早产牛",
@@ -3631,7 +3635,7 @@
     },
     "D016_WoodenWheyBucket": {
       "name": "木质乳清桶",
-      "description": "每次在你使用__羊市场__/__牛市场__累积格之前，你可以花费1 <WOOD>/免费建造1个<STABLE>。"
+      "description": "每次在你使用__space:sheep-market|羊市场__/__space:cattle-market|牛市场__累积格之前，你可以花费1 <WOOD>/免费建造1个<STABLE>。"
     },
     "D017_DrillHarrow": {
       "name": "播种耙",
@@ -3639,7 +3643,7 @@
     },
     "D018_SteamPlow": {
       "name": "蒸汽动力犁",
-      "description": "在每轮的回家阶段结束时，你可以支付2<WOOD>+1<FOOD>来使用__农田__行动格而无需派遣家庭成员。"
+      "description": "在每轮的回家阶段结束时，你可以支付2<WOOD>+1<FOOD>来使用__space:farmland|农田__行动格而无需派遣家庭成员。"
     },
     "D019_PulverizerPlow": {
       "name": "碎土犁",
@@ -3657,7 +3661,7 @@
     },
     "D028_WritingDesk": {
       "name": "写字台",
-      "description": "每当你使用__课程__行动格前，你可以支付2<FOOD>作为学费来额外打出1张职业卡。",
+      "description": "每当你使用__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格前，你可以支付2<FOOD>作为学费来额外打出1张职业卡。",
       "prerequisite": "2 职业"
     },
     "D029_MuckRake": {
@@ -3765,7 +3769,7 @@
     },
     "D054_TroutPool": {
       "name": "鳟鱼池",
-      "description": "在每个工作阶段开始时，如果在 __捕鱼__积累行动格上至少有3<FOOD>，你从公共供应区获得1<FOOD>。"
+      "description": "在每个工作阶段开始时，如果在 __space:fishing|捕鱼__积累行动格上至少有3<FOOD>，你从公共供应区获得1<FOOD>。"
     },
     "D056_FatstockStretcher": {
       "name": "肥畜屠宰架",
@@ -3816,7 +3820,7 @@
     },
     "D068_SmallBasket": {
       "name": "小篮子",
-      "description": "每次你使用 __芦苇河岸__积累行动格之后，你可以花费1<REED>获得1<VEGETABLE>。如果游戏是4人局或以上，将花费的1<REED>放在积累行动格上。",
+      "description": "每次你使用 __space:reed-bank|芦苇河岸__积累行动格之后，你可以花费1<REED>获得1<VEGETABLE>。如果游戏是4人局或以上，将花费的1<REED>放在积累行动格上。",
       "prerequisite": "2 职业"
     },
     "D069_SmallGreenhouse": {
@@ -3826,7 +3830,7 @@
     },
     "D073_SupplyBoat": {
       "name": "补给船",
-      "description": "每当你使用__捕鱼__累积格后，你可以支付1<FOOD>来购买1<GRAIN>，或是支付3<FOOD>来购买1<VEGETABLE>。",
+      "description": "每当你使用__space:fishing|捕鱼__累积格后，你可以支付1<FOOD>来购买1<GRAIN>，或是支付3<FOOD>来购买1<VEGETABLE>。",
       "prerequisite": "1 职业"
     },
     "D075_WoodField": {
@@ -3864,11 +3868,11 @@
     },
     "D082_HuntingTrophy": {
       "name": "狩猎奖杯",
-      "description": "要打出此牌，你必须归还或烹饪1 <PIG>。\n在__住宅改建__上建造的改良，你可少支付1个你选择的建筑资源。在__农场改建__上建造的<FENCE>，你总共少支付3 <WOOD>。"
+      "description": "要打出此牌，你必须归还或烹饪1 <PIG>。\n在__space:house-redevelopment|住宅改建__上建造的改良，你可少支付1个你选择的建筑资源。在__space:farm-redevelopment|农场改建__上建造的<FENCE>，你总共少支付3 <WOOD>。"
     },
     "D083_Pigswill": {
       "name": "猪食",
-      "description": "每次你使用__围栏__行动格前，你额外获得1<PIG>。"
+      "description": "每次你使用__space:fencing|围栏__行动格前，你额外获得1<PIG>。"
     },
     "D084_FeedPellets": {
       "name": "饲料颗粒",
@@ -3886,7 +3890,7 @@
     },
     "E003_TeaTime": {
       "name": "茶点时间",
-      "description": "立即将你在 __谷物利用__ 轮次行动格上的家庭成员返回家里，你可以之后在这个轮再次派遣该家庭成员。",
+      "description": "立即将你在 __space:grain-utilization|谷物利用__ 轮次行动格上的家庭成员返回家里，你可以之后在这个轮再次派遣该家庭成员。",
       "prerequisite": "在谷物利用格上有家庭成员"
     },
     "E006_Recount": {
@@ -3928,7 +3932,7 @@
     },
     "E017_SkimmerPlow": {
       "name": "撇犁",
-      "description": "每当你使用 __农田__ 或 __耕作__ 行动格时，你可以开垦2块 <FIELD> 而非1块。每当你播种时，你必须在你播种的每块 <FIELD> 上少放置1个货物。",
+      "description": "每当你使用 __space:farmland|农田__ 或 __space:cultivation|耕作__ 行动格时，你可以开垦2块 <FIELD> 而非1块。每当你播种时，你必须在你播种的每块 <FIELD> 上少放置1个货物。",
       "prerequisite": "2 职业"
     },
     "E018_SeedAlmanac": {
@@ -3938,16 +3942,16 @@
     },
     "E019_OxGoad": {
       "name": "赶牛棒",
-      "description": "每当你在使用 __牛市场__ 累积格后，你可以支付2 <FOOD> 来开垦1块 <FIELD>。",
+      "description": "每当你在使用 __space:cattle-market|牛市场__ 累积格后，你可以支付2 <FOOD> 来开垦1块 <FIELD>。",
       "prerequisite": "3 职业"
     },
     "E020_IronHoe": {
       "name": "铁锄头",
-      "description": "在每个工作阶段结束时，如果你同时占据了 __谷物种子__ 和 __蔬菜种子__ 行动格，你可以开垦1块 <FIELD>。"
+      "description": "在每个工作阶段结束时，如果你同时占据了 __space:grain-seeds|谷物种子__ 和 __space:vegetable-seeds|蔬菜种子__ 行动格，你可以开垦1块 <FIELD>。"
     },
     "E021_SheepRug": {
       "name": "羊毛地毯",
-      "description": "从现在起来，你可以使用已被占据的__家庭增长__行动格，只要占据该格上的家庭成员都来自同一名其他玩家。",
+      "description": "从现在起来，你可以使用已被占据的__space:wish-children,urgent-wish-children,modest-wish-children-56|家庭增长__行动格，只要占据该格上的家庭成员都来自同一名其他玩家。",
       "prerequisite": "4 羊"
     },
     "E023_Apiary": {
@@ -4001,7 +4005,7 @@
     },
     "E038_RodCollection": {
       "name": "鱼竿收藏",
-      "description": "每次你使用__捕鱼__行动格时，你能放置最多2<WOOD>到这张卡上。游戏结束计分时，除了第1/4/7/10个木头外，每个 <WOOD> 价值1奖励<SCORE>。",
+      "description": "每次你使用__space:fishing|捕鱼__行动格时，你能放置最多2<WOOD>到这张卡上。游戏结束计分时，除了第1/4/7/10个木头外，每个 <WOOD> 价值1奖励<SCORE>。",
       "prerequisite": "3个职业"
     },
     "E039_Paintbrush": {
@@ -4011,7 +4015,7 @@
     },
     "E040_BeeStatue": {
       "name": "蜜蜂雕像",
-      "description": "在此卡上从上到下依次放1<GRAIN>，1<STONE>，1<GRAIN>，1<STONE>，1<VEGETABLE>。每次你使用__打零工__行动格时，你获得最上面的物品。"
+      "description": "在此卡上从上到下依次放1<GRAIN>，1<STONE>，1<GRAIN>，1<STONE>，1<VEGETABLE>。每次你使用__space:day-laborer|打零工__行动格时，你获得最上面的物品。"
     },
     "E041_MuddyWaters": {
       "name": "泥浆",
@@ -4064,7 +4068,7 @@
     },
     "E055_StoneWeir": {
       "name": "石坝",
-      "description": "每次你使用__捕鱼__积累行动格时，如果该格上有0/1/2/3<FOOD>，你额外获得4/3/2/1<FOOD>。",
+      "description": "每次你使用__space:fishing|捕鱼__积累行动格时，如果该格上有0/1/2/3<FOOD>，你额外获得4/3/2/1<FOOD>。",
       "prerequisite": "2个职业"
     },
     "E056_RomanPot": {
@@ -4081,7 +4085,7 @@
     },
     "E059_CombandCutter": {
       "name": "羊毛梳剪",
-      "description": "每次你使用__打零工__行动格时，每在__羊市场__累积格上有一只<SHEEP>，你获得1点额外<FOOD>，最多获得4点额外<FOOD>。"
+      "description": "每次你使用__space:day-laborer|打零工__行动格时，每在__space:sheep-market|羊市场__累积格上有一只<SHEEP>，你获得1点额外<FOOD>，最多获得4点额外<FOOD>。"
     },
     "E060_WorkingGloves": {
       "name": "工人手套",
@@ -4099,12 +4103,12 @@
     },
     "E066_BarnShed": {
       "name": "谷仓棚",
-      "description": "每次另一名玩家 （或单人游戏时的你自己） 使用__森林__积累格，你获得1<GRAIN>。",
+      "description": "每次另一名玩家 （或单人游戏时的你自己） 使用__space:forest|森林__积累格，你获得1<GRAIN>。",
       "prerequisite": "3个职业"
     },
     "E067_GrainBag": {
       "name": "粮食袋",
-      "description": "每次使用__谷物种子__行动格时，您每拥有1张<BAKE>-发展卡，就能获得1个额外的 <GRAIN>。"
+      "description": "每次使用__space:grain-seeds|谷物种子__行动格时，您每拥有1张<BAKE>-发展卡，就能获得1个额外的 <GRAIN>。"
     },
     "E068_CherryOrchard": {
       "name": "樱桃园",
@@ -4263,12 +4267,12 @@
     },
     "M041_CattleCollar": {
       "name": "牛项圈",
-      "description": "每次你使用__农田__或__耕作__行动格，或执行__刀耕火种__特殊行动后，如果你有至少1 <CATTLE>，你可以额外开垦1块<FIELD>。",
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格，或执行__moor:slash-and-burn|刀耕火种__特殊行动后，如果你有至少1 <CATTLE>，你可以额外开垦1块<FIELD>。",
       "prerequisite": "在第8轮或之后打出"
     },
     "M042_DeepPlow": {
       "name": "深耕犁",
-      "description": "你可以立即将1 <MOOR>放置在一个未使用的农场空地上。每次你使用__农田__或__耕作__行动格时，你也可以将1 <MOOR>交换为1个<FIELD>板块。",
+      "description": "你可以立即将1 <MOOR>放置在一个未使用的农场空地上。每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你也可以将1 <MOOR>交换为1个<FIELD>板块。",
       "prerequisite": "2 改良"
     },
     "M043_WildFields": {
@@ -4288,17 +4292,17 @@
     },
     "M046_Thicket": {
       "name": "灌木丛",
-      "description": "选择最多2个你的<FOREST>，并在每个上面额外放置1个<FOREST>。你不能在这些农场空地上执行__刀耕火种__特殊行动，除非你先通过__伐木__特殊行动移除一个板块。",
+      "description": "选择最多2个你的<FOREST>，并在每个上面额外放置1个<FOREST>。你不能在这些农场空地上执行__moor:slash-and-burn|刀耕火种__特殊行动，除非你先通过__moor:fell-trees|伐木__特殊行动移除一个板块。",
       "prerequisite": "4 森林"
     },
     "M047_BogForest": {
       "name": "沼泽森林",
-      "description": "你可以选择任意数量的 <MOOR>，在每个上面各放置 1 个 <FOREST>。在先通过 __伐木__ 特殊行动移除 <FOREST> 之前，你不能在这些农场格上执行 __刀耕火种__ 特殊行动，也不能使用被覆盖的 <MOOR>。",
+      "description": "你可以选择任意数量的 <MOOR>，在每个上面各放置 1 个 <FOREST>。在先通过 __moor:fell-trees|伐木__ 特殊行动移除 <FOREST> 之前，你不能在这些农场格上执行 __moor:slash-and-burn|刀耕火种__ 特殊行动，也不能使用被覆盖的 <MOOR>。",
       "prerequisite": "3 改良"
     },
     "M048_ForestSwamp": {
       "name": "森林沼泽",
-      "description": "每次你执行__挖泥炭__特殊行动后，将4添加到当前回合，并将1个<FOREST>放置在相应的回合格上。在该回合开始时，你可以将该<FOREST>放置在一个未使用的农场空间上。",
+      "description": "每次你执行__moor:cut-peat|挖泥炭__特殊行动后，将4添加到当前回合，并将1个<FOREST>放置在相应的回合格上。在该回合开始时，你可以将该<FOREST>放置在一个未使用的农场空间上。",
       "prerequisite": "2 主要改良"
     },
     "M049_SurveyorsMap": {
@@ -4326,16 +4330,16 @@
     },
     "M054_AgriculturalImplement": {
       "name": "农具",
-      "description": "每次你使用__农田__或__耕作__行动格后，你可以立即拿取一张面朝上的特殊行动牌。该特殊行动牌的费用通常为0或2<FOOD>。"
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格后，你可以立即拿取一张面朝上的特殊行动牌。该特殊行动牌的费用通常为0或2<FOOD>。"
     },
     "M055_ToolShed": {
       "name": "工具棚",
-      "description": "每回合一次，在你执行__刀耕火种__或__挖泥炭__特殊行动之前或之后，你也可以执行相应的另一个特殊行动。",
+      "description": "每回合一次，在你执行__moor:slash-and-burn|刀耕火种__或__moor:cut-peat|挖泥炭__特殊行动之前或之后，你也可以执行相应的另一个特殊行动。",
       "prerequisite": "2 改良"
     },
     "M056_PeatCuttingRights": {
       "name": "泥炭开采权",
-      "description": "在当前回合上添加4和7，并在对应的回合格上放置1 <FUEL>。在这些回合开始时，你可以弃掉 <FUEL> 并执行__挖泥炭__特殊行动，通过拿取对应的特殊行动牌。",
+      "description": "在当前回合上添加4和7，并在对应的回合格上放置1 <FUEL>。在这些回合开始时，你可以弃掉 <FUEL> 并执行__moor:cut-peat|挖泥炭__特殊行动，通过拿取对应的特殊行动牌。",
       "prerequisite": "1 马"
     },
     "M057_Taps": {
@@ -4345,12 +4349,12 @@
     },
     "M058_PeatFertilizer": {
       "name": "泥炭肥料",
-      "description": "每次你执行__挖泥炭__特殊行动后，你也可以执行一次__播种__行动。",
+      "description": "每次你执行__moor:cut-peat|挖泥炭__特殊行动后，你也可以执行一次__播种__行动。",
       "prerequisite": "2 农田"
     },
     "M059_NaturesFertilizer": {
       "name": "天然肥料",
-      "description": "每次你执行__刀耕火种__特殊行动后，你也会获得一次__播种__行动，但仅限于新的<FIELD>。这也适用于你通过一个__小改良__将1个<MOOR>兑换为1个<FIELD>板块的情况。",
+      "description": "每次你执行__moor:slash-and-burn|刀耕火种__特殊行动后，你也会获得一次__播种__行动，但仅限于新的<FIELD>。这也适用于你通过一个__小改良__将1个<MOOR>兑换为1个<FIELD>板块的情况。",
       "prerequisite": "1 主要改良"
     },
     "M060_SowingMachine": {
@@ -4403,7 +4407,7 @@
     },
     "M070_MoorArchaeology": {
       "name": "沼泽考古",
-      "description": "每次你执行__挖泥炭__特殊行动时，你可以将1个<FENCE>从你的供应区放置在已清空的农场空间上。该空间算作已使用，但在游戏剩余时间里被阻挡。计分时，它额外价值1点<SCORE>。",
+      "description": "每次你执行__moor:cut-peat|挖泥炭__特殊行动时，你可以将1个<FENCE>从你的供应区放置在已清空的农场空间上。该空间算作已使用，但在游戏剩余时间里被阻挡。计分时，它额外价值1点<SCORE>。",
       "prerequisite": "黏土屋"
     },
     "M071_BogBody": {
@@ -4435,7 +4439,7 @@
     },
     "M077_DryingField": {
       "name": "晒干场",
-      "description": "每当你执行__挖泥炭__特殊行动时，在当前轮数上加3，并将2点<FUEL>放置在相应的轮数格上。在该轮数开始时，你获得该<FUEL>。"
+      "description": "每当你执行__moor:cut-peat|挖泥炭__特殊行动时，在当前轮数上加3，并将2点<FUEL>放置在相应的轮数格上。在该轮数开始时，你获得该<FUEL>。"
     },
     "M078_Barge": {
       "name": "驳船",
@@ -4461,7 +4465,7 @@
     },
     "M083_CoalSeam": {
       "name": "煤层",
-      "description": "当你打出此牌时，你立即获得1 <FUEL>。每次你执行__雇工集市__特殊行动或使用__打零工__行动格时，你也会获得1 <FUEL>。"
+      "description": "当你打出此牌时，你立即获得1 <FUEL>。每次你执行__moor:hiring-fair|雇工集市__特殊行动或使用__space:day-laborer|打零工__行动格时，你也会获得1 <FUEL>。"
     },
     "M084_BogPony": {
       "name": "沼泽矮马",
@@ -4479,7 +4483,7 @@
     },
     "M087_PeatBarge": {
       "name": "泥煤驳船",
-      "description": "每次你使用__捕鱼__累积格时，你也会获得2 <FUEL>。"
+      "description": "每次你使用__space:fishing|捕鱼__累积格时，你也会获得2 <FUEL>。"
     },
     "M088_PeatIron": {
       "name": "泥煤铁",
@@ -4500,7 +4504,7 @@
     },
     "M092_AridField": {
       "name": "干旱田地",
-      "description": "每次你执行__挖泥炭__特殊行动时，将1 <FUEL>和1 <FOOD>放置在已清空的农场格上。此农场格仍被视为未使用。一旦此农场格不再未使用，你便获得这些货物。",
+      "description": "每次你执行__moor:cut-peat|挖泥炭__特殊行动时，将1 <FUEL>和1 <FOOD>放置在已清空的农场格上。此农场格仍被视为未使用。一旦此农场格不再未使用，你便获得这些货物。",
       "prerequisite": "3 改良"
     },
     "M093_FarmhandsQuarters": {
@@ -4517,7 +4521,7 @@
     },
     "M096_FallowLand": {
       "name": "休耕土地",
-      "description": "每当你执行__伐木__或__挖泥炭__特殊行动时，在被清空的农场空地上放置1<FOOD>。这块农场空地仍被视为未使用。一旦这块农场空地不再是未使用状态，你获得这些<FOOD>。",
+      "description": "每当你执行__moor:fell-trees|伐木__或__moor:cut-peat|挖泥炭__特殊行动时，在被清空的农场空地上放置1<FOOD>。这块农场空地仍被视为未使用。一旦这块农场空地不再是未使用状态，你获得这些<FOOD>。",
       "prerequisite": "2 改良"
     },
     "M097_VillageHall": {
@@ -4526,7 +4530,7 @@
     },
     "M098_FishSmokehouse": {
       "name": "熏鱼房",
-      "description": "每当你使用__捕鱼__累积格时，你可以支付1<FUEL>以额外获得3<FOOD>。"
+      "description": "每当你使用__space:fishing|捕鱼__累积格时，你可以支付1<FUEL>以额外获得3<FOOD>。"
     },
     "M099_HealingClay": {
       "name": "药用黏土",
@@ -4574,7 +4578,7 @@
     },
     "M109_Malthouse": {
       "name": "麦芽房",
-      "description": "每当你执行__挖泥炭__特殊行动时，你也可以将正好1<GRAIN>转化为4<FOOD>。"
+      "description": "每当你执行__moor:cut-peat|挖泥炭__特殊行动时，你也可以将正好1<GRAIN>转化为4<FOOD>。"
     },
     "M110_FarmCart": {
       "name": "农场手推车",
@@ -4588,7 +4592,7 @@
     },
     "M112_PeatAshFertilizer": {
       "name": "泥炭灰肥料",
-      "description": "每次在你执行__挖泥炭__特殊行动之前，你可以在所有包含<GRAIN>或<VEGETABLE>的<FIELD>和农场空地上额外放置1个同类型作物。不要在空的<FIELD>和农场空地上放置任何作物。"
+      "description": "每次在你执行__moor:cut-peat|挖泥炭__特殊行动之前，你可以在所有包含<GRAIN>或<VEGETABLE>的<FIELD>和农场空地上额外放置1个同类型作物。不要在空的<FIELD>和农场空地上放置任何作物。"
     },
     "M113_LivingHistoryMuseum": {
       "name": "活历史博物馆",
@@ -4597,7 +4601,7 @@
     },
     "M114_RiversideWoods": {
       "name": "河畔树林",
-      "description": "有了这张牌，每次你使用__捕鱼__累积格时，你还会为你每个包含至少1个<FOREST>的农场空地获得1 <WOOD>，最多3 <WOOD>。",
+      "description": "有了这张牌，每次你使用__space:fishing|捕鱼__累积格时，你还会为你每个包含至少1个<FOREST>的农场空地获得1 <WOOD>，最多3 <WOOD>。",
       "prerequisite": "3 主要改良"
     },
     "M115_OakBark": {
@@ -4607,7 +4611,7 @@
     },
     "M116_MoorBirchTrees": {
       "name": "沼泽桦树",
-      "description": "每次你执行__挖泥炭__特殊行动时，你还会获得2 <WOOD>。",
+      "description": "每次你执行__moor:cut-peat|挖泥炭__特殊行动时，你还会获得2 <WOOD>。",
       "prerequisite": "3 房间"
     },
     "M117_DraughtHorses": {
@@ -4616,35 +4620,35 @@
     },
     "M118_TimberMill": {
       "name": "木材厂",
-      "description": "每次你执行__伐木__特殊行动或从累积格获得至少4 <WOOD>时，你获得1额外<WOOD>。如果你支付1 <FUEL>，你获得2额外<WOOD>而不是1。"
+      "description": "每次你执行__moor:fell-trees|伐木__特殊行动或从累积格获得至少4 <WOOD>时，你获得1额外<WOOD>。如果你支付1 <FUEL>，你获得2额外<WOOD>而不是1。"
     },
     "M119_AlderSwamp": {
       "name": "赤杨沼泽",
-      "description": "每次你执行__伐木__特殊行动时，你还会选择获得1 <WOOD>或1 <REED>。",
+      "description": "每次你执行__moor:fell-trees|伐木__特殊行动时，你还会选择获得1 <WOOD>或1 <REED>。",
       "prerequisite": "2 改良"
     },
     "M120_RiverClay": {
       "name": "河泥",
-      "description": "每次你使用__捕鱼__累积格时，你还会获得2 <CLAY>。",
+      "description": "每次你使用__space:fishing|捕鱼__累积格时，你还会获得2 <CLAY>。",
       "prerequisite": "1 主要改良"
     },
     "M121_Loam": {
       "name": "壤土",
-      "description": "在每个工作阶段，如果你在执行__雇工集市__特殊行动时，除了1个工人外，你已放置了所有工人，你还会获得1 <CLAY>。",
+      "description": "在每个工作阶段，如果你在执行__moor:hiring-fair|雇工集市__特殊行动时，除了1个工人外，你已放置了所有工人，你还会获得1 <CLAY>。",
       "prerequisite": "1 改良"
     },
     "M122_WillowBank": {
       "name": "柳树河岸",
-      "description": "每次你执行__伐木__特殊行动时，你还会获得1 <REED>。",
+      "description": "每次你执行__moor:fell-trees|伐木__特殊行动时，你还会获得1 <REED>。",
       "prerequisite": "1 主要改良"
     },
     "M123_StoneQuarry": {
       "name": "采石场",
-      "description": "将5 <STONE>（3人游戏时为3 <STONE>）放置到这张牌上。每次你执行__雇工集市__特殊行动时，你还会从这张牌上获得1 <STONE>。"
+      "description": "将5 <STONE>（3人游戏时为3 <STONE>）放置到这张牌上。每次你执行__moor:hiring-fair|雇工集市__特殊行动时，你还会从这张牌上获得1 <STONE>。"
     },
     "M124_StoneWagon": {
       "name": "运石马车",
-      "description": "每次你使用__打零工__行动格时，你还会获得1 <STONE>。"
+      "description": "每次你使用__space:day-laborer|打零工__行动格时，你还会获得1 <STONE>。"
     },
     "M125_HardwareStore": {
       "name": "五金店",
@@ -4657,7 +4661,7 @@
     },
     "M127_Wheelbarrow": {
       "name": "独轮车",
-      "description": "每当你从累积格拿取至少 4 个同一种建筑资源时，额外获得 1 <FUEL>。每当你执行 __挖泥炭__ 特殊行动时，额外获得 1 个自选建筑资源。",
+      "description": "每当你从累积格拿取至少 4 个同一种建筑资源时，额外获得 1 <FUEL>。每当你执行 __moor:cut-peat|挖泥炭__ 特殊行动时，额外获得 1 个自选建筑资源。",
       "prerequisite": "1 主要改良"
     },
     "M128_Workbench": {
@@ -4667,12 +4671,12 @@
     },
     "M129_PlowhorseMarket": {
       "name": "犁马市场",
-      "description": "每次你使用__农田__或__耕作__行动格时，你也可以用1 <FOOD>购买正好1 <HORSE>。",
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你也可以用1 <FOOD>购买正好1 <HORSE>。",
       "prerequisite": "1 主要改良"
     },
     "M130_Nosebag": {
       "name": "饲料袋",
-      "description": "每次你使用__谷物种子__行动格时，你额外获得1 <HORSE>。",
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你额外获得1 <HORSE>。",
       "prerequisite": "1 主要改良"
     },
     "M131_CattleStall": {
@@ -4691,15 +4695,15 @@
     },
     "C168_AnimalCatcher": {
       "name": "动物猎人",
-      "description": "每当你使用 __打零工__ 行动位时，你可以改为从公共供给获得 3 种不同动物而非 2 <FOOD>。若如此，在剩余每次收获中你需支付 1 <FOOD>。"
+      "description": "每当你使用 __space:day-laborer|打零工__ 行动位时，你可以改为从公共供给获得 3 种不同动物而非 2 <FOOD>。若如此，在剩余每次收获中你需支付 1 <FOOD>。"
     },
     "C130_OutskirtsDirector": {
       "name": "郊区总监",
-      "description": "每次你使用__树林__或__低洼地__积累行动格时，你可以从公共供应区拿取2<REED>放置在两者之中你未选择的另外一个积累行动格上。若你如此做，你可以立即放置下一名家庭成员。"
+      "description": "每次你使用__space:grove,grove-56|树林__或__space:hollow,hollow-4,hollow-56|低洼地__积累行动格时，你可以从公共供应区拿取2<REED>放置在两者之中你未选择的另外一个积累行动格上。若你如此做，你可以立即放置下一名家庭成员。"
     },
     "B094_StockProtector": {
       "name": "家畜守护者",
-      "description": "每当你使用__围栏__行动格前，你获得2<WOOD>，且在你使用该__围栏__行动格后，你可以立即派遣你的下一名家庭成员。"
+      "description": "每当你使用__space:fencing|围栏__行动格前，你获得2<WOOD>，且在你使用该__space:fencing|围栏__行动格后，你可以立即派遣你的下一名家庭成员。"
     },
     "A092_AdoptiveParents": {
       "name": "养父母",
@@ -4711,7 +4715,7 @@
     },
     "A128_RiparianBuilder": {
       "name": "河岸建造工",
-      "description": "每当其他玩家使用 __芦苇河岸__ 累积格时，你可以建造 1 间房：若建造黏土/石屋，费用减 1 <CLAY>/2 <STONE>。"
+      "description": "每当其他玩家使用 __space:reed-bank|芦苇河岸__ 累积格时，你可以建造 1 间房：若建造黏土/石屋，费用减 1 <CLAY>/2 <STONE>。"
     },
     "A106_SlurrySpreader": {
       "name": "粪浆撒播器",
@@ -4739,7 +4743,7 @@
     },
     "A119_FirewoodCollector": {
       "name": "拾木者",
-      "description": "每次你使用 __农田__，__谷物种子__，__谷物利用__，或 __耕作__行动格，在该回合结束时，你得到1<WOOD>。"
+      "description": "每次你使用 __space:farmland|农田__，__space:grain-seeds|谷物种子__，__space:grain-utilization|谷物利用__，或 __space:cultivation|耕作__行动格，在该回合结束时，你得到1<WOOD>。"
     },
     "A123_FrameBuilder": {
       "name": "架梁工",
@@ -4755,7 +4759,7 @@
     },
     "A137_RiverineShepherd": {
       "name": "河岸牧羊人",
-      "description": "每次你使用 __羊市场__或者__芦苇河岸__积累行动格时，若对应的另一个行动格上存有物品，则你可以取走1个。"
+      "description": "每次你使用 __space:sheep-market|羊市场__或者__space:reed-bank|芦苇河岸__积累行动格时，若对应的另一个行动格上存有物品，则你可以取走1个。"
     },
     "A144_Sequestrator": {
       "name": "财产扣押者",
@@ -4767,7 +4771,7 @@
     },
     "A162_ForestTallyman": {
       "name": "林木清点工",
-      "description": "当 __森林__ 与 __黏土坑__ 两个累积格都被占用时，你可以将此牌作为行动位，获得 2 <CLAY> 和 3 <WOOD>。"
+      "description": "当 __space:forest|森林__ 与 __space:clay-pit|黏土坑__ 两个累积格都被占用时，你可以将此牌作为行动位，获得 2 <CLAY> 和 3 <WOOD>。"
     },
     "A165_PigBreeder": {
       "name": "喂猪人",
@@ -4792,7 +4796,7 @@
     "A094_LazySowman": {
       "name": "偷懒的播种工",
       "description": "在你的回合里，每次你主动放弃1次无附加条件的__播种__行动，你便可立即派遣你的另一名家庭成员到场上任意行动格上，即使是已被占用的行动格。",
-      "rules": "此次额外放人不能选择 __集会所__。"
+      "rules": "此次额外放人不能选择 __space:meeting-place|集会所__。"
     },
     "A097_Freshman": {
       "name": "新手学徒",
@@ -4861,7 +4865,7 @@
     },
     "C138_AnimalFeeder": {
       "name": "动物喂养员",
-      "description": "当你使用__打零工__行动格时，你可以选择额外获得1<SHEEP>或1<GRAIN>，或者支付1<FOOD>来购买1<PIG>，或者支付2<FOOD>来购买1<CATTLE>。"
+      "description": "当你使用__space:day-laborer|打零工__行动格时，你可以选择额外获得1<SHEEP>或1<GRAIN>，或者支付1<FOOD>来购买1<PIG>，或者支付2<FOOD>来购买1<CATTLE>。"
     },
     "C135_Constable": {
       "name": "警官",
@@ -4869,7 +4873,7 @@
     },
     "C142_MarketCrier": {
       "name": "街市叫卖佬",
-      "description": "每次你使用__谷物种子__行动格时，你可以选择获得1<GRAIN>和1<VEGETABLE>，然后其他玩家均获得1<GRAIN>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你可以选择获得1<GRAIN>和1<VEGETABLE>，然后其他玩家均获得1<GRAIN>。"
     },
     "C146_WorkshopAssistant": {
       "name": "工坊助手",
@@ -4881,7 +4885,7 @@
     },
     "C156_HoofCaregiver": {
       "name": "牛蹄护理工",
-      "description": "立即从公共供给向 __牛市场__ 累积格添加 1 <CATTLE>。随后，__牛市场__ 上每有 1 头牛，你获得 1 <GRAIN> 和 1 <FOOD>。"
+      "description": "立即从公共供给向 __space:cattle-market|牛市场__ 累积格添加 1 <CATTLE>。随后，__space:cattle-market|牛市场__ 上每有 1 头牛，你获得 1 <GRAIN> 和 1 <FOOD>。"
     },
     "C162_ForestOwner": {
       "name": "森林主人",
@@ -4905,7 +4909,7 @@
     },
     "C093_InnerDistrictsDirector": {
       "name": "城区总监",
-      "description": "每次你使用__森林__或__黏土坑__积累行动格时，你可以从公共供应区拿取1<STONE>放置在两者之中你未选择的另外一个积累行动格上。若你如此做，你可以立即放置下一名家庭成员。"
+      "description": "每次你使用__space:forest|森林__或__space:clay-pit|黏土坑__积累行动格时，你可以从公共供应区拿取1<STONE>放置在两者之中你未选择的另外一个积累行动格上。若你如此做，你可以立即放置下一名家庭成员。"
     },
     "C096_Merchant": {
       "name": "商人",
@@ -4925,7 +4929,7 @@
     },
     "D101_SugarBaker": {
       "name": "焦糖烘培师",
-      "description": "每次你使用 __谷物利用__行动格之后，你能花费1<FOOD>购买1奖励<SCORE>。将该 <FOOD> 放在该行动格上 （供下一个访问者）."
+      "description": "每次你使用 __space:grain-utilization|谷物利用__行动格之后，你能花费1<FOOD>购买1奖励<SCORE>。将该 <FOOD> 放在该行动格上 （供下一个访问者）."
     },
     "D102_SampleStableMaker": {
       "name": "简易畜棚制造者",
@@ -4933,7 +4937,7 @@
     },
     "D103_CanalBoatman": {
       "name": "运河船夫",
-      "description": "每次你使用__捕鱼__或__芦苇河岸__行动格时，你可以支付1<FOOD>来立即放置你的另1名家庭成员到此卡上。若你如此做，则你获得3<STONE>，或1<GRAIN>+1<VEGETABLE>。"
+      "description": "每次你使用__space:fishing|捕鱼__或__space:reed-bank|芦苇河岸__行动格时，你可以支付1<FOOD>来立即放置你的另1名家庭成员到此卡上。若你如此做，则你获得3<STONE>，或1<GRAIN>+1<VEGETABLE>。"
     },
     "D107_Bellfounder": {
       "name": "铸钟工",
@@ -4945,7 +4949,7 @@
     },
     "D116_TreeInspector": {
       "name": "树木巡查员",
-      "description": "此牌为仅你可用的 1 <WOOD> 累积格。每当新翻开的行动位卡是 __采石场__ 累积格时，你必须弃掉本牌上的所有 <WOOD>。"
+      "description": "此牌为仅你可用的 1 <WOOD> 累积格。每当新翻开的行动位卡是 __space:western-quarry,eastern-quarry|采石场__ 累积格时，你必须弃掉本牌上的所有 <WOOD>。"
     },
     "D124_Emissary": {
       "name": "密使",
@@ -4969,20 +4973,20 @@
     },
     "D134_OysterEater": {
       "name": "吃牡蛎的人",
-      "description": "每次__捕鱼__积累行动格被使用时，你获得1奖励<SCORE>并强制跳过你本回合的下一次家庭成员派遣。（你仍可在后续轮次中派遣你的家庭成员）"
+      "description": "每次__space:fishing|捕鱼__积累行动格被使用时，你获得1奖励<SCORE>并强制跳过你本回合的下一次家庭成员派遣。（你仍可在后续轮次中派遣你的家庭成员）"
     },
     "D137_TradeTeacher": {
       "name": "贸易导师",
-      "description": "每当你使用 __课程__ 行动位后，你可以购买至多 2 种不同资源：<GRAIN>、<STONE>、<SHEEP>、<PIG> 各需 1 <FOOD>；<CATTLE> 与 <VEGETABLE> 各需 2 <FOOD>。"
+      "description": "每当你使用 __space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__ 行动位后，你可以购买至多 2 种不同资源：<GRAIN>、<STONE>、<SHEEP>、<PIG> 各需 1 <FOOD>；<CATTLE> 与 <VEGETABLE> 各需 2 <FOOD>。"
     },
     "D150_GodlySpouse": {
       "name": "虔诚的配偶",
-      "description": "每当你在同一回合放置的第二名工人执行 __家庭增长__ 行动时，除非该工人在 __集会所__ 上，否则将你放置的第一名工人送回家。"
+      "description": "每当你在同一回合放置的第二名工人执行 __家庭增长__ 行动时，除非该工人在 __space:meeting-place|集会所__ 上，否则将你放置的第一名工人送回家。"
     },
     "D151_SpinDoctor": {
-      "rules": "包括本牌在内，任何卡牌都不能让你使用已被占用的 __集会所__。",
+      "rules": "包括本牌在内，任何卡牌都不能让你使用已被占用的 __space:meeting-place|集会所__。",
       "name": "公关专家",
-      "description": "每次你使用__流浪艺人__积累行动格后，你可以立即放置你的另一名家庭成员到任何一个行动格上，无论该行动格是否已被占据。"
+      "description": "每次你使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格后，你可以立即放置你的另一名家庭成员到任何一个行动格上，无论该行动格是否已被占据。"
     },
     "D157_PartyOrganizer": {
       "name": "派对组织者",
@@ -5003,11 +5007,11 @@
     },
     "D093_SheepInspector": {
       "name": "羊群巡视员",
-      "description": "每个工作阶段限用1次，在你完成一名家庭成员的行动后，你可以支付1<SHEEP>和2<FOOD> 返回另一名你已经放置的家庭成员到家中，除非该成员位于__集会所__行动格上。"
+      "description": "每个工作阶段限用1次，在你完成一名家庭成员的行动后，你可以支付1<SHEEP>和2<FOOD> 返回另一名你已经放置的家庭成员到家中，除非该成员位于__space:meeting-place|集会所__行动格上。"
     },
     "D094_HenpeckedHusband": {
       "name": "妻管严",
-      "description": "每当你用同一回合放置的第二名工人执行 __扩建房屋__ 行动时，除非该工人在 __集会所__ 上，否则将你放置的第一名工人送回家。"
+      "description": "每当你用同一回合放置的第二名工人执行 __扩建房屋__ 行动时，除非该工人在 __space:meeting-place|集会所__ 上，否则将你放置的第一名工人送回家。"
     },
     "D095_SiteManager": {
       "name": "站点管理员",
@@ -5039,7 +5043,7 @@
     },
     "E130_Overachiever": {
       "name": "超常发挥者",
-      "description": "每当你使用__家庭增长__ 行动格前，你都可以打出1张主要或小改良，其费用减少1个由你选择的建筑资源或作物。"
+      "description": "每当你使用__space:wish-children,urgent-wish-children,modest-wish-children-56|家庭增长__ 行动格前，你都可以打出1张主要或小改良，其费用减少1个由你选择的建筑资源或作物。"
     },
     "E133_ChampionBreeder": {
       "name": "冠军饲养员",
@@ -5051,12 +5055,12 @@
     },
     "E148_Lazybones": {
       "name": "偷懒之人",
-      "description": "在__谷物种子__, __农田__, __打零工__,和 __扩建农舍__行动格上分别放置至多1<STABLE>。当其他玩家使用其中放置了畜棚的行动格时，你可以免费建造该 <STABLE>。",
+      "description": "在__space:grain-seeds|谷物种子__, __space:farmland|农田__, __space:day-laborer|打零工__,和 __space:farm-expansion|扩建农舍__行动格上分别放置至多1<STABLE>。当其他玩家使用其中放置了畜棚的行动格时，你可以免费建造该 <STABLE>。",
       "choice": "预留 {spaces}"
     },
     "E151_DeliveryNurse": {
       "name": "接生护士",
-      "description": "本局游戏限1次：若你拥有所有种类的动物，你可以使用任何__家庭增长__行动格，无需空房间。"
+      "description": "本局游戏限1次：若你拥有所有种类的动物，你可以使用任何__space:wish-children,urgent-wish-children,modest-wish-children-56|家庭增长__行动格，无需空房间。"
     },
     "E153_StoneSculptor": {
       "name": "雕刻家",
@@ -5080,7 +5084,7 @@
     },
     "E166_Roastmaster": {
       "name": "烤肉大师",
-      "description": "每当你使用__流浪艺人__/__捕鱼__累积格前，你都可以将该格中的1<FOOD>移动到上述另一个累积格上，以获得1<CATTLE>。"
+      "description": "每当你使用__space:traveling-players,traveling-players-56|流浪艺人__/__space:fishing|捕鱼__累积格前，你都可以将该格中的1<FOOD>移动到上述另一个累积格上，以获得1<CATTLE>。"
     },
     "E167_DairyCrier": {
       "name": "牛奶配送员",
@@ -5104,7 +5108,7 @@
     },
     "E092_FieldDoctor": {
       "name": "田间医生",
-      "description": "本局一次，若你住在恰好 2 间房的房屋中且四周被 4 块田地围住，你可以在没有房间的情况下使用任意 __渴望孩子__ 行动位。"
+      "description": "本局一次，若你住在恰好 2 间房的房屋中且四周被 4 块田地围住，你可以在没有房间的情况下使用任意 __space:wish-children,urgent-wish-children,modest-wish-children-56|渴望孩子__ 行动位。"
     },
     "E093_Motivator": {
       "name": "榜样",
@@ -5132,7 +5136,7 @@
     },
     "A095_Angler": {
       "name": "钓鱼人",
-      "description": "每次你使用积累不超过2<FOOD>的 __捕鱼__积累行动格之后，你获得一个 __改良__行动。"
+      "description": "每次你使用积累不超过2<FOOD>的 __space:fishing|捕鱼__积累行动格之后，你获得一个 __改良__行动。"
     },
     "A096_TaskArtisan": {
       "name": "任务型工匠",
@@ -5176,11 +5180,11 @@
     },
     "A113_HeresyTeacher": {
       "name": "异端教师",
-      "description": "每当你使用一个__课程__行动格时，在你每个有至少3 <GRAIN>且没有<VEGETABLE>的<FIELD>中获得1 <VEGETABLE>。将<VEGETABLE>放置在<GRAIN>下方。"
+      "description": "每当你使用一个__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格时，在你每个有至少3 <GRAIN>且没有<VEGETABLE>的<FIELD>中获得1 <VEGETABLE>。将<VEGETABLE>放置在<GRAIN>下方。"
     },
     "A114_SeasonalWorker": {
       "name": "季节工",
-      "description": "每当你使用__打零工__行动格时，你额外获得1 <GRAIN>。从第6回合起，你可以选择改为获得1 <VEGETABLE>。"
+      "description": "每当你使用__space:day-laborer|打零工__行动格时，你额外获得1 <GRAIN>。从第6回合起，你可以选择改为获得1 <VEGETABLE>。"
     },
     "A115_ChiefForester": {
       "name": "首席林务官",
@@ -5204,11 +5208,11 @@
     },
     "A121_ClayPuncher": {
       "name": "砖头冲压工",
-      "description": "当你打出这张卡牌或者每次你使用一次__课程__行动格或 __黏土坑__积累行动格之后，你获得1<CLAY>。"
+      "description": "当你打出这张卡牌或者每次你使用一次__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格或 __space:clay-pit|黏土坑__积累行动格之后，你获得1<CLAY>。"
     },
     "A122_PanBaker": {
       "name": "面包师",
-      "description": "每次你使用 __谷物利用__行动格时，你获得2<CLAY> 和1<WOOD>。"
+      "description": "每次你使用 __space:grain-utilization|谷物利用__行动格时，你获得2<CLAY> 和1<WOOD>。"
     },
     "A124_Knapper": {
       "name": "石头打磨工",
@@ -5220,11 +5224,11 @@
     },
     "A129_Swagman": {
       "name": "流浪汉",
-      "description": "每次你使用__扩建农舍__或__谷物种子__行动格后，你可以立即将此家庭成员移至对应的另一个行动格上并使用它，即使它已被占用（不可反复移动）。"
+      "description": "每次你使用__space:farm-expansion|扩建农舍__或__space:grain-seeds|谷物种子__行动格后，你可以立即将此家庭成员移至对应的另一个行动格上并使用它，即使它已被占用（不可反复移动）。"
     },
     "A130_MummysBoy": {
       "name": "妈宝",
-      "description": "每轮一次，当你放置你的前2个家庭成员之后再放置家庭成员时，你可以将其放置在你第2个家庭成员所在的行动格上，并再次使用该行动格，除非该行动格是__集会所__行动格。"
+      "description": "每轮一次，当你放置你的前2个家庭成员之后再放置家庭成员时，你可以将其放置在你第2个家庭成员所在的行动格上，并再次使用该行动格，除非该行动格是__space:meeting-place|集会所__行动格。"
     },
     "A131_CraftTeacher": {
       "name": "技校导师",
@@ -5248,23 +5252,23 @@
     },
     "A138_Harpooner": {
       "name": "鱼叉猎手",
-      "description": "每当你使用__捕鱼__行动格时，你还可以支付1 <WOOD>以获得你拥有的每个家庭成员1点<FOOD>，以及1 <REED>"
+      "description": "每当你使用__space:fishing|捕鱼__行动格时，你还可以支付1 <WOOD>以获得你拥有的每个家庭成员1点<FOOD>，以及1 <REED>"
     },
     "A139_HollowWarden": {
       "name": "窑洞看守",
-      "description": "当你打出这张卡时，你立即获得1次__主要改良__行动（照常付费）,但只能打出火炉。每当你使用__低洼地__积累行动格时，你额外获得1<FOOD>。"
+      "description": "当你打出这张卡时，你立即获得1次__主要改良__行动（照常付费）,但只能打出火炉。每当你使用__space:hollow,hollow-4,hollow-56|低洼地__积累行动格时，你额外获得1<FOOD>。"
     },
     "A140_ShovelBearer": {
       "name": "铲土工",
-      "description": "每次在你使用 __黏土坑__或者 __低洼地__积累行动格时，你同样获得 <FOOD>，数量等同于在两者之中你未选择的另外一个积累行动格上的<CLAY>。"
+      "description": "每次在你使用 __space:clay-pit|黏土坑__或者 __space:hollow,hollow-4,hollow-56|低洼地__积累行动格时，你同样获得 <FOOD>，数量等同于在两者之中你未选择的另外一个积累行动格上的<CLAY>。"
     },
     "A141_TurnipFarmer": {
       "name": "萝卜农夫",
-      "description": "在每轮的回家阶段开始时，如果 __打零工__和 __谷物种子__行动格被占用，你获得1<VEGETABLE>。"
+      "description": "在每轮的回家阶段开始时，如果 __space:day-laborer|打零工__和 __space:grain-seeds|谷物种子__行动格被占用，你获得1<VEGETABLE>。"
     },
     "A142_Cordmaker": {
       "name": "编绳工",
-      "description": "每当任何玩家（包括你）从__芦苇河岸__累积格拿取至少2 <REED>时，你可以选择拿取1 <GRAIN>或支付2点<FOOD>购买1 <VEGETABLE>。"
+      "description": "每当任何玩家（包括你）从__space:reed-bank|芦苇河岸__累积格拿取至少2 <REED>时，你可以选择拿取1 <GRAIN>或支付2点<FOOD>购买1 <VEGETABLE>。"
     },
     "A143_Stonecutter": {
       "name": "切石工",
@@ -5280,15 +5284,15 @@
     },
     "A147_AnimalDealer": {
       "name": "牲畜交易商",
-      "description": "每次你执行__羊市场__，__猪市场__，__牛市场__积累行动格时，你可以支付1<FOOD>额外购买一只对应种类的动物。"
+      "description": "每次你执行__space:sheep-market|羊市场__，__space:pig-market|猪市场__，__space:cattle-market|牛市场__积累行动格时，你可以支付1<FOOD>额外购买一只对应种类的动物。"
     },
     "A149_HouseArtist": {
       "name": "房屋艺术家",
-      "description": "每次你使用__流浪艺人__积累行动格时，你额外获得1次__扩建房屋__行动，且该行动扩建每间房屋都减免1<REED>。"
+      "description": "每次你使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你额外获得1次__扩建房屋__行动，且该行动扩建每间房屋都减免1<REED>。"
     },
     "A150_Stagehand": {
       "name": "舞台布景工",
-      "description": "每当其他玩家使用使用__流浪艺人__积累行动格时，你可以选择一次__围栏__，__畜栏__，或__扩建房屋__行动。"
+      "description": "每当其他玩家使用使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你可以选择一次__围栏__，__畜栏__，或__扩建房屋__行动。"
     },
     "A151_Minstrel": {
       "name": "吟游诗人",
@@ -5296,7 +5300,7 @@
     },
     "A152_NightSchoolStudent": {
       "name": "夜校学生",
-      "description": "在每轮回家阶段，若没有任何玩家从__课程__行动格取回家庭成员，则你可以支付1<FOOD>作为学费来打出1张职业卡。"
+      "description": "在每轮回家阶段，若没有任何玩家从__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格取回家庭成员，则你可以支付1<FOOD>作为学费来打出1张职业卡。"
     },
     "A153_PigOwner": {
       "name": "养猪大户",
@@ -5308,7 +5312,7 @@
     },
     "A155_Conjurer": {
       "name": "杂耍艺人",
-      "description": "每次你使用__流浪艺人__积累行动格时，你额外获得1<WOOD>和1<GRAIN>。"
+      "description": "每次你使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你额外获得1<WOOD>和1<GRAIN>。"
     },
     "A156_Buyer": {
       "name": "采购员",
@@ -5316,19 +5320,19 @@
     },
     "A157_Bohemian": {
       "name": "波西米亚人",
-      "description": "在每轮回家阶段开始时，若场上至少有1个__课程__行动格是无人占据的，则你获得1<FOOD>。"
+      "description": "在每轮回家阶段开始时，若场上至少有1个__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格是无人占据的，则你获得1<FOOD>。"
     },
     "A158_CulinaryArtist": {
       "name": "烹饪艺术家",
-      "description": "每次其他玩家使用 __流浪艺人__积累行动格时，你可以选择将1<GRAIN>/<SHEEP>/<VEGETABLE>转换成4/5/7<FOOD>。"
+      "description": "每次其他玩家使用 __space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你可以选择将1<GRAIN>/<SHEEP>/<VEGETABLE>转换成4/5/7<FOOD>。"
     },
     "A159_JoineroftheSea": {
       "name": "航海木匠",
-      "description": "每当其他玩家使用__捕鱼__/__芦苇河岸__积累行动格时，你可以支付他1<WOOD>来从公共供应区获得2<FOOD>/3<FOOD>。"
+      "description": "每当其他玩家使用__space:fishing|捕鱼__/__space:reed-bank|芦苇河岸__积累行动格时，你可以支付他1<WOOD>来从公共供应区获得2<FOOD>/3<FOOD>。"
     },
     "A160_Lutenist": {
       "name": "琵琶演奏家",
-      "description": "每当其他玩家使用__流浪艺人__累积格前，你获得1<FOOD> 和1<WOOD>，然后你可以立即支付2<FOOD>来购买1<VEGETABLE>。"
+      "description": "每当其他玩家使用__space:traveling-players,traveling-players-56|流浪艺人__累积格前，你获得1<FOOD> 和1<WOOD>，然后你可以立即支付2<FOOD>来购买1<VEGETABLE>。"
     },
     "A161_PatchCaretaker": {
       "name": "土地看护人",
@@ -5336,7 +5340,7 @@
     },
     "A163_BuildingExpert": {
       "name": "建筑专家",
-      "description": "每次你派遣你的1/2/3/4/5名家庭成员去使用__资源市场__行动格时，你额外获得1<WOOD>/<CLAY>/<REED>/<STONE>/<STONE>。"
+      "description": "每次你派遣你的1/2/3/4/5名家庭成员去使用__space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|资源市场__行动格时，你额外获得1<WOOD>/<CLAY>/<REED>/<STONE>/<STONE>。"
     },
     "A164_WoodWorker": {
       "name": "森林工人",
@@ -5352,7 +5356,7 @@
     },
     "A168_AnimalTeacher": {
       "name": "畜牧教师",
-      "description": "每次你使用__课程__行动格之后，你可以选择花费0/1/2<FOOD>购买1<SHEEP>/<PIG>/<CATTLE>。"
+      "description": "每次你使用__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格之后，你可以选择花费0/1/2<FOOD>购买1<SHEEP>/<PIG>/<CATTLE>。"
     },
     "A169_OffSiter": {
       "name": "场外工人",
@@ -5368,7 +5372,7 @@
     },
     "A172_BoatPainter": {
       "name": "船只画师",
-      "description": "在每个工作阶段结束时，如果__捕鱼__和__流浪艺人__累积格都被占据，你获得1 <GRAIN>或2 <FOOD>（由你选择）。"
+      "description": "在每个工作阶段结束时，如果__space:fishing|捕鱼__和__space:traveling-players,traveling-players-56|流浪艺人__累积格都被占据，你获得1 <GRAIN>或2 <FOOD>（由你选择）。"
     },
     "A173_ClayThief": {
       "name": "黏土窃贼",
@@ -5396,11 +5400,11 @@
     },
     "A179_MountainShepherd": {
       "name": "高山牧羊人",
-      "description": "每次你使用任一__采石场__累积格时，你立即从公共储备中额外获得1只 <SHEEP>。"
+      "description": "每次你使用任一__space:western-quarry,eastern-quarry|采石场__累积格时，你立即从公共储备中额外获得1只 <SHEEP>。"
     },
     "A180_AnimalBrander": {
       "name": "牲畜烙印师",
-      "description": "每次你使用__动物市场__行动格时，你可以支付1 <FOOD>，将同一选项使用两次（而不是一次）。"
+      "description": "每次你使用__space:animal-market-56|动物市场__行动格时，你可以支付1 <FOOD>，将同一选项使用两次（而不是一次）。"
     },
     "B085_FarmHand": {
       "name": "雇农",
@@ -5408,7 +5412,7 @@
     },
     "B087_Cottager": {
       "name": "佃农",
-      "description": "每当你使用__打零工__行动格前，你可以建造1个房间或翻修房屋，正常支付费用。"
+      "description": "每当你使用__space:day-laborer|打零工__行动格前，你可以建造1个房间或翻修房屋，正常支付费用。"
     },
     "B088_EstablishedPerson": {
       "name": "尊贵之人",
@@ -5420,15 +5424,15 @@
     },
     "B090_CooperativePlower": {
       "name": "合作犁田工",
-      "description": "每当你使用__农田__行动格，并且__谷物种子__行动格已被占据时，你可以额外开垦1块<FIELD>。"
+      "description": "每当你使用__space:farmland|农田__行动格，并且__space:grain-seeds|谷物种子__行动格已被占据时，你可以额外开垦1块<FIELD>。"
     },
     "B091_AssistantTiller": {
       "name": "耕种帮手",
-      "description": "每当你使用__打零工__行动格时，你还可以开垦1块<FIELD>。"
+      "description": "每当你使用__space:day-laborer|打零工__行动格时，你还可以开垦1块<FIELD>。"
     },
     "B092_LittleStickKnitter": {
       "name": "针线编制工",
-      "description": "从第5轮开始，每次你使用 __羊市场__积累行动格时，你能执行一次 __家庭增长（需要空房）__行动。"
+      "description": "从第5轮开始，每次你使用 __space:sheep-market|羊市场__积累行动格时，你能执行一次 __家庭增长（需要空房）__行动。"
     },
     "B093_Confidant": {
       "name": "密友",
@@ -5504,7 +5508,7 @@
     },
     "B116_Shoreforester": {
       "name": "河岸林务官",
-      "description": "当你打出这张卡牌或在准备阶段1<REED>放置在空的 __芦苇河岸__积累行动格上时，你获得1<WOOD>。"
+      "description": "当你打出这张卡牌或在准备阶段1<REED>放置在空的 __space:reed-bank|芦苇河岸__积累行动格上时，你获得1<WOOD>。"
     },
     "B117_Informant": {
       "name": "线人",
@@ -5524,7 +5528,7 @@
     },
     "B121_Geologist": {
       "name": "地质学家",
-      "description": "每次你使用__森林__或__芦苇河岸__积累行动格时，你额外获得1<CLAY>。若游戏人数大于等于3人，使用__黏土坑__积累行动格亦能额外获得1块砖头。"
+      "description": "每次你使用__space:forest|森林__或__space:reed-bank|芦苇河岸__积累行动格时，你额外获得1<CLAY>。若游戏人数大于等于3人，使用__space:clay-pit|黏土坑__积累行动格亦能额外获得1块砖头。"
     },
     "B122_Mineralogist": {
       "name": "矿物学者",
@@ -5548,7 +5552,7 @@
     },
     "B128_Plumber": {
       "name": "管道工",
-      "description": "每当你使用__主要改良__行动格后，你可以额外执行1次__翻修__行动，且此次翻修的费用减少2<CLAY>或2<STONE>。"
+      "description": "每当你使用__space:major-improvement|主要改良__行动格后，你可以额外执行1次__翻修__行动，且此次翻修的费用减少2<CLAY>或2<STONE>。"
     },
     "B129_Seatmate": {
       "name": "同桌",
@@ -5556,7 +5560,7 @@
     },
     "B130_FullPeasant": {
       "name": "全职农夫",
-      "description": "每当你使用了__谷物利用__或__围栏__行动格后，若上述另一个行动格尚未被占据，则你可以支付1<FOOD>来移动此家庭成员去使用对应的另一个行动格。"
+      "description": "每当你使用了__space:grain-utilization|谷物利用__或__space:fencing|围栏__行动格后，若上述另一个行动格尚未被占据，则你可以支付1<FOOD>来移动此家庭成员去使用对应的另一个行动格。"
     },
     "B131_Equipper": {
       "name": "武装者",
@@ -5600,15 +5604,15 @@
     },
     "B142_Greengrocer": {
       "name": "菜贩",
-      "description": "每次你使用__谷物种子__行动格时，你额外获得1<VEGETABLE>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你额外获得1<VEGETABLE>。"
     },
     "B143_ClayWarden": {
       "name": "黏土看守者",
-      "description": "每次有其他玩家使用__低洼地__累积格时，你获得1<CLAY>。在3/4人游戏中，你额外获得1<CLAY>/<FOOD>。"
+      "description": "每次有其他玩家使用__space:hollow,hollow-4,hollow-56|低洼地__累积格时，你获得1<CLAY>。在3/4人游戏中，你额外获得1<CLAY>/<FOOD>。"
     },
     "B144_Collier": {
       "name": "煤矿工",
-      "description": "每次你使用__黏土坑__或__低洼地__累积格后，你获得1<WOOD>。在__黏土坑__上你额外获得1<REED>。"
+      "description": "每次你使用__space:clay-pit|黏土坑__或__space:hollow,hollow-4,hollow-56|低洼地__累积格后，你获得1<WOOD>。在__space:clay-pit|黏土坑__上你额外获得1<REED>。"
     },
     "B145_BrushwoodCollector": {
       "name": "拾柴工",
@@ -5624,11 +5628,11 @@
     },
     "B150_LargeScaleFarmer": {
       "name": "大户农民",
-      "description": "每当你使用__扩建农舍__或__主要改良__行动格后，若上述另一个行动格未被占用，则你可以支付1<FOOD>来移动此家庭成员去使用对应的另一个行动格。"
+      "description": "每当你使用__space:farm-expansion|扩建农舍__或__space:major-improvement|主要改良__行动格后，若上述另一个行动格未被占用，则你可以支付1<FOOD>来移动此家庭成员去使用对应的另一个行动格。"
     },
     "B152_JuniorArtist": {
       "name": "少年艺术家",
-      "description": "每当你使用__打零工__行动格后，你可以支付1<FOOD>来移动此家庭成员去使用未被占用的__流浪艺人__行动格或__课程__行动格。"
+      "description": "每当你使用__space:day-laborer|打零工__行动格后，你可以支付1<FOOD>来移动此家庭成员去使用未被占用的__space:traveling-players,traveling-players-56|流浪艺人__行动格或__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格。"
     },
     "B153_Housemaster": {
       "name": "房主",
@@ -5636,11 +5640,11 @@
     },
     "B155_ArtTeacher": {
       "name": "美术教师",
-      "description": "打出此卡时，你立即获得1<WOOD>+1<REED>。每当你需要支付职业卡的学费时，可以用__流浪艺人__累积格上积累的<FOOD>来支付。"
+      "description": "打出此卡时，你立即获得1<WOOD>+1<REED>。每当你需要支付职业卡的学费时，可以用__space:traveling-players,traveling-players-56|流浪艺人__累积格上积累的<FOOD>来支付。"
     },
     "B156_StorehouseKeeper": {
       "name": "仓库管理员",
-      "description": "每次你使用__资源市场__行动格时，你额外获得1<CLAY> 或1<GRAIN>。"
+      "description": "每次你使用__space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|资源市场__行动格时，你额外获得1<CLAY> 或1<GRAIN>。"
     },
     "B157_Salter": {
       "name": "腌制工",
@@ -5648,7 +5652,7 @@
     },
     "B158_DistrictManager": {
       "name": "区域经理",
-      "description": "在每轮工作阶段结束时，若你使用了__森林__和__树林__积累行动格，则你获得5<FOOD>。"
+      "description": "在每轮工作阶段结束时，若你使用了__space:forest|森林__和__space:grove,grove-56|树林__积累行动格，则你获得5<FOOD>。"
     },
     "B159_LieutenantGeneral": {
       "name": "陆军中将",
@@ -5656,7 +5660,7 @@
     },
     "B160_PubOwner": {
       "name": "酒吧老板",
-      "description": "打出时立即获得1份小麦。在每轮工作阶段结束时，若__森林__，__黏土坑__和__芦苇河岸__积累行动格都被占用，则你得到1<GRAIN>。"
+      "description": "打出时立即获得1份小麦。在每轮工作阶段结束时，若__space:forest|森林__，__space:clay-pit|黏土坑__和__space:reed-bank|芦苇河岸__积累行动格都被占用，则你得到1<GRAIN>。"
     },
     "B161_Weakling": {
       "name": "体弱多病者",
@@ -5676,7 +5680,7 @@
     },
     "B166_CattleFeeder": {
       "name": "养牛妇",
-      "description": "每次你使用__谷物种子__行动格时，你可以支付1<FOOD>购买1<CATTLE>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你可以支付1<FOOD>购买1<CATTLE>。"
     },
     "B167_StableSergeant": {
       "name": "圈舍警官",
@@ -5692,11 +5696,11 @@
     },
     "B170_CorralBuilder": {
       "name": "畜栏建造者",
-      "description": "当__猪市场__和__牛市场__行动格卡牌各自被揭示（并放置在回合格上）时，你可以立即 <FENCE> 恰好1个农场空间，无需支付 <WOOD>。"
+      "description": "当__space:pig-market|猪市场__和__space:cattle-market|牛市场__行动格卡牌各自被揭示（并放置在回合格上）时，你可以立即 <FENCE> 恰好1个农场空间，无需支付 <WOOD>。"
     },
     "B171_GreenhouseBuilder": {
       "name": "温室建造者",
-      "description": "这是你专属的行动格。如果相应的行动格已在场，它提供__围栏__、__住宅改建__或__蔬菜种子__的选择。"
+      "description": "这是你专属的行动格。如果相应的行动格已在场，它提供__space:fencing|围栏__、__space:house-redevelopment|住宅改建__或__space:vegetable-seeds|蔬菜种子__的选择。"
     },
     "B172_CattleCaregiver": {
       "name": "牛只看护员",
@@ -5708,7 +5712,7 @@
     },
     "B174_RiverbankGardener": {
       "name": "河岸园丁",
-      "description": "每次你使用__河岸森林__累积格时，你还会获得1 <VEGETABLE>。"
+      "description": "每次你使用__space:riverbank-forest-56|河岸森林__累积格时，你还会获得1 <VEGETABLE>。"
     },
     "B175_FieldOverseer": {
       "name": "田地监工",
@@ -5716,7 +5720,7 @@
     },
     "B176_VillageIdiot": {
       "name": "村里傻瓜",
-      "description": "村里傻瓜是你唯一的职业。每当另一名玩家使用__集会所__行动格时，你获得1 <WOOD> 和1 <FOOD>。",
+      "description": "村里傻瓜是你唯一的职业。每当另一名玩家使用__space:meeting-place|集会所__行动格时，你获得1 <WOOD> 和1 <FOOD>。",
       "prerequisite": "无职业"
     },
     "B177_StoneClawer": {
@@ -5725,7 +5729,7 @@
     },
     "B178_TagAlong": {
       "name": "跟屁虫",
-      "description": "每当另一名玩家使用__资源市场__行动格后，你可以立即将一名家庭成员放置在那里，也执行该行动。"
+      "description": "每当另一名玩家使用__space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|资源市场__行动格后，你可以立即将一名家庭成员放置在那里，也执行该行动。"
     },
     "B179_WildBoarHunter": {
       "name": "野猪猎人",
@@ -5741,11 +5745,11 @@
     },
     "C090_FieldWatchman": {
       "name": "农田巡视员",
-      "description": "每次你使用__谷物种子__行动格时，你还可以开垦1块<FIELD>。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，你还可以开垦1块<FIELD>。"
     },
     "C091_PlowHero": {
       "name": "开荒英雄",
-      "description": "每次你用本轮放置的第一个家庭成员使用__农田__或__耕作__行动格时，你可以额外开垦1块<FIELD>，并支付1份<FOOD>。"
+      "description": "每次你用本轮放置的第一个家庭成员使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你可以额外开垦1块<FIELD>，并支付1份<FOOD>。"
     },
     "C092_AutumnMother": {
       "name": "秋日之母",
@@ -5761,7 +5765,7 @@
     },
     "C097_SeedResearcher": {
       "name": "种子研究员",
-      "description": "在每轮回家阶段，若__谷物种子__和 __蔬菜种子__行动格都被占据，则你获得2<FOOD>，并可以免学费打出1张职业卡。"
+      "description": "在每轮回家阶段，若__space:grain-seeds|谷物种子__和 __space:vegetable-seeds|蔬菜种子__行动格都被占据，则你获得2<FOOD>，并可以免学费打出1张职业卡。"
     },
     "C098_CubeCutter": {
       "name": "骰子雕刻工",
@@ -5813,7 +5817,7 @@
     },
     "C112_Thresher": {
       "name": "打谷者",
-      "description": "每次你使用__谷物利用__、__农田__或 __耕作__行动格之前，你可以用1<FOOD>购买1<GRAIN>。"
+      "description": "每次你使用__space:grain-utilization|谷物利用__、__space:farmland|农田__或 __space:cultivation|耕作__行动格之前，你可以用1<FOOD>购买1<GRAIN>。"
     },
     "C113_WinterCaretaker": {
       "name": "冬季管理员",
@@ -5841,7 +5845,7 @@
     },
     "C121_ClayKneader": {
       "name": "黏土揉捏工",
-      "description": "当你打出这张卡时你立即获得1<WOOD> 和2<CLAY>。每次你使用__谷物种子__或__蔬菜种子__行动格后，你获得1<CLAY>。"
+      "description": "当你打出这张卡时你立即获得1<WOOD> 和2<CLAY>。每次你使用__space:grain-seeds|谷物种子__或__space:vegetable-seeds|蔬菜种子__行动格后，你获得1<CLAY>。"
     },
     "C122_Bricklayer": {
       "name": "砌砖工",
@@ -5861,7 +5865,7 @@
     },
     "C126_Excavator": {
       "name": "挖掘工",
-      "description": "每次你使用__打零工__行动格后，你额外获得1 <WOOD>和1 <CLAY>，并且你可以用1 <FOOD>购买1 <STONE>。"
+      "description": "每次你使用__space:day-laborer|打零工__行动格后，你额外获得1 <WOOD>和1 <CLAY>，并且你可以用1 <FOOD>购买1 <STONE>。"
     },
     "C127_Lover": {
       "name": "情圣",
@@ -5873,11 +5877,11 @@
     },
     "C129_SecondSpouse": {
       "name": "二婚配偶",
-      "description": "你可以使用__紧急渴望孩子__行动格（从第12-13回合开始），即使它已被另一名玩家放置的第一个工人占据。"
+      "description": "你可以使用__space:urgent-wish-children|紧急渴望孩子__行动格（从第12-13回合开始），即使它已被另一名玩家放置的第一个工人占据。"
     },
     "C131_PrivateTeacher": {
       "name": "私人教师",
-      "description": "每次你使用__谷物种子__行动格时，若有任意一个__课程__行动格已被占用，则你可以支付1<FOOD>作为学费来打出1张职业卡。"
+      "description": "每次你使用__space:grain-seeds|谷物种子__行动格时，若有任意一个__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格已被占用，则你可以支付1<FOOD>作为学费来打出1张职业卡。"
     },
     "C132_TimberShingleMaker": {
       "name": "木瓦制造商",
@@ -5905,7 +5909,7 @@
     },
     "C141_SheepProvider": {
       "name": "羊只供应商",
-      "description": "每次任何一名玩家 （包括你）使用 __羊市场__积累行动格时，你获得1<GRAIN>。"
+      "description": "每次任何一名玩家 （包括你）使用 __space:sheep-market|羊市场__积累行动格时，你获得1<GRAIN>。"
     },
     "C143_StoneBuyer": {
       "name": "石头采购商",
@@ -5917,11 +5921,11 @@
     },
     "C145_ForestReviewer": {
       "name": "森林审查员",
-      "description": "在__森林__和__树林__累积格的其中之一已被占据的情况下，当任意玩家（包括你）使用上述另一个未被占据的累积格后，你获得1<REED>。"
+      "description": "在__space:forest|森林__和__space:grove,grove-56|树林__累积格的其中之一已被占据的情况下，当任意玩家（包括你）使用上述另一个未被占据的累积格后，你获得1<REED>。"
     },
     "C147_Cowherd": {
       "name": "牧牛人",
-      "description": "每当你使用__牛市场__累积格时，你额外获得1 <CATTLE>。"
+      "description": "每当你使用__space:cattle-market|牛市场__累积格时，你额外获得1 <CATTLE>。"
     },
     "C149_ResourceRecycler": {
       "name": "资源循环再用者",
@@ -5929,15 +5933,15 @@
     },
     "C150_ParrotBreeder": {
       "name": "鹦鹉饲养员",
-      "description": "在你的回合中，如果你向公共供应区支付1<GRAIN>，你就可以使用你右边的玩家在他们的回合中刚刚使用过的同一个行动格（除非是__集会所__行动格）（不可追溯）。"
+      "description": "在你的回合中，如果你向公共供应区支付1<GRAIN>，你就可以使用你右边的玩家在他们的回合中刚刚使用过的同一个行动格（除非是__space:meeting-place|集会所__行动格）（不可追溯）。"
     },
     "C151_SowingDirector": {
       "name": "播种总监",
-      "description": "每次在其他一名玩家使用 __谷物利用__行动格时，你得到一个__播种__行动。"
+      "description": "每次在其他一名玩家使用 __space:grain-utilization|谷物利用__行动格时，你得到一个__播种__行动。"
     },
     "C152_Puppeteer": {
       "name": "木偶艺人",
-      "description": "每次当其他玩家使用 __流浪艺人__积累行动格时，你可以支付给他1<FOOD> 来免学费打出1张职业卡。"
+      "description": "每次当其他玩家使用 __space:traveling-players,traveling-players-56|流浪艺人__积累行动格时，你可以支付给他1<FOOD> 来免学费打出1张职业卡。"
     },
     "C153_PatternMaker": {
       "name": "样板工",
@@ -5961,7 +5965,7 @@
     },
     "C159_FishermansFriend": {
       "name": "渔夫之友",
-      "description": "在每轮开始时，如果__流浪艺人__积累行动格比__捕鱼__积累行动格有更多的 <FOOD>，你从公共供应区获得二者之差的食物。"
+      "description": "在每轮开始时，如果__space:traveling-players,traveling-players-56|流浪艺人__积累行动格比__space:fishing|捕鱼__积累行动格有更多的 <FOOD>，你从公共供应区获得二者之差的食物。"
     },
     "C160_Outrider": {
       "name": "先驱者",
@@ -5977,7 +5981,7 @@
     },
     "C164_GermanHeathKeeper": {
       "name": "德国牧草看护员",
-      "description": "每当有玩家（包括你自己）使用__猪市场__积累行动格时，你从公共区获得1<SHEEP>。"
+      "description": "每当有玩家（包括你自己）使用__space:pig-market|猪市场__积累行动格时，你从公共区获得1<SHEEP>。"
     },
     "C165_GameCatcher": {
       "name": "荒野猎手",
@@ -5989,7 +5993,7 @@
     },
     "C167_CattleBuyer": {
       "name": "买牛人",
-      "description": "每次其他玩家使用__围栏__行动格，你能用1/2/2<FOOD>购买恰好1<SHEEP>/<PIG>/<CATTLE>。"
+      "description": "每次其他玩家使用__space:fencing|围栏__行动格，你能用1/2/2<FOOD>购买恰好1<SHEEP>/<PIG>/<CATTLE>。"
     },
     "C169_FastMason": {
       "name": "快速石匠",
@@ -6009,7 +6013,7 @@
     },
     "C173_TopOuter": {
       "name": "顶层外部",
-      "description": "每当游戏板扩展上的__建造房屋__行动格被使用时，你获得__流浪艺人__累积格上的所有<FOOD>。"
+      "description": "每当游戏板扩展上的__space:house-building-56|建造房屋__行动格被使用时，你获得__space:traveling-players,traveling-players-56|流浪艺人__累积格上的所有<FOOD>。"
     },
     "C174_StoneCustodian": {
       "name": "石场看守员",
@@ -6017,11 +6021,11 @@
     },
     "C175_VillageTeacher": {
       "name": "乡村教师",
-      "description": "在你每次使用__课程__行动格后，立即，如果这是该回合第1/2/3个被占用的__课程__行动格，你获得1<FOOD>/<GRAIN>/<VEGETABLE>。"
+      "description": "在你每次使用__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格后，立即，如果这是该回合第1/2/3个被占用的__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格，你获得1<FOOD>/<GRAIN>/<VEGETABLE>。"
     },
     "C176_Cleanacre": {
       "name": "净土",
-      "description": "每当你使用__农田__、__耕作__或__农场补给__行动时（后者仅在6人游戏时可用），你额外获得2<CLAY>。"
+      "description": "每当你使用__space:farmland|农田__、__space:cultivation|耕作__或__space:farm-supplies-6|农场补给__行动时（后者仅在6人游戏时可用），你额外获得2<CLAY>。"
     },
     "C177_MountainHiker": {
       "name": "登山者",
@@ -6057,7 +6061,7 @@
     },
     "D090_PlowMaker": {
       "name": "制犁工",
-      "description": "每次你使用__农田__或__耕作__行动格时，你可以支付1 <FOOD>来额外开垦1块<FIELD>。"
+      "description": "每次你使用__space:farmland|农田__或__space:cultivation|耕作__行动格时，你可以支付1 <FOOD>来额外开垦1块<FIELD>。"
     },
     "D091_Plowman": {
       "name": "犁田工",
@@ -6093,11 +6097,11 @@
     },
     "D109_SowingMaster": {
       "name": "播种大师",
-      "description": "当你打出这张卡时立即获得1<WOOD>。每当你使用__谷物利用__或是 __耕作__行动格后，你获得2<FOOD>。"
+      "description": "当你打出这张卡时立即获得1<WOOD>。每当你使用__space:grain-utilization|谷物利用__或是 __space:cultivation|耕作__行动格后，你获得2<FOOD>。"
     },
     "D110_FishFarmer": {
       "name": "渔农",
-      "description": "每次__捕鱼__累积格上有1/2/3+ <FOOD>时，你在__芦苇河岸__/__黏土坑__/__森林__累积格上额外获得2 <FOOD>。"
+      "description": "每次__space:fishing|捕鱼__累积格上有1/2/3+ <FOOD>时，你在__space:reed-bank|芦苇河岸__/__space:clay-pit|黏土坑__/__space:forest|森林__累积格上额外获得2 <FOOD>。"
     },
     "D111_InteriorDecorator": {
       "name": "室内设计师",
@@ -6105,7 +6109,7 @@
     },
     "D112_YoungFarmer": {
       "name": "年幼的农夫",
-      "description": "每次你使用 __主要改良__行动格时，你同时获得1<GRAIN>，之后你可以执行 __播种__行动。"
+      "description": "每次你使用 __space:major-improvement|主要改良__行动格时，你同时获得1<GRAIN>，之后你可以执行 __播种__行动。"
     },
     "D113_FoodMerchant": {
       "name": "食物商人",
@@ -6157,7 +6161,7 @@
     },
     "D130_RecreationalCarpenter": {
       "name": "休闲木匠",
-      "description": "在每个工作阶段结束时，若你没有使用__集会所__行动格，则你可以执行一次__扩建房屋__行动而不用派遣家庭成员。"
+      "description": "在每个工作阶段结束时，若你没有使用__space:meeting-place|集会所__行动格，则你可以执行一次__扩建房屋__行动而不用派遣家庭成员。"
     },
     "D133_BeerTentOperator": {
       "name": "啤酒棚老板",
@@ -6177,7 +6181,7 @@
     },
     "D139_Chairman": {
       "name": "会长",
-      "description": "每次另一个玩家使用 __集会所__行动格时，该玩家和你各获得1<FOOD> （在采取行动之前）. 如果你使用它，你获得1<FOOD>。"
+      "description": "每次另一个玩家使用 __space:meeting-place|集会所__行动格时，该玩家和你各获得1<FOOD> （在采取行动之前）. 如果你使用它，你获得1<FOOD>。"
     },
     "D140_Loudmouth": {
       "name": "高谈阔论者",
@@ -6185,11 +6189,11 @@
     },
     "D141_SeedSeller": {
       "name": "种子贩售商",
-      "description": "当你打出此卡时，你立即获得1<GRAIN>。每当你使用__谷物种子__行动格时，你额外获得1<GRAIN>。"
+      "description": "当你打出此卡时，你立即获得1<GRAIN>。每当你使用__space:grain-seeds|谷物种子__行动格时，你额外获得1<GRAIN>。"
     },
     "D142_PotatoPlanter": {
       "name": "土豆种植者",
-      "description": "在每个工作阶段结束时，若你占据了__黏土坑__或__芦苇河岸__累积格，且上述的另一个累积格未被占据，你获得1<VEGETABLE>。"
+      "description": "在每个工作阶段结束时，若你占据了__space:clay-pit|黏土坑__或__space:reed-bank|芦苇河岸__累积格，且上述的另一个累积格未被占据，你获得1<VEGETABLE>。"
     },
     "D143_TreeCutter": {
       "name": "砍树工",
@@ -6197,7 +6201,7 @@
     },
     "D144_WaterWorker": {
       "name": "水上工人",
-      "description": "每当你使用__捕鱼__、__芦苇河岸__、__打零工__格或第4回合的行动格后，你额外获得1<REED>。"
+      "description": "每当你使用__space:fishing|捕鱼__、__space:reed-bank|芦苇河岸__、__space:day-laborer|打零工__格或第4回合的行动格后，你额外获得1<REED>。"
     },
     "D145_RoofExaminer": {
       "name": "屋顶质检员",
@@ -6209,7 +6213,7 @@
     },
     "D147_TrapBuilder": {
       "name": "陷阱修建工",
-      "description": "每次你使用__打零工__行动格时，在接下来的3轮次行动格上分别放置1<FOOD>，1<FOOD>，1<PIG>。轮次开始时，你获得对应的物品。"
+      "description": "每次你使用__space:day-laborer|打零工__行动格时，在接下来的3轮次行动格上分别放置1<FOOD>，1<FOOD>，1<PIG>。轮次开始时，你获得对应的物品。"
     },
     "D148_DomesticianExpert": {
       "name": "驯养专家",
@@ -6217,7 +6221,7 @@
     },
     "D149_CasualWorker": {
       "name": "临时员工",
-      "description": "每当其他玩家使用__采石场__累积格时，你可以选择获得1 <FOOD>或建造一个<STABLE>而无需支付<WOOD>。"
+      "description": "每当其他玩家使用__space:western-quarry,eastern-quarry|采石场__累积格时，你可以选择获得1 <FOOD>或建造一个<STABLE>而无需支付<WOOD>。"
     },
     "D152_Patron": {
       "name": "赞助商",
@@ -6237,7 +6241,7 @@
     },
     "D156_RetailDealer": {
       "name": "零售商",
-      "description": "在此卡上放置3<GRAIN>和3<FOOD>。每次你使用__资源市场__行动格时，你从此卡上额外获得1<GRAIN>和1<FOOD>。"
+      "description": "在此卡上放置3<GRAIN>和3<FOOD>。每次你使用__space:resource-market,resource-market-4,resource-market-56,moor-resource-market-12|资源市场__行动格时，你从此卡上额外获得1<GRAIN>和1<FOOD>。"
     },
     "D159_ReedSeller": {
       "name": "芦苇商人",
@@ -6281,7 +6285,7 @@
     },
     "D171_SeniorTeacher": {
       "name": "资深教师",
-      "description": "每当其他玩家在__课程__行动格支付<FOOD>时，你获得正好1点该<FOOD>。"
+      "description": "每当其他玩家在__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格支付<FOOD>时，你获得正好1点该<FOOD>。"
     },
     "D172_PutcherMaker": {
       "name": "捕鱼笼制作者",
@@ -6293,7 +6297,7 @@
     },
     "D174_LoessGardener": {
       "name": "黄土园丁",
-      "description": "每当你使用__黏土坑__累积格时，你也可以用1 <FOOD>购买1 <VEGETABLE>。"
+      "description": "每当你使用__space:clay-pit|黏土坑__累积格时，你也可以用1 <FOOD>购买1 <VEGETABLE>。"
     },
     "D175_Countryman": {
       "name": "乡下人",
@@ -6309,7 +6313,7 @@
     },
     "D178_SubstituteTeacher": {
       "name": "代课教师",
-      "description": "每当所有三个__课程__行动格都被占据时，你可以用一个家庭成员使用这张卡牌，以获得你选择的1个建筑资源或每种作物1个。"
+      "description": "每当所有三个__space:lessons,lessons-3,lessons-4,lessons-56-2f,lessons-56-variable|课程__行动格都被占据时，你可以用一个家庭成员使用这张卡牌，以获得你选择的1个建筑资源或每种作物1个。"
     },
     "D179_Bullcatcher": {
       "name": "捕牛人",
@@ -6333,7 +6337,7 @@
     },
     "E095_Miller": {
       "name": "磨坊主人",
-      "description": "你可以立即支付正常费用来打出1<BAKE> 的发展卡。每次其他玩家使用 __谷物种子__行动格时，你可以进行一次 __烤面包__行动。"
+      "description": "你可以立即支付正常费用来打出1<BAKE> 的发展卡。每次其他玩家使用 __space:grain-seeds|谷物种子__行动格时，你可以进行一次 __烤面包__行动。"
     },
     "E096_Elder": {
       "name": "长者",
@@ -6401,7 +6405,7 @@
     },
     "E115_SeedServant": {
       "name": "种子仆人",
-      "description": "每次使用__谷物种子__行动格后，你可以执行__烤面包__行动。每次使用__蔬菜种子__行动格后，你可以执行__播种__行动。"
+      "description": "每次使用__space:grain-seeds|谷物种子__行动格后，你可以执行__烤面包__行动。每次使用__space:vegetable-seeds|蔬菜种子__行动格后，你可以执行__播种__行动。"
     },
     "E116_FirCutter": {
       "name": "杉树砍伐者",
@@ -6425,7 +6429,7 @@
     },
     "E121_HillCultivator": {
       "name": "山地栽培师",
-      "description": "每次你使用 __谷物种子__ / __蔬菜种子__行动格时，你额外获得2/3<CLAY>。"
+      "description": "每次你使用 __space:grain-seeds|谷物种子__ / __space:vegetable-seeds|蔬菜种子__行动格时，你额外获得2/3<CLAY>。"
     },
     "E122_Cottar": {
       "name": "苏格兰农民",
@@ -6449,11 +6453,11 @@
     },
     "E129_Imitator": {
       "name": "模仿者",
-      "description": "如果你有家庭成员在__打零工__行动格，你可以使用第1-9轮次行动格中的非累积资源的行动格，即使它们已被占用。"
+      "description": "如果你有家庭成员在__space:day-laborer|打零工__行动格，你可以使用第1-9轮次行动格中的非累积资源的行动格，即使它们已被占用。"
     },
     "E131_MarketMaster": {
       "name": "营销大师",
-      "description": "每次你使用最后一名家庭成员使用__流浪艺人__积累行动格后，你可以花费1<FOOD>作为学费来打出1张职业卡。"
+      "description": "每次你使用最后一名家庭成员使用__space:traveling-players,traveling-players-56|流浪艺人__积累行动格后，你可以花费1<FOOD>作为学费来打出1张职业卡。"
     },
     "E132_VeggieLover": {
       "name": "素食爱好者",
@@ -6469,7 +6473,7 @@
     },
     "E137_FlaxFarmer": {
       "name": "亚麻农夫",
-      "description": "每次你使用__芦苇河岸__积累行动格时，你额外获得1<GRAIN>。每次你使用__谷物种子__行动格时，你额外获得1<REED>。"
+      "description": "每次你使用__space:reed-bank|芦苇河岸__积累行动格时，你额外获得1<GRAIN>。每次你使用__space:grain-seeds|谷物种子__行动格时，你额外获得1<REED>。"
     },
     "E138_LivestockExpert": {
       "name": "畜牧专家",
@@ -6485,7 +6489,7 @@
     },
     "E141_VegetableVendor": {
       "name": "蔬菜摊贩",
-      "description": "每次你使用 __主要改良__或 __蔬菜种子__行动格时，你能分别获得1<VEGETABLE> 或 一个 __改良__行动。"
+      "description": "每次你使用 __space:major-improvement|主要改良__或 __space:vegetable-seeds|蔬菜种子__行动格时，你能分别获得1<VEGETABLE> 或 一个 __改良__行动。"
     },
     "E142_Smuggler": {
       "name": "走私贩",
@@ -6521,7 +6525,7 @@
     },
     "E152_BargainHunter": {
       "name": "投机商人",
-      "description": "在每轮开始时，你可以从你的供应区放置1<FOOD>到__流浪艺人__积累行动格上支付相应费用打出一张小改良。"
+      "description": "在每轮开始时，你可以从你的供应区放置1<FOOD>到__space:traveling-players,traveling-players-56|流浪艺人__积累行动格上支付相应费用打出一张小改良。"
     },
     "E154_Margrave": {
       "name": "侯爵",
@@ -6541,7 +6545,7 @@
     },
     "E160_KelpGatherer": {
       "name": "海藻采集者",
-      "description": "每当另一位玩家使用__捕鱼__堆积格时，他们获得1额外<FOOD>，你获得1 <VEGETABLE>。"
+      "description": "每当另一位玩家使用__space:fishing|捕鱼__堆积格时，他们获得1额外<FOOD>，你获得1 <VEGETABLE>。"
     },
     "E163_Patroness": {
       "name": "女赞助商",

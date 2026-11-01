@@ -20,6 +20,18 @@ AGRICOLA_GAME_DIR=../open-agricola pnpm exec tsx scripts/import-bga-card-transla
 
 工坊未发布内容的翻译属于用户卡牌数据；在预览、房间或回放的展示入口转换为同样的文本结构，不能覆盖全局官方包。
 
+## 牌面行动引用
+
+明确指向行动格或沼泽特殊行动的名称使用带目标的标记：
+
+- `__space:fishing|Fishing__`、`__space:fishing|捕鱼__` 指向同一行动格。
+- `__space:western-quarry,eastern-quarry|采石场__` 同时指向两个行动格。
+- `__moor:cut-peat|挖泥炭__` 指向沼泽特殊行动。
+
+竖线前的目标不翻译；竖线后保留该语言的显示名称。普通行动与其他卡名继续使用 `__文字__`，例如 `__Major Improvement__ action` 不指向行动格。游戏构建会核对目标是否存在；图鉴搜索只保留显示名称。
+
+`AGRICOLA_GAME_DIR=<游戏目录> pnpm exec tsx scripts/annotate-action-references.ts` 按已核对的英文语义迁移现有中英文引用。脚本可重复运行，无法对应的中文引用会阻断写入。BGA 导入保留已审核的目标；译名改变导致无法保留目标时，导入报告 `action-reference-change`，由作者核对。
+
 ## BGA 来源记录
 
 # BGA Agricola 语言包
