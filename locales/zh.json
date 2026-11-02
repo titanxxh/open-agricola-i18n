@@ -1422,6 +1422,11 @@
       "unavailable": "群二维码暂不可用，请稍后重试。",
       "retry": "重试"
     },
+    "whatsNew": {
+      "label": "更新内容",
+      "unreadLabel": "更新内容（有新内容）",
+      "new": "新"
+    },
     "encyclopedia": {
       "title": "卡牌百科",
       "description": "查找官方卡牌、父母卡与扩展规则。",

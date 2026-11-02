@@ -1422,6 +1422,11 @@
       "unavailable": "The group QR code is unavailable. Please try again later.",
       "retry": "Retry"
     },
+    "whatsNew": {
+      "label": "What's new",
+      "unreadLabel": "What's new (unread updates)",
+      "new": "New"
+    },
     "encyclopedia": {
       "title": "Card Encyclopedia",
       "description": "Look up official cards, parent cards, and expansion rules.",
