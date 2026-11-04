@@ -3825,6 +3825,23 @@
     "collectInvalidPartial": "Invalid partial collect payload"
   },
   "platform": {
+    "retention": {
+      "title": "Room retention",
+      "description": "Keep saved rooms after every player disconnects.",
+      "waitingDays": "Waiting rooms (days)",
+      "playingDays": "Games in progress (days)",
+      "scope": "Changes apply the next time all players disconnect. Existing deadlines stay unchanged.",
+      "range": "Enter a whole number from {min} to {max} days.",
+      "defaults": "Defaults: {waiting} days while waiting, {playing} days during play.",
+      "save": "Save retention settings",
+      "saved": "Retention settings saved.",
+      "unavailable": "Room retention settings could not be loaded or saved.",
+      "conflict": "Another administrator changed these settings. Reload the current values before saving.",
+      "reload": "Reload current settings",
+      "updated": "Last changed by {name} on {time}",
+      "updatedWithoutActor": "Last changed on {time}",
+      "defaultSettings": "Using default settings"
+    },
     "operationsTitle": "Operations dashboard",
     "operationsUnavailable": "Observability is unavailable. Data is unknown.",
     "operationsAdminOnly": "Administrator access required.",

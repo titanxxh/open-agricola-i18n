@@ -6703,6 +6703,23 @@
     "collectInvalidPartial": "部分拿取资源参数无效"
   },
   "platform": {
+    "retention": {
+      "title": "房间保留时间",
+      "description": "设置所有玩家离线后，房间存档继续保留的时间。",
+      "waitingDays": "等待房间（天）",
+      "playingDays": "进行中对局（天）",
+      "scope": "修改从下一次全员离线时生效，已经设置的截止时间保持不变。",
+      "range": "请输入 {min} 到 {max} 天之间的整数。",
+      "defaults": "默认：等待房间 {waiting} 天，进行中对局 {playing} 天。",
+      "save": "保存保留时间",
+      "saved": "房间保留时间已保存。",
+      "unavailable": "暂时无法读取或保存房间保留时间。",
+      "conflict": "其他管理员已修改设置，请重新读取当前值后再保存。",
+      "reload": "重新读取设置",
+      "updated": "最近由 {name} 于 {time} 修改",
+      "updatedWithoutActor": "最近修改时间：{time}",
+      "defaultSettings": "当前使用默认设置"
+    },
     "operationsTitle": "平台运行看板",
     "operationsUnavailable": "暂时无法读取监控，数据状态未知。",
     "operationsAdminOnly": "此页面仅限管理员访问。",
