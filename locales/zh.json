@@ -7276,6 +7276,15 @@
       "terminated": "协商结束",
       "history": "最近结束的对局",
       "viewReplay": "查看回放"
+    },
+    "spectateBtn": "旁观",
+    "spectating": {
+      "live": "旁观中，仅展示公开信息",
+      "offline": "所有玩家已离线，旁观已停止。",
+      "completed": "对局已结束。",
+      "terminated": "玩家已提前结束此局。",
+      "removed": "此局已无法旁观。",
+      "replay": "查看回放"
     }
   },
   "cards": {

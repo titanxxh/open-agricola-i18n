@@ -4398,6 +4398,15 @@
       "terminated": "Ended by agreement",
       "history": "Recent ended games",
       "viewReplay": "View replay"
+    },
+    "spectateBtn": "Spectate",
+    "spectating": {
+      "live": "Spectating public information",
+      "offline": "All players are offline. Spectating has stopped.",
+      "completed": "The game has finished.",
+      "terminated": "The players ended this game.",
+      "removed": "This game is no longer available for spectating.",
+      "replay": "View replay"
     }
   },
   "cards": {
