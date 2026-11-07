@@ -268,7 +268,13 @@
       "minorImprovements": "Minor improvements",
       "confirm": "Confirm picks",
       "kept": "Already kept",
-      "waitingForOthers": "Waiting for other players ({submitted}/{seats})…"
+      "waitingForOthers": "Waiting for other players ({submitted}/{seats})…",
+      "waitingForPacket": "Waiting for cards",
+      "complete": "Draft complete",
+      "online": "Online",
+      "offline": "Offline",
+      "progress": "Occupations {occ}/{occTotal} · Minors {minor}/{minorTotal}",
+      "heading": "Card draft"
     },
     "parentSelection": {
       "dialog": "Parent Cards selection",

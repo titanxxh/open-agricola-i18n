@@ -268,7 +268,13 @@
       "minorImprovements": "小改良",
       "confirm": "确认选择",
       "kept": "已保留的卡牌",
-      "waitingForOthers": "等待其他玩家（{submitted}/{seats}）…"
+      "waitingForOthers": "等待其他玩家（{submitted}/{seats}）…",
+      "waitingForPacket": "等待传牌",
+      "complete": "已完成轮抽",
+      "online": "在线",
+      "offline": "离线",
+      "progress": "职业 {occ}/{occTotal} · 小改 {minor}/{minorTotal}",
+      "heading": "卡牌轮抽"
     },
     "parentSelection": {
       "dialog": "父母卡选择",
