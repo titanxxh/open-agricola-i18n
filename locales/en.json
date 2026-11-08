@@ -4934,6 +4934,7 @@
     "badge": "Beta",
     "creationHint": "Team and multihand modes are being tested. Rules and screens may change. Report problems with the in-game bug report.",
     "rematchRequiresAccess": "Rematching a team game requires beta access. Ask a player who has it to start one.",
+    "rematchProposerUnavailable": "The proposer no longer has beta access, so no new game was created. The proposer can withdraw the proposal.",
     "featureUnavailable": "Team modes are not available to you. No room was created.",
     "accessLabel": "Beta access",
     "accessEnabled": "Enabled",

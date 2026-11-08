@@ -7812,6 +7812,7 @@
     "badge": "Beta",
     "creationHint": "组队与分身模式正在测试，规则和界面可能调整；遇到问题请用对局内的 Bug 反馈。",
     "rematchRequiresAccess": "组队局的重开需要 Beta 资格，可请队伍里有资格的玩家发起。",
+    "rematchProposerUnavailable": "发起人已没有 Beta 资格，新对局未创建；发起人可以撤回提议。",
     "featureUnavailable": "组队模式暂未对你开放，未创建房间。",
     "accessLabel": "Beta 资格",
     "accessEnabled": "已开通",
