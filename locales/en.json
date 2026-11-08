@@ -4929,5 +4929,27 @@
     "handleSeat": "Handle seat {number}: {player}",
     "viewOwnHand": "View your hand",
     "seatLabel": "Seat {number}: {player}"
+  },
+  "beta": {
+    "badge": "Beta",
+    "creationHint": "Team and multihand modes are being tested. Rules and screens may change. Report problems with the in-game bug report.",
+    "rematchRequiresAccess": "Rematching a team game requires beta access. Ask a player who has it to start one.",
+    "featureUnavailable": "Team modes are not available to you. No room was created.",
+    "accessLabel": "Beta access",
+    "accessEnabled": "Enabled",
+    "availableModes": "Available: Team mode, Multihand mode",
+    "adminTitle": "Beta access",
+    "account": "Account",
+    "grantedBy": "Granted by",
+    "grantedAt": "Granted at",
+    "grant": "Grant",
+    "revoke": "Revoke",
+    "accountPlaceholder": "Enter at least two characters of a username or display name",
+    "noMatches": "No matching players.",
+    "noGrants": "No beta access has been granted.",
+    "revokeTitle": "Revoke beta access",
+    "revokeConfirm": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected.",
+    "accountNotFound": "This account does not exist.",
+    "adminAutomatic": "Admins have beta access automatically."
   }
 }
