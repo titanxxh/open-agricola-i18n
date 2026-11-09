@@ -249,6 +249,10 @@
         "markSpaces": {
           "prompt": "Choose how many food to pay for unused farmyard spaces"
         }
+      },
+      "OLD_I239_CornProteer": {
+        "offer": "{card:OLD_I239_CornProteer}: Buy the offered grain or decline",
+        "chooseBuyer": "{card:OLD_I239_CornProteer}: Choose a willing buyer"
       }
     },
     "defaultPlayerName": "Player {number}",
@@ -4523,6 +4527,16 @@
     },
     "E022_GuestRoom": {
       "storeFood": "Choose how much food to store on Guest Room"
+    },
+    "OLD_I239_CornProteer": {
+      "offer": "Buy the offered grain or decline",
+      "buy": "Offer to buy",
+      "buyDisabled": "Not enough food",
+      "decline": "Decline",
+      "chooseBuyer": "Choose a buyer for the grain"
+    },
+    "OLD_I223_HarvestHelper": {
+      "field": "{player}: take one grain from field ({row}, {col}) {card}"
     }
   },
   "fence": {
@@ -4952,5 +4966,15 @@
     "revokeConfirm": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected.",
     "accountNotFound": "This account does not exist.",
     "adminAutomatic": "Admins have beta access automatically."
-  }
+  },
+  "platform.edition": "Game edition",
+  "platform.revisedEdition": "Revised Agricola",
+  "platform.classicEdition": "Classic Agricola (preview)",
+  "platform.classicPreviewNote": "Four players. Only ported cards are dealt; the remaining classic cards are reference only.",
+  "platform.classicReferenceOnly": "Reference only: this card effect is not ported and this card is not dealt.",
+  "cards.OLD_I236_HideFarmer.markSpaces.description": "Pay food so unused farmyard spaces do not lose points.",
+  "cards.OLD_I236_HideFarmer.markSpaces.name": "Hide unused spaces",
+  "ui.cards.OLD_I236_HideFarmer.markSpaces.prompt": "Choose how many food to pay for unused farmyard spaces",
+  "ui.cards.OLD_I236_HideFarmer.optional": "Hide unused farmyard spaces?",
+  "cards.OLD_I236_HideFarmer.markSpaces.invalid": "Invalid food count"
 }

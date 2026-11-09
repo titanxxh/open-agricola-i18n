@@ -249,6 +249,10 @@
         "markSpaces": {
           "prompt": "选择要为多少个未使用农场格支付食物"
         }
+      },
+      "OLD_I239_CornProteer": {
+        "offer": "{card:OLD_I239_CornProteer}：购买所提供的小麦，或拒绝",
+        "chooseBuyer": "{card:OLD_I239_CornProteer}：选择一名愿意购买的玩家"
       }
     },
     "defaultPlayerName": "玩家 {number}",
@@ -7401,6 +7405,16 @@
     },
     "E022_GuestRoom": {
       "storeFood": "选择存入客房的食物数量"
+    },
+    "OLD_I239_CornProteer": {
+      "offer": "选择购买小麦或放弃",
+      "buy": "提出购买",
+      "buyDisabled": "食物不足",
+      "decline": "不购买",
+      "chooseBuyer": "选择小麦买家"
+    },
+    "OLD_I223_HarvestHelper": {
+      "field": "{player}：从田地（{row}, {col}）取1份小麦 {card}"
     }
   },
   "fence": {
@@ -7830,5 +7844,15 @@
     "revokeConfirm": "撤销 @{username} 的 Beta 资格？立即生效，已有组队房不受影响。",
     "accountNotFound": "账号不存在。",
     "adminAutomatic": "管理员自动拥有 Beta 资格。"
-  }
+  },
+  "platform.edition": "游戏版本",
+  "platform.revisedEdition": "新版农场主",
+  "platform.classicEdition": "旧农（试运行）",
+  "platform.classicPreviewNote": "仅限四人：只发放已经接入效果的卡牌，其余旧农卡牌暂供查阅。",
+  "platform.classicReferenceOnly": "仅供查阅：这张牌的效果尚未迁移，暂不参与发牌。",
+  "cards.OLD_I236_HideFarmer.markSpaces.description": "支付食物，使未使用农场格不扣分。",
+  "cards.OLD_I236_HideFarmer.markSpaces.name": "隐藏未使用农场格",
+  "ui.cards.OLD_I236_HideFarmer.markSpaces.prompt": "选择要为多少个未使用农场格支付食物",
+  "ui.cards.OLD_I236_HideFarmer.optional": "隐藏未使用农场格？",
+  "cards.OLD_I236_HideFarmer.markSpaces.invalid": "食物数量非法"
 }
