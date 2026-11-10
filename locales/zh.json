@@ -257,6 +257,10 @@
         "markSpaces": {
           "prompt": "选择要为多少个未使用农场格支付食物"
         }
+      },
+      "OLD_I239_CornProteer": {
+        "offer": "{card:OLD_I239_CornProteer}：购买所提供的小麦，或拒绝",
+        "chooseBuyer": "{card:OLD_I239_CornProteer}：选择一名愿意购买的玩家"
       }
     },
     "defaultPlayerName": "玩家 {number}",
@@ -1601,7 +1605,9 @@
     "harvestRequirementsTitle": "下次收获 · 第{round}回合",
     "harvestRequirementsFood": "喂养需要{count}食物",
     "harvestRequirementsFuel": "供暖需要{count}燃料",
-    "harvestRequirementsHint": "按当前家庭成员、房屋和已打出的卡牌计算。"
+    "harvestRequirementsHint": "按当前家庭成员、房屋和已打出的卡牌计算。",
+    "interactionChooseFamilyGrowth": "选择生育方式",
+    "interactionGrowNewborn": "生育一名新家庭成员"
   },
   "moor": {
     "specialActions": {
@@ -7463,6 +7469,16 @@
     },
     "E022_GuestRoom": {
       "storeFood": "选择存入客房的食物数量"
+    },
+    "OLD_I239_CornProteer": {
+      "offer": "选择购买小麦或放弃",
+      "buy": "提出购买",
+      "buyDisabled": "食物不足",
+      "decline": "不购买",
+      "chooseBuyer": "选择小麦买家"
+    },
+    "OLD_I223_HarvestHelper": {
+      "field": "{player}：从田地（{row}, {col}）取1份小麦 {card}"
     }
   },
   "fence": {
@@ -7985,5 +8001,15 @@
     "releaseExplanation": "完整修复已在实际运行的前端和后端核验。感谢你报告这个问题。",
     "historicalFirstIncluded": "首次包含修复的版本：{version}",
     "fixSummary": "修复摘要"
-  }
+  },
+  "platform.edition": "游戏版本",
+  "platform.revisedEdition": "新版农场主",
+  "platform.classicEdition": "旧农（试运行）",
+  "platform.classicPreviewNote": "仅限四人：只发放已经接入效果的卡牌，其余旧农卡牌暂供查阅。",
+  "platform.classicReferenceOnly": "仅供查阅：这张牌的效果尚未迁移，暂不参与发牌。",
+  "cards.OLD_I236_HideFarmer.markSpaces.description": "支付食物，使未使用农场格不扣分。",
+  "cards.OLD_I236_HideFarmer.markSpaces.name": "隐藏未使用农场格",
+  "ui.cards.OLD_I236_HideFarmer.markSpaces.prompt": "选择要为多少个未使用农场格支付食物",
+  "ui.cards.OLD_I236_HideFarmer.optional": "隐藏未使用农场格？",
+  "cards.OLD_I236_HideFarmer.markSpaces.invalid": "食物数量非法"
 }
