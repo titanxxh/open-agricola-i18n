@@ -4988,5 +4988,25 @@
     "revokeConfirm": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected.",
     "accountNotFound": "This account does not exist.",
     "adminAutomatic": "Admins have beta access automatically."
+  },
+  "prerelease": {
+    "entry": "Enter prerelease",
+    "entryHint": "Opens the prerelease site in a new tab. Your production tab stays open.",
+    "unavailable": "Prerelease is not available yet. Please try again later.",
+    "connecting": "Checking your access to prerelease…",
+    "handoffTitle": "Entering prerelease",
+    "handoffInvalid": "This entry link is invalid or expired. Return to production and enter prerelease again.",
+    "accessExpired": "Your login or Beta access is no longer valid. Return to production to sign in and enter again.",
+    "returnToProduction": "Return to production",
+    "environment": "Prerelease",
+    "version": "Prerelease {version}",
+    "readOnlySandbox": "Read-only card testing",
+    "readOnlySandboxHint": "Test candidate official cards and published public cards. Designing and publishing cards is available on production.",
+    "maintenance": "Prerelease is under maintenance. Your confirmed game progress is retained.",
+    "reset": "The prerelease test environment was reset. Return to production and enter again.",
+    "archiveRetention": "Prerelease results and replays remain available for up to {days} days. A reset or environment closure can remove them earlier.",
+    "sessionExpiry": "Your prerelease session expires by {date}.",
+    "accessPaused": "Access is paused while account status cannot be confirmed. Please try again later.",
+    "readonlyError": "This action is unavailable in the read-only prerelease workshop."
   }
 }

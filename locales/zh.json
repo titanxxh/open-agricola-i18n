@@ -7866,5 +7866,25 @@
     "revokeConfirm": "撤销 @{username} 的 Beta 资格？立即生效，已有组队房不受影响。",
     "accountNotFound": "账号不存在。",
     "adminAutomatic": "管理员自动拥有 Beta 资格。"
+  },
+  "prerelease": {
+    "entry": "进入预发布",
+    "entryHint": "在新标签页打开预发布，保留当前正式站标签页。",
+    "unavailable": "预发布暂不可用，请稍后再试。",
+    "connecting": "正在核对预发布资格…",
+    "handoffTitle": "正在进入预发布",
+    "handoffInvalid": "入口链接无效或已过期，请返回正式站重新进入预发布。",
+    "accessExpired": "登录或 Beta 资格已失效，请返回正式站登录后重新进入。",
+    "returnToProduction": "返回正式站",
+    "environment": "预发布",
+    "version": "预发布 {version}",
+    "readOnlySandbox": "只读试卡",
+    "readOnlySandboxHint": "测试候选官方牌和已上线公共卡。设计和发布卡牌请前往正式站。",
+    "maintenance": "预发布正在维护，已确认的对局进度会保留。",
+    "reset": "预发布测试环境已重置，请返回正式站重新进入。",
+    "archiveRetention": "预发布战绩和回放最多在线保留 {days} 天。环境重置或关闭时可能提前清理。",
+    "sessionExpiry": "预发布登录最迟于 {date} 到期。",
+    "accessPaused": "暂时无法核对账号状态，访问已暂停，请稍后再试。",
+    "readonlyError": "只读预发布工坊不支持此操作。"
   }
 }
