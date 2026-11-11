@@ -7863,7 +7863,7 @@
     "noMatches": "没有匹配的玩家。",
     "noGrants": "暂无已授予的 Beta 资格。",
     "revokeTitle": "撤销 Beta 资格",
-    "revokeConfirm": "撤销 @{username} 的 Beta 资格？立即生效，已有组队房不受影响。",
+    "revokeConfirm": "撤销 @{username} 的 Beta 资格？预发布访问将在 30 秒内停止，已保存的对局及其他状态会保留。",
     "accountNotFound": "账号不存在。",
     "adminAutomatic": "管理员自动拥有 Beta 资格。"
   },
