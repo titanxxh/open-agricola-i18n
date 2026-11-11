@@ -4985,7 +4985,7 @@
     "noMatches": "No matching players.",
     "noGrants": "No beta access has been granted.",
     "revokeTitle": "Revoke beta access",
-    "revokeConfirm": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected.",
+    "revokeConfirm": "Revoke beta access for @{username}? Prerelease access will stop within 30 seconds. Saved games and other state will be retained.",
     "accountNotFound": "This account does not exist.",
     "adminAutomatic": "Admins have beta access automatically."
   },
