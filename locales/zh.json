@@ -7938,7 +7938,7 @@
     "duplicateSave": "关联重复报告",
     "duplicateSaved": "重复报告已关联，系统会根据已核验的生产记录处理上线通知。",
     "fixReports": "根问题下的报告",
-    "fixInvalid": "关联无效，请核对确认结论、根问题及完整提交 SHA。",
+    "fixInvalid": "关联无效，请核对确认结论、根问题、完整提交 SHA 和具体修复摘要。",
     "fixEvidence": "GitHub 未能核验该合入修复，请核对项目、PR 和真实合入提交后重试。",
     "fixConflict": "关联已发生变化，请重新查找报告后再保存。",
     "fixUnavailable": "报告账号不可用，关联未修改。",
