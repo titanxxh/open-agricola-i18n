@@ -5073,6 +5073,7 @@
     "releaseLink": "View release {version}",
     "relatedReports": "Related reports",
     "releaseExplanation": "The complete fix was verified in the running frontend and backend. Thank you for reporting this bug.",
-    "historicalFirstIncluded": "First included in {version}"
+    "historicalFirstIncluded": "First included in {version}",
+    "fixSummary": "Fix summary"
   }
 }
