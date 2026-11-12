@@ -7886,5 +7886,29 @@
     "sessionExpiry": "预发布登录最迟于 {date} 到期。",
     "accessPaused": "暂时无法核对账号状态，访问已暂停，请稍后再试。",
     "readonlyError": "只读预发布工坊不支持此操作。"
+  },
+  "feedback": {
+    "inbox": "站内信",
+    "unreadLabel": "站内信，{count} 封未读",
+    "empty": "暂无站内信。",
+    "unread": "未读",
+    "read": "已读",
+    "back": "返回消息列表",
+    "more": "更早的消息",
+    "confirmedBug": "已确认 bug",
+    "reportLink": "查看 issue #{number}",
+    "adminTitle": "Bug Report 处理反馈",
+    "issueNumber": "GitHub issue 编号",
+    "findReport": "查找报告",
+    "summary": "报告摘要",
+    "explanation": "给报告人的说明",
+    "confirmBug": "确认 bug 并通知",
+    "saved": "处理反馈已发送给报告人。",
+    "reportNotFound": "没有找到对应的已提交 Bug Report。",
+    "conflict": "报告已有新的反馈，请重新查找并核对最新内容。",
+    "failed": "读取或保存反馈失败，请重试。",
+    "retry": "重试",
+    "noFeedback": "这份报告还没有处理反馈。",
+    "adminHint": "查找已提交的报告并说明确认的问题，报告人将收到站内信。"
   }
 }
