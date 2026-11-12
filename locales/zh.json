@@ -7943,6 +7943,13 @@
     "fixConflict": "关联已发生变化，请重新查找报告后再保存。",
     "fixUnavailable": "报告账号不可用，关联未修改。",
     "fixEditRoot": "请在根问题报告中修改必需的修复 PR。",
-    "fixRemovePR": "移除 PR"
+    "fixRemovePR": "移除 PR",
+    "fixReleased": "修复已核验上线",
+    "releaseKind": "修复已上线",
+    "firstVerifiedRelease": "首次核验上线版本：{version}",
+    "currentProductionRelease": "核验时的生产版本：{version}",
+    "releaseLink": "查看 {version} 版本",
+    "relatedReports": "相关报告",
+    "releaseExplanation": "完整修复已在实际运行的前端和后端核验。感谢你报告这个问题。"
   }
 }
