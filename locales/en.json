@@ -5008,5 +5008,29 @@
     "sessionExpiry": "Your prerelease session expires by {date}.",
     "accessPaused": "Access is paused while account status cannot be confirmed. Please try again later.",
     "readonlyError": "This action is unavailable in the read-only prerelease workshop."
+  },
+  "feedback": {
+    "inbox": "Inbox",
+    "unreadLabel": "Inbox, {count} unread",
+    "empty": "No messages yet.",
+    "unread": "Unread",
+    "read": "Read",
+    "back": "Back to messages",
+    "more": "Older messages",
+    "confirmedBug": "Bug confirmed",
+    "reportLink": "View issue #{number}",
+    "adminTitle": "Bug report feedback",
+    "issueNumber": "GitHub issue number",
+    "findReport": "Find report",
+    "summary": "Report summary",
+    "explanation": "Explanation for the reporter",
+    "confirmBug": "Confirm bug and notify",
+    "saved": "Feedback sent to the reporter.",
+    "reportNotFound": "No submitted bug report matches this issue.",
+    "conflict": "This report changed. Find it again to review the latest feedback.",
+    "failed": "Could not load or save feedback. Please try again.",
+    "retry": "Try again",
+    "noFeedback": "This report has no feedback yet.",
+    "adminHint": "Find a submitted report and explain the confirmed problem. The reporter will receive an inbox message."
   }
 }
