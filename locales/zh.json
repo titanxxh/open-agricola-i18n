@@ -7951,6 +7951,7 @@
     "releaseLink": "查看 {version} 版本",
     "relatedReports": "相关报告",
     "releaseExplanation": "完整修复已在实际运行的前端和后端核验。感谢你报告这个问题。",
-    "historicalFirstIncluded": "首次包含修复的版本：{version}"
+    "historicalFirstIncluded": "首次包含修复的版本：{version}",
+    "fixSummary": "修复摘要"
   }
 }
