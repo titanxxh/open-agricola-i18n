@@ -5065,6 +5065,13 @@
     "fixConflict": "This association changed. Find the report again before saving.",
     "fixUnavailable": "A reporter is unavailable; the association was not changed.",
     "fixEditRoot": "Edit required fix PRs from the root report.",
-    "fixRemovePR": "Remove PR"
+    "fixRemovePR": "Remove PR",
+    "fixReleased": "Fix verified in production",
+    "releaseKind": "Fix is live",
+    "firstVerifiedRelease": "First verified in {version}",
+    "currentProductionRelease": "Production version at verification: {version}",
+    "releaseLink": "View release {version}",
+    "relatedReports": "Related reports",
+    "releaseExplanation": "The complete fix was verified in the running frontend and backend. Thank you for reporting this bug."
   }
 }
