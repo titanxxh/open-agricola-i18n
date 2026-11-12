@@ -5031,6 +5031,16 @@
     "failed": "Could not load or save feedback. Please try again.",
     "retry": "Try again",
     "noFeedback": "This report has no feedback yet.",
-    "adminHint": "Find a submitted report and explain the confirmed problem. The reporter will receive an inbox message."
+    "adminHint": "Find a submitted report, record an assessment, and explain it to the reporter. Reassess the report after the requested information is added.",
+    "kindLabel": "Assessment",
+    "notBug": "Not a bug",
+    "needsInfo": "More information needed · awaiting assessment",
+    "missingItems": "Missing information",
+    "missingItemsInput": "Specific missing items (one per line)",
+    "needsInfoHint": "List the actual details missing from this report. The report stays unconfirmed until a maintainer reassesses it.",
+    "githubAccountHint": "You can read the public issue without a GitHub account. Adding information on GitHub requires an account.",
+    "sendAssessment": "Send assessment and notify",
+    "notBugHint": "Explain the applicable rule, normal behavior or why this is an improvement suggestion.",
+    "reloadReport": "Reload latest assessment"
   }
 }

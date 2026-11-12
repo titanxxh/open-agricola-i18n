@@ -7909,6 +7909,16 @@
     "failed": "读取或保存反馈失败，请重试。",
     "retry": "重试",
     "noFeedback": "这份报告还没有处理反馈。",
-    "adminHint": "查找已提交的报告并说明确认的问题，报告人将收到站内信。"
+    "adminHint": "查找已提交的报告，登记处理类型并向报告人说明原因；收到补充材料后可重新评估。",
+    "kindLabel": "处理类型",
+    "notBug": "非 bug",
+    "needsInfo": "需要补充信息 · 待确认",
+    "missingItems": "需要补充的材料",
+    "missingItemsInput": "具体缺失项（每行一项）",
+    "needsInfoHint": "列出本报告实际缺少的材料。报告仍待确认，补充后由维护者重新评估。",
+    "githubAccountHint": "无需 GitHub 账号即可阅读公开 issue；在 GitHub 补充材料需要账号。",
+    "sendAssessment": "发送处理说明并通知",
+    "notBugHint": "说明适用规则、正常行为，或为什么属于体验建议。",
+    "reloadReport": "重新读取最新结论"
   }
 }
