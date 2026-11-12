@@ -5060,7 +5060,7 @@
     "duplicateSave": "Link duplicate report",
     "duplicateSaved": "Duplicate linked. The system checks retained production evidence for release notifications.",
     "fixReports": "Reports for this root",
-    "fixInvalid": "The association is invalid. Check the confirmed conclusions, root and complete commit SHAs.",
+    "fixInvalid": "The association is invalid. Check the confirmed conclusions, root, complete commit SHAs and specific fix summary.",
     "fixEvidence": "GitHub could not verify the merged fix. Check the project, PR and actual merged commits, then retry.",
     "fixConflict": "This association changed. Find the report again before saving.",
     "fixUnavailable": "A reporter is unavailable; the association was not changed.",
