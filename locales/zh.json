@@ -7922,7 +7922,7 @@
     "notBugHint": "说明适用规则、正常行为，或为什么属于体验建议。",
     "reloadReport": "重新读取最新结论",
     "fixTitle": "修复与重复报告",
-    "fixHint": "只登记共同完成该修复的 PR。仅相关或诊断改进 PR 不能证明已修复。建立关联不会向玩家发送上线通知。",
+    "fixHint": "只登记共同完成该修复的 PR。仅相关或诊断改进 PR 不能证明已修复。上线通知须有核验过的生产证据。",
     "fixUnlinked": "尚未关联已核验的修复。",
     "fixPending": "已关联修复，等待核验生产上线。",
     "fixRoot": "根问题 #{number}",
@@ -7933,10 +7933,10 @@
     "fixCommitHint": "填写全部必需提交的完整 SHA，用空格或逗号分隔。请使用真实合入后的提交，包括 rebase 后的新提交。",
     "fixAddPR": "添加修复 PR",
     "fixSave": "核验并保存修复",
-    "fixSaved": "修复关联已保存，未发送上线通知。",
+    "fixSaved": "修复关联已保存，系统会根据已核验的生产记录处理上线通知。",
     "duplicateRoot": "重复报告对应的根问题编号",
     "duplicateSave": "关联重复报告",
-    "duplicateSaved": "重复报告已关联，未发送上线通知。",
+    "duplicateSaved": "重复报告已关联，系统会根据已核验的生产记录处理上线通知。",
     "fixReports": "根问题下的报告",
     "fixInvalid": "关联无效，请核对确认结论、根问题及完整提交 SHA。",
     "fixEvidence": "GitHub 未能核验该合入修复，请核对项目、PR 和真实合入提交后重试。",
@@ -7950,6 +7950,7 @@
     "currentProductionRelease": "核验时的生产版本：{version}",
     "releaseLink": "查看 {version} 版本",
     "relatedReports": "相关报告",
-    "releaseExplanation": "完整修复已在实际运行的前端和后端核验。感谢你报告这个问题。"
+    "releaseExplanation": "完整修复已在实际运行的前端和后端核验。感谢你报告这个问题。",
+    "historicalFirstIncluded": "首次包含修复的版本：{version}"
   }
 }
