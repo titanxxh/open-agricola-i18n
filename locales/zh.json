@@ -1481,7 +1481,16 @@
         "major": "主要改良",
         "moorSpecialAction": "泥沼特殊行动",
         "moorStart": "开局地形",
-        "season": "季节规则"
+        "season": "季节规则",
+        "illustratedAction": "图文行动",
+        "spaceMerchant": "太空商人",
+        "alienArtifact": "外星物品",
+        "alienEvent": "外星事件",
+        "event": "事件",
+        "globalEvent": "开局事件",
+        "offspring": "子嗣",
+        "guest": "访客",
+        "expansionRules": "说明"
       },
       "results": {
         "count": "{count} 条结果",
@@ -1541,6 +1550,10 @@
       "moorStart": {
         "name": "开局地形 {number}",
         "layout": "开局地形布局"
+      },
+      "scanFace": {
+        "offspringAssign": "指定给一个子嗣",
+        "globalEventFooter": "开局选一张事件，面朝上，对所有人生效。"
       },
       "icons": {
         "score": "分"

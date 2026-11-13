@@ -5,16 +5,16 @@
     {
       "id": "en",
       "name": "English",
-      "file": "en.43c32a2ae473d93c.json",
-      "sha256": "43c32a2ae473d93c51d903b084243b9fd19bcf51904b523a11e6f67cfaff03e4",
-      "sourceSha256": "979627a0dc625a7f852293115fbaaab474d8c94b6a805c9ddb504fe3d02eda95"
+      "file": "en.c0fa2bc1e66add2f.json",
+      "sha256": "c0fa2bc1e66add2f5e56d2981ac5c5d9cfb596afd0de2073d313c688282b52b0",
+      "sourceSha256": "f75d00a05ba2b707513c22ca61198b9526dbd56c68a67079645d61e9df0154e3"
     },
     {
       "id": "zh",
       "name": "简体中文",
-      "file": "zh.b1e4016f87dcc7c6.json",
-      "sha256": "b1e4016f87dcc7c63940f27bacf389c53a1a3b45b55c932e5cabd694e10f5172",
-      "sourceSha256": "1774a3296f0402cb3edb4f31c0635d8650378df9bd0d6aaf985b4de3eb236151"
+      "file": "zh.5f007e7bbd4c6faf.json",
+      "sha256": "5f007e7bbd4c6faf61e4fa20ed419c451d284a5d139d051bfb26dd0db57fc6a1",
+      "sourceSha256": "0c0ba3064294e3408cb852c2c8debc062d471aa0f26b5705faac601136612d75"
     }
   ]
 }

@@ -1481,7 +1481,16 @@
         "major": "Major Improvement",
         "moorSpecialAction": "Moor Special Action",
         "moorStart": "Starting Terrain",
-        "season": "Season Rule"
+        "season": "Season Rule",
+        "illustratedAction": "Illustrated Action",
+        "spaceMerchant": "Space Merchant",
+        "alienArtifact": "Alien Artifact",
+        "alienEvent": "Alien Event",
+        "event": "Event",
+        "globalEvent": "Opening Event",
+        "offspring": "Offspring",
+        "guest": "Guest",
+        "expansionRules": "Rules"
       },
       "results": {
         "count": "Results: {count}",
@@ -1541,6 +1550,10 @@
       "moorStart": {
         "name": "Starting Terrain {number}",
         "layout": "Starting terrain layout"
+      },
+      "scanFace": {
+        "offspringAssign": "Assign\nto an\nOff-\nspring",
+        "globalEventFooter": "At the start of the game, select an event card and turn it face up; it affects all players."
       },
       "icons": {
         "score": "Points"
