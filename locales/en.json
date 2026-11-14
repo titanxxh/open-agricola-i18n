@@ -4457,7 +4457,13 @@
       "terminated": "The players ended this game.",
       "removed": "This game is no longer available for spectating.",
       "replay": "View replay"
-    }
+    },
+    "publicSandboxTitle": "Public card sandbox",
+    "publicSandboxDescription": "Test official cards and published public cards. Card design and publishing stay on the main site.",
+    "sandboxExecutionMode": "Run game",
+    "sandboxBrowserMode": "In this browser",
+    "sandboxServerMode": "On the server",
+    "publicSandboxPaused": "This playtest is paused. Check access and card availability before continuing."
   },
   "cards": {
     "D051_Archway": {

@@ -7335,7 +7335,13 @@
       "terminated": "玩家已提前结束此局。",
       "removed": "此局已无法旁观。",
       "replay": "查看回放"
-    }
+    },
+    "publicSandboxTitle": "公共卡沙盒",
+    "publicSandboxDescription": "测试官方牌和已上线公共卡。卡牌设计和发布请前往正式站。",
+    "sandboxExecutionMode": "运行方式",
+    "sandboxBrowserMode": "在此浏览器中",
+    "sandboxServerMode": "在服务器上",
+    "publicSandboxPaused": "本次测试已暂停。请复核访问资格与卡牌状态后再继续。"
   },
   "cards": {
     "D051_Archway": {
