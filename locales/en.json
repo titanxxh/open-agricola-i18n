@@ -4965,6 +4965,7 @@
     "full": "Full",
     "host": "Host",
     "moveMember": "Move {player} to a team",
+    "swapWith": "Swap with {player} ({team})",
     "start": "Start game",
     "startNeedsFull": "Fill every team to start.",
     "waitingForHost": "Waiting for the host to start.",

@@ -7843,6 +7843,7 @@
     "full": "已满员",
     "host": "房主",
     "moveMember": "为 {player} 调整队伍",
+    "swapWith": "与{player}交换（{team}）",
     "start": "开始游戏",
     "startNeedsFull": "各队满员后即可开局。",
     "waitingForHost": "等待房主开局。",
