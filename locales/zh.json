@@ -141,6 +141,14 @@
     "roundLocked": "未开放",
     "farmTitle": "玩家农场",
     "publicFarms": "公开农场",
+    "sectionNav": {
+      "hand": "手牌",
+      "farm": "农场",
+      "publicFarms": "他人",
+      "seasons": "四季",
+      "moor": "特殊",
+      "majorSupply": "改良"
+    },
     "startPlayer": "起始玩家",
     "openingOrder": "开局顺位",
     "you": "你",

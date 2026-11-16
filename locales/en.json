@@ -141,6 +141,14 @@
     "roundLocked": "Locked",
     "farmTitle": "Player Farm",
     "publicFarms": "Public farms",
+    "sectionNav": {
+      "hand": "Hand",
+      "farm": "Farm",
+      "publicFarms": "Others",
+      "seasons": "Seasons",
+      "moor": "Special",
+      "majorSupply": "Majors"
+    },
     "startPlayer": "Start Player",
     "openingOrder": "Opening turn order",
     "you": "You",
