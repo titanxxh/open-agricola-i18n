@@ -257,10 +257,6 @@
         "markSpaces": {
           "prompt": "选择要为多少个未使用农场格支付食物"
         }
-      },
-      "CI239_CornProteer": {
-        "offer": "{card:CI239_CornProteer}：购买所提供的小麦，或拒绝",
-        "chooseBuyer": "{card:CI239_CornProteer}：选择一名愿意购买的玩家"
       }
     },
     "defaultPlayerName": "玩家 {number}",

@@ -31,6 +31,10 @@ AGRICOLA_GAME_DIR=../open-agricola pnpm exec tsx scripts/import-bga-card-transla
 也不能仅凭旧 ID 的英文后缀猜测牌面内容。已有导入数据中部分 PI 牌名与 ID
 后缀不同，因此原本是英文的那些条目也需核对原牌后再恢复。
 
+带 `{card:CI239_CornProteer}` 引用的两个 `ui.cards` 提示暂不收录：当前两个
+应用 PR 都没有迁入小麦奸商，应用无法解析该卡名引用。待该卡实现进入消费分支
+后再恢复提示；已有中文牌面及不含卡名引用的交互文案继续保留。
+
 语言包应使用实际消费分支生成的 `public/cards-manifest.json` 构建。
 合入应用前，先合入并验证语言 PR，再将应用 `i18n.ref` 固定到语言仓库 main 的
 对应提交及 `packs/manifest.json` 校验和。这里的文案不启用旧版游戏选项。

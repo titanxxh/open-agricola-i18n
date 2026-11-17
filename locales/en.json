@@ -257,10 +257,6 @@
         "markSpaces": {
           "prompt": "Choose how many food to pay for unused farmyard spaces"
         }
-      },
-      "CI239_CornProteer": {
-        "offer": "{card:CI239_CornProteer}: Buy the offered grain or decline",
-        "chooseBuyer": "{card:CI239_CornProteer}: Choose a willing buyer"
       }
     },
     "defaultPlayerName": "Player {number}",
