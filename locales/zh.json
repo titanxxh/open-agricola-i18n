@@ -7082,21 +7082,9 @@
       "rules": "",
       "prerequisite": ""
     },
-    "CPI015_FishingPier": {
-      "name": "Animal Bedding",
-      "description": "You can keep 1 additional animal (of the same type) in each of your unfenced <STABLE>, and 2 additional animals (of the same type) in each pasture with <STABLE>.",
-      "rules": "",
-      "prerequisite": "1 Grain Field"
-    },
     "CPI016_GardenersBothy": {
       "name": "园丁茅屋",
       "description": "每当你使用犁田行动格后，你可以将该人立即移动到此卡上并获得1份小麦。每当你使用粮食耕种[犁播]行动格后，你可以将该人立即移动到此卡上并获得1份蔬菜。",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI017_Geode": {
-      "name": "Wood Saw",
-      "description": "Each time all other players have more people than you, you can take a __Build Rooms__ action without placing a person.",
       "rules": "",
       "prerequisite": ""
     },
@@ -7105,18 +7093,6 @@
       "description": "你的田地板块不必相邻。但在1个轮次内放置的田地板块必须相邻。游戏结束时，如果你有3/4/5块不与其他田相邻的田地版块，则你额外获得1/2/3分。",
       "rules": "",
       "prerequisite": ""
-    },
-    "CPI019_MarketSquare": {
-      "name": "Briar Hedge",
-      "description": "You do not need to pay <WOOD> for <FENCE> that you build on the edge of your farmyard board.",
-      "rules": "",
-      "prerequisite": "1 Animal of Each Type"
-    },
-    "CPI020_MeetingPost": {
-      "name": "Skimmer Plow",
-      "description": "Each time you use the __Farmland__ or __Cultivation__  action space, you can plow 2 <FIELD> instead of 1. Each time you sow, you must place 1 fewer good on each <FIELD> you sow.",
-      "rules": "",
-      "prerequisite": "2 Occupations"
     },
     "CPI021_Pitchfork": {
       "name": "干草叉",
@@ -7129,18 +7105,6 @@
       "description": "打出此卡时，你所有已打出的职业卡失效并面朝下(未来回合行动格上的逻辑照常结算)，但仍算作职业卡。之后只要你没有打出新的职业卡，每回合开始时你获得1份食物",
       "rules": "",
       "prerequisite": "1 Occupations"
-    },
-    "CPI023_ShelterintheField": {
-      "name": "Iron Hoe",
-      "description": "At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 <FIELD>.",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI024_Spars": {
-      "name": "Sheep Rug",
-      "description": "You can use any __Wish for Children__ action space, even if it is occupied by another player's person.",
-      "rules": "",
-      "prerequisite": "4 Sheep"
     },
     "CWA001_ClutchDrive": {
       "name": "离合器",
@@ -12124,57 +12088,15 @@
       "rules": "",
       "prerequisite": ""
     },
-    "CPI001_Alchemist": {
-      "name": "Museum Caretaker",
-      "description": "At the start of each work phase, if you have at least 1 <WOOD>, 1 <CLAY>, 1 <REED>, 1 <STONE>, 1 <GRAIN>, and 1 <VEGETABLE> in your supply, you get 1 bonus <SCORE>.",
-      "rules": "",
-      "prerequisite": ""
-    },
     "CPI002_Altruist": {
       "name": "Altruist",
       "description": "每局游戏限2次：你可以在“翻修”行动中花费1芦苇+每间屋子1木将你的石屋翻修回木屋。若你如此做，你翻修的每间房屋获得3分并同时获得3砖。",
       "rules": "",
       "prerequisite": ""
     },
-    "CPI003_Backpacker": {
-      "name": "Acquirer",
-      "description": "At the start of each round, you can pay <FOOD> equal to the number of people you have to buy 1 good of your choice from the general supply.",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI004_ChiselMaker": {
-      "name": "Wolf",
-      "description": "Pile (from bottom to top) 1 <CLAY>, 1 <WOOD>, and 1 <GRAIN> on this card. Each time you get a good matching the top item, you can move that item to your supply and get 1 <PIG>.",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI005_Contortionist": {
-      "name": "Spice Trader",
-      "description": "If you play this card in round 4 or before, place 3 <VEGETABLE> on the space for round 11. At the start of that round, you get the <VEGETABLE>.",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI006_Footman": {
-      "name": "Pioneer",
-      "description": "When you play this card and each time before you use the most recent action space card, you get 1 building resource of your choice and 1 <FOOD>.",
-      "rules": "",
-      "prerequisite": ""
-    },
     "CPI007_MarriageCounselor": {
       "name": "Marriage Counselor",
       "description": "每回合开始时，如果有玩家的家庭成员比你多2名或以上，或所有其他玩家的家庭成员都比你多，你可以支付1<FOOD>并在本回合使用1名食客。",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI008_MasterCarpenter": {
-      "name": "Land Surveyor",
-      "description": "In the field phase of each harvest, if you have at least 2/4/6/7 <FIELD>, you get 1/2/3/4 <FOOD>.",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI009_PestExterminator": {
-      "name": "Blackberry Farmer",
-      "description": "Each time you build <FENCE>, place 1 <FOOD> on each remaining round space, up to the number of <FENCE> just built. At the start of these rounds, you get the <FOOD>.",
       "rules": "",
       "prerequisite": ""
     },
@@ -12187,12 +12109,6 @@
     "CPI011_SunriseHerder": {
       "name": "Sunrise Herder",
       "description": "每回合限1次：你可以你可以跳过你的第一个轮次，支付0/0/1<FOOD>获得1羊/猪/牛。你可以在后续的轮次继续派遣他。",
-      "rules": "",
-      "prerequisite": ""
-    },
-    "CPI012_WoundedVeteran": {
-      "name": "Recluse",
-      "description": "As long as you have no minor improvements in front of you, you get 1 <FOOD> at the start of each round and 1 <WOOD> at the start of each harvest.",
       "rules": "",
       "prerequisite": ""
     },

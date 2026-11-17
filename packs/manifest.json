@@ -12,9 +12,9 @@
     {
       "id": "zh",
       "name": "简体中文",
-      "file": "zh.6d2172e8f46708fb.json",
-      "sha256": "6d2172e8f46708fbcb59ec05bf76e6c420982893337eb5871d0fab59557a3704",
-      "sourceSha256": "42735f2c2e226c555903bd7bbb059f30ebc13bd626b832f0b2db9ed3ad3d0fb7"
+      "file": "zh.8e049d9cd53426b2.json",
+      "sha256": "8e049d9cd53426b2b1e9fa96277eb026b7d39a262d3fc40afe7016f863fe99af",
+      "sourceSha256": "7fff7a65d00ef01a9391b7830c926a5ebe6a3327d38c2b55c7b2d75e6387ad6b"
     }
   ]
 }

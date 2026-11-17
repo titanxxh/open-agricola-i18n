@@ -27,10 +27,16 @@ describe('classic translation sources', () => {
     expect(classicEnglish.filter(([, text]) => /[\u3400-\u9fff]/.test(text))).toEqual([])
     const cards = (data: typeof chinese) => ['occupations', 'minorImprovements']
       .flatMap(group => Object.keys(data[group]).filter(id => /^C[A-Z]+\d{3}_/.test(id)))
-    expect(cards(chinese)).toHaveLength(1024)
+    const deferred = JSON.parse(readFileSync(resolve('reference/classic-unverified-zh.json'), 'utf8'))
+    expect(cards(chinese)).toHaveLength(1010)
+    expect(cards(deferred)).toHaveLength(14)
+    expect(new Set([...cards(chinese), ...cards(deferred)]).size).toBe(1024)
     expect(cards(english).sort()).toEqual(['CE203_Shepherd', 'CI097_Slaughterhouse'])
     const en = compileLanguagePack('en', english, english, {}).messages
     const zh = compileLanguagePack('zh', chinese, english, {}).messages
+    for (const id of cards(deferred)) {
+      expect(zh).not.toHaveProperty(`cardFaces.${id}.name`)
+    }
     expect(en['cardFaces.CE203_Shepherd.name']).toBe('Shepherd')
     expect(zh['cardFaces.CE203_Shepherd.name']).toBe('牧羊人')
     expect(en['cardFaces.CI097_Slaughterhouse.name']).toBe('Slaughterhouse')

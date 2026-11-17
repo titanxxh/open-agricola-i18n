@@ -26,7 +26,10 @@ AGRICOLA_GAME_DIR=../open-agricola pnpm exec tsx scripts/import-bga-card-transla
 `CI097_Slaughterhouse`。译文键和 `{card:...}` 引用使用同一 ID；图鉴牌组名称
 维护于 `ui.encyclopedia.groups.CE` 等键，与新版 E 包分开。
 
-中文源保留已导入的 1,024 张旧牌文案。英文源目前只保留两个应用 PR 中已核对的
+旧牌导入记录共 1,024 张，其中 1,010 张保留在中文源；14 张 PI 牌的英文牌面
+与其旧版 ID 不匹配（例如 `CPI001_Alchemist` 的牌面是 Museum Caretaker），
+原样保留在 `reference/classic-unverified-zh.json`，核对原卡后才能恢复到语言包。
+英文源目前只保留两个应用 PR 中已核对的
 牧羊人和屠宰场牌面；其余 1,022 张暂缓英文录入，不能把中文复制到英文源，
 也不能仅凭旧 ID 的英文后缀猜测牌面内容。已有导入数据中部分 PI 牌名与 ID
 后缀不同，因此原本是英文的那些条目也需核对原牌后再恢复。
