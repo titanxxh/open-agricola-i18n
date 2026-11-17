@@ -1597,7 +1597,11 @@
       "own": "Your farm",
       "partner": "{player}'s farm",
       "confirm": "Build on this farm"
-    }
+    },
+    "harvestRequirementsTitle": "Next harvest · Round {round}",
+    "harvestRequirementsFood": "Feeding requires {count} food",
+    "harvestRequirementsFuel": "Heating requires {count} fuel",
+    "harvestRequirementsHint": "Based on your current family, house and played cards."
   },
   "moor": {
     "specialActions": {

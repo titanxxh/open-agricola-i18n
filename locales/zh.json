@@ -1597,7 +1597,11 @@
       "own": "自己的农场",
       "partner": "{player} 的农场",
       "confirm": "在此农场建造"
-    }
+    },
+    "harvestRequirementsTitle": "下次收获 · 第{round}回合",
+    "harvestRequirementsFood": "喂养需要{count}食物",
+    "harvestRequirementsFuel": "供暖需要{count}燃料",
+    "harvestRequirementsHint": "按当前家庭成员、房屋和已打出的卡牌计算。"
   },
   "moor": {
     "specialActions": {
