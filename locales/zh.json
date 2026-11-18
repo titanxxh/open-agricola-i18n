@@ -10074,7 +10074,7 @@
     },
     "CE203_Shepherd": {
       "name": "牧羊人",
-      "description": "每个繁殖阶段，如果你有至少4<sheep>，你的<sheep>能繁殖2只后代而不是1只。",
+      "description": "每个繁殖阶段，如果你有至少4<sheep>，你的<sheep>能繁殖2只后代而不是1只，只要你有空间安置它们。",
       "rules": "",
       "prerequisite": ""
     },

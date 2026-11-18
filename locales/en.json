@@ -3770,7 +3770,7 @@
     },
     "CE203_Shepherd": {
       "name": "Shepherd",
-      "description": "During each breeding phase, if you have at least 4 <sheep>, your <sheep> produce 2 offspring instead of 1.",
+      "description": "During each breeding phase, if you have at least 4 <sheep>, your <sheep> produce 2 offspring instead of 1, as long as you have room for them.",
       "rules": "",
       "prerequisite": ""
     }
