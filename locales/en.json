@@ -4036,6 +4036,13 @@
     "hasAccount": "Already have an account?",
     "unknownError": "Unknown error",
     "networkError": "Network error",
+    "serverMaintenance": {
+      "title": "The server is under maintenance or temporarily unavailable",
+      "body": "Your account and game progress are not lost. This page continues automatically when the server is back.",
+      "retrying": "Retrying automatically every 15 seconds.",
+      "retryNow": "Retry now",
+      "game": "The server is under maintenance or temporarily unavailable. The game reconnects automatically when it is back; game progress is not lost."
+    },
     "authErrors": {
       "invalid_login": "Username or password is incorrect",
       "invalid_username": "Username must be 2-30 characters and contain only letters, numbers, underscores, or Chinese characters",
