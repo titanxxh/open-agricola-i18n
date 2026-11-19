@@ -41,6 +41,11 @@
     }
   },
   "ui": {
+    "guest": {
+      "dispatch": "Dispatch Guest ({card})",
+      "marker": "{player}'s Guest ({card})",
+      "pending": "Guests available ({count})"
+    },
     "gameTitle": "Open Agricola",
     "round": "Round",
     "currentPlayer": "Current Player",
@@ -845,6 +850,7 @@
     "actionPreviewThen": ", then ",
     "actionPreviewAnd": " and ",
     "timedOperations": {
+      "receive-guest": "Receive a Guest",
       "return-worker": "Return worker to supply",
       "remove-worker": "Remove worker from the game",
       "release-held-worker": "Return held worker home",
@@ -3888,6 +3894,9 @@
     "farmAnimalMoved": "{player} moves {animals}",
     "futureMeepleRemoved": "{player} removes future worker entries from {cardId} ({rounds})",
     "futureMeepleResolved": "{player} resolves future worker from {cardId} in round {round}{roomType}{resources}",
+    "guestGranted": "{player} receives a Guest from {card} for round {round}",
+    "guestDispatched": "{player} dispatches a Guest to {space}",
+    "guestVoided": "{player}'s Guest from {card} expires unused",
     "workerReturned": "Worker(s) return {destination}",
     "workerRemoved": "Person removed from the game",
     "workerDestinationHome": "home",
