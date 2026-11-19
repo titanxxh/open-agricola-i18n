@@ -1464,6 +1464,7 @@
         "clear": "Clear filters",
         "showResults": "Show results ({count})",
         "group": "Deck or expansion",
+        "classicDeck": "Classic decks",
         "type": "Card type",
         "cost": "Printed cost resources",
         "costHint": "Matches if any printed cost option uses a selected resource",
@@ -1485,6 +1486,7 @@
         "major56": "5–6 Player Major Improvements",
         "majorMoor": "Moor Major Improvements",
         "moor": "Farmers of the Moor",
+        "classic": "Classic",
         "CBI": "Classic BI Deck",
         "CC": "Classic C Deck",
         "CE": "Classic E Deck",
@@ -3916,6 +3918,16 @@
     "partnerFencesBuilt": "{player} builds {count} fences for {owner}"
   },
   "platform": {
+    "cardEditionLabel": "Card edition",
+    "cardEditionRevised": "Revised",
+    "cardEditionClassic": "Classic",
+    "classicDecksLabel": "Classic decks",
+    "classicDeckCount": "{deck} · {occupations} occupations, {minors} minor improvements",
+    "classicPoolInsufficient": "Classic decks {decks} cannot fill {players} hands: need {neededOccupations} occupations and {neededMinors} minor improvements, have {eligibleOccupations} and {eligibleMinors} eligible cards",
+    "classicIncompatibleOptions": "Classic games exclude Farmers of the Moor, the community deck, Parent Cards, and Through the Seasons.",
+    "classicPoolLoading": "Loading classic decks…",
+    "classicPoolUnavailable": "Classic decks could not be loaded.",
+    "classicNoDeckSelected": "Select a classic deck with eligible cards.",
     "retention": {
       "title": "Room retention",
       "description": "Keep saved rooms after every player disconnects.",
