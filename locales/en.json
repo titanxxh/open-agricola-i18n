@@ -1585,6 +1585,23 @@
         "attention": "Your action is needed",
         "backToGame": "Back to game",
         "close": "Close encyclopedia"
+      },
+      "offline": {
+        "title": "Offline encyclopedia",
+        "open": "Open offline encyclopedia",
+        "save": "Save for offline reading",
+        "update": "Update offline encyclopedia",
+        "switchLanguage": "Save in this language",
+        "remove": "Delete offline encyclopedia",
+        "saving": "Saving offline encyclopedia…",
+        "details": "{language} · Version {version} · Saved {savedAt} · {size}",
+        "updateAvailable": "A newer offline version is available.",
+        "saveFailed": "Could not save the offline encyclopedia. Any previous copy is still available.",
+        "removeFailed": "Could not delete the offline encyclopedia.",
+        "downloadRequired": "Download the offline encyclopedia again from the online encyclopedia.",
+        "search": "Search cards by number, name, or text",
+        "noResults": "No matching cards.",
+        "openOnline": "Open online encyclopedia"
       }
     },
     "actionReference": {
@@ -1617,7 +1634,8 @@
     "harvestRequirementsFuel": "Heating requires {count} fuel",
     "harvestRequirementsHint": "Based on your current family, house and played cards.",
     "interactionChooseFamilyGrowth": "Choose how to grow your family",
-    "interactionGrowNewborn": "Add a newborn family member"
+    "interactionGrowNewborn": "Add a newborn family member",
+    "roomOfflineMessage": "Unable to open the room right now. Check your connection and try again."
   },
   "moor": {
     "specialActions": {
@@ -5157,5 +5175,18 @@
   "cards.CI236_HideFarmer.markSpaces.name": "Hide unused spaces",
   "ui.cards.CI236_HideFarmer.markSpaces.prompt": "Choose how many food to pay for unused farmyard spaces",
   "ui.cards.CI236_HideFarmer.optional": "Hide unused farmyard spaces?",
-  "cards.CI236_HideFarmer.markSpaces.invalid": "Invalid food count"
+  "cards.CI236_HideFarmer.markSpaces.invalid": "Invalid food count",
+  "webPush": {
+    "title": "Browser notifications",
+    "draft": "Draft reminders",
+    "inbox": "Bug Report inbox notifications",
+    "deviceOnly": "These settings apply to this browser.",
+    "blocked": "Allow notifications in your browser settings to turn on reminders.",
+    "unavailable": "This browser does not currently support these notifications.",
+    "installIos": "Add Open Agricola to your Home Screen and open it there to enable notifications.",
+    "failed": "Could not update notifications. Try again.",
+    "notificationUnavailable": "This notification is no longer available.",
+    "draftNotification": "You have cards to draft",
+    "inboxNotification": "You have a new inbox message"
+  }
 }
