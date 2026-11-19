@@ -41,6 +41,11 @@
     }
   },
   "ui": {
+    "guest": {
+      "dispatch": "派遣食客（{card}）",
+      "marker": "{player}的食客（{card}）",
+      "pending": "待派遣食客 {count} 名"
+    },
     "gameTitle": "Open Agricola",
     "round": "回合",
     "currentPlayer": "当前玩家",
@@ -845,6 +850,7 @@
     "actionPreviewThen": "，则",
     "actionPreviewAnd": "且",
     "timedOperations": {
+      "receive-guest": "获得食客",
       "return-worker": "将工人归还供给",
       "remove-worker": "将工人移出游戏",
       "release-held-worker": "卡牌上的工人回家",
@@ -12814,6 +12820,9 @@
     "farmAnimalMoved": "{player} 移动 {animals}",
     "futureMeepleRemoved": "{player} 移除 {cardId} 的未来工人记录（{rounds}）",
     "futureMeepleResolved": "{player} 结算 {cardId} 在第 {round} 回合的未来工人{roomType}{resources}",
+    "guestGranted": "{player}获得来自{card}的食客，可在第 {round} 回合派遣",
+    "guestDispatched": "{player}派遣食客到{space}",
+    "guestVoided": "{player}来自{card}的食客因未派遣而作废",
     "workerReturned": "回收工人{destination}",
     "workerRemoved": "人物被永久移出游戏",
     "workerDestinationHome": "回家",
