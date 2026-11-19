@@ -1586,6 +1586,23 @@
         "attention": "需要你操作",
         "backToGame": "返回对局",
         "close": "关闭百科"
+      },
+      "offline": {
+        "title": "离线百科",
+        "open": "打开离线百科",
+        "save": "保存离线百科",
+        "update": "更新离线百科",
+        "switchLanguage": "保存为当前语言",
+        "remove": "删除离线百科",
+        "saving": "正在保存离线百科…",
+        "details": "{language} · 版本 {version} · 保存于 {savedAt} · {size}",
+        "updateAvailable": "有新版离线百科可供更新。",
+        "saveFailed": "保存离线百科失败，之前保存的版本仍可使用。",
+        "removeFailed": "无法删除离线百科。",
+        "downloadRequired": "请从在线百科重新下载离线百科。",
+        "search": "按编号、名称或正文搜索卡牌",
+        "noResults": "没有匹配的卡牌。",
+        "openOnline": "打开在线百科"
       }
     },
     "actionReference": {
@@ -1618,7 +1635,8 @@
     "harvestRequirementsFuel": "供暖需要{count}燃料",
     "harvestRequirementsHint": "按当前家庭成员、房屋和已打出的卡牌计算。",
     "interactionChooseFamilyGrowth": "选择生育方式",
-    "interactionGrowNewborn": "生育一名新家庭成员"
+    "interactionGrowNewborn": "生育一名新家庭成员",
+    "roomOfflineMessage": "暂时无法打开房间，请检查网络后重试"
   },
   "moor": {
     "specialActions": {
@@ -14084,5 +14102,18 @@
   "cards.CI236_HideFarmer.markSpaces.name": "隐藏未使用农场格",
   "ui.cards.CI236_HideFarmer.markSpaces.prompt": "选择要为多少个未使用农场格支付食物",
   "ui.cards.CI236_HideFarmer.optional": "隐藏未使用农场格？",
-  "cards.CI236_HideFarmer.markSpaces.invalid": "食物数量非法"
+  "cards.CI236_HideFarmer.markSpaces.invalid": "食物数量非法",
+  "webPush": {
+    "title": "浏览器通知",
+    "draft": "轮抽提醒",
+    "inbox": "Bug Report 站内信通知",
+    "deviceOnly": "这些设置仅适用于当前浏览器。",
+    "blocked": "请在浏览器设置中允许通知，再开启提醒。",
+    "unavailable": "当前浏览器暂不支持此通知。",
+    "installIos": "请将 Open Agricola 添加到主屏幕，再从主屏幕打开并启用通知。",
+    "failed": "无法更新通知设置，请重试。",
+    "notificationUnavailable": "这条通知已不可用。",
+    "draftNotification": "有新牌可选",
+    "inboxNotification": "你有一条新的站内信"
+  }
 }
