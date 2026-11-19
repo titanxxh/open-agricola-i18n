@@ -1464,6 +1464,7 @@
         "clear": "清空条件",
         "showResults": "查看 {count} 条结果",
         "group": "牌组或扩展",
+        "classicDeck": "旧版牌组",
         "type": "牌型",
         "cost": "印刷费用资源",
         "costHint": "任一印刷费用方案含所选资源即可",
@@ -1485,6 +1486,7 @@
         "major56": "5–6 人补充主要改良",
         "majorMoor": "泥沼主要改良",
         "moor": "泥沼",
+        "classic": "旧版",
         "CBI": "旧版 BI 牌组",
         "CC": "旧版 C 牌组",
         "CE": "旧版 E 牌组",
@@ -12842,6 +12844,16 @@
     "partnerFencesBuilt": "{player} 替 {owner} 建了 {count} 段围栏"
   },
   "platform": {
+    "cardEditionLabel": "卡牌版本",
+    "cardEditionRevised": "修订版",
+    "cardEditionClassic": "旧版",
+    "classicDecksLabel": "旧版牌组",
+    "classicDeckCount": "{deck} · {occupations} 张职业，{minors} 张次要发展",
+    "classicPoolInsufficient": "旧版牌组 {decks} 无法发满 {players} 人的手牌。需要 {neededOccupations} 张职业、{neededMinors} 张次要发展，符合条件的卡分别有 {eligibleOccupations} 张和 {eligibleMinors} 张。",
+    "classicIncompatibleOptions": "旧版对局不能使用沼泽、社区牌组、父母卡或四季扩展。",
+    "classicPoolLoading": "正在加载旧版牌组…",
+    "classicPoolUnavailable": "无法加载旧版牌组。",
+    "classicNoDeckSelected": "请选择有可用卡牌的旧版牌组。",
     "retention": {
       "title": "房间保留时间",
       "description": "设置所有玩家离线后，房间存档继续保留的时间。",
