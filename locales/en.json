@@ -1185,7 +1185,14 @@
         "waiting_for_model_02338d": "Waiting for model",
         "reading_references_1fdd4b": "Reading references",
         "validating_complete_source_e31675": "Validating complete source",
-        "continue_adds_model_requests_reference_calls_and_546ff9": "Continue adds {value0} model requests, {value1} reference calls and 5 active minutes. Counts remain cumulative."
+        "continue_adds_model_requests_reference_calls_and_546ff9": "Continue adds {value0} model requests, {value1} reference calls and 5 active minutes. Counts remain cumulative.",
+        "more_information_needed_f4cf20": "More information needed",
+        "needs_a_platform_change_81615b": "Needs a platform change",
+        "evidence_7ea014": "Evidence",
+        "missing_shared_mechanisms_6a7560": "Missing shared mechanisms",
+        "questions_for_you_839ba7": "Questions for you",
+        "prefill_a_github_issue_92266b": "Prefill a GitHub issue",
+        "opens_a_new_issue_from_your_own_github_account_5c7d69": "Opens a new issue from your own GitHub account with the card request and this research. Review it before submitting."
       },
       "components_board_log_rendering": {
         "round_card_1af5ae": "round card",
