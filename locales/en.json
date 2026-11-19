@@ -630,6 +630,7 @@
     "reorgPending": "Pending",
     "reorgOverAssign": "Assigned animals exceed available counts",
     "reorgConfirm": "Confirm",
+    "reorgConvertToFood": "Convert to food",
     "reorgDiscardPrompt": "Unassigned animals will be discarded: {animals}",
     "reorgDiscardConfirm": "Confirm discard",
     "reorgAdjustMore": "Adjust more",

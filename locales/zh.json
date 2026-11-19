@@ -630,6 +630,7 @@
     "reorgPending": "待重整",
     "reorgOverAssign": "分配数量超过持有数量",
     "reorgConfirm": "确认调整",
+    "reorgConvertToFood": "换成食物",
     "reorgDiscardPrompt": "有未放入圈地的动物，将被丢弃：{animals}",
     "reorgDiscardConfirm": "确认丢弃",
     "reorgAdjustMore": "继续调整",
