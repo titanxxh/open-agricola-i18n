@@ -1185,7 +1185,14 @@
         "waiting_for_model_02338d": "等待模型",
         "reading_references_1fdd4b": "读取参考资料",
         "validating_complete_source_e31675": "校验完整源码",
-        "continue_adds_model_requests_reference_calls_and_546ff9": "继续增加 {value0} 次模型请求、{value1} 次资料调用和 5 分钟；以上计数继续累加。"
+        "continue_adds_model_requests_reference_calls_and_546ff9": "继续增加 {value0} 次模型请求、{value1} 次资料调用和 5 分钟；以上计数继续累加。",
+        "more_information_needed_f4cf20": "需要补充信息",
+        "needs_a_platform_change_81615b": "需要平台改动",
+        "evidence_7ea014": "依据",
+        "missing_shared_mechanisms_6a7560": "缺少的通用机制",
+        "questions_for_you_839ba7": "需要你确认的问题",
+        "prefill_a_github_issue_92266b": "预填 GitHub issue",
+        "opens_a_new_issue_from_your_own_github_account_5c7d69": "用你自己的 GitHub 账号新建 issue，附上卡牌需求和这次预研结果。提交前请先检查。"
       },
       "components_board_log_rendering": {
         "round_card_1af5ae": "回合牌",
