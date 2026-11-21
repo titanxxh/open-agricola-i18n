@@ -5,8 +5,9 @@ import { readFileSync } from 'node:fs'
 describe('BGA action reference preservation', () => {
   it('keeps reviewed space targets distinct from ordinary actions in the published languages', () => {
     const manifest = JSON.parse(readFileSync('packs/manifest.json', 'utf8'))
-    const packs: Record<string, Record<string, string>> = Object.fromEntries(manifest.languages.map((language: { id: string; file: string }) =>
-      [language.id, JSON.parse(readFileSync(`packs/${language.file}`, 'utf8')).messages]))
+    const read = (file: string): Record<string, string> => JSON.parse(readFileSync(`packs/${file}`, 'utf8')).messages
+    const packs: Record<string, Record<string, string>> = Object.fromEntries(manifest.languages.map((language: { id: string; core: { file: string }; cards: { file: string } }) =>
+      [language.id, { ...read(language.core.file), ...read(language.cards.file) }]))
     const targets = (text: string) => [...text.matchAll(/__(space|moor):([^|_]+)\|/g)]
       .flatMap(match => match[2].split(',').map(id => `${match[1]}:${id}`)).sort()
     expect(targets(packs.en['cardFaces.B059_FoodChest.description'])).toEqual(['space:major-improvement'])
