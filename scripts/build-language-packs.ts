@@ -5,7 +5,24 @@ import { fileURLToPath } from 'node:url'
 import { buildCardsManifest, type CardsManifest } from './game-metadata'
 import { flattenDictionary } from './i18n/flatten-dictionary'
 type LanguagePack = { version: 1; locale: string; messages: Record<string,string> }
-type LanguageManifest = { version: 1; defaultLocale: string; languages: Array<{id:string; name:string; file:string; sha256:string; sourceSha256:string}> }
+type PackFile = { file: string; sha256: string }
+type LanguageManifest = { version: 2; defaultLocale: string; languages: Array<{ id: string; name: string; core: PackFile; cards: PackFile; sourceSha256: string }> }
+
+/** Card text is only needed where cards are shown, so it ships as a second file that startup does not wait for. */
+const CARD_TEXT_GROUPS = new Set(['cardFaces', 'occupations', 'minorImprovements', 'improvements', 'cards', 'parentFaces'])
+/** Long card text lives under `cardFaces`; the typed groups keep only the names that rules output refers to. */
+const DUPLICATED_CARD_TEXT = /^(occupations|minorImprovements|improvements)\.[^.]+\.(description|rules|prerequisite)$/
+
+export function splitLanguagePack(pack: LanguagePack): { core: LanguagePack; cards: LanguagePack } {
+  const core: Record<string, string> = {}
+  const cards: Record<string, string> = {}
+  for (const [key, text] of Object.entries(pack.messages)) {
+    if (DUPLICATED_CARD_TEXT.test(key)) continue
+    if (CARD_TEXT_GROUPS.has(key.slice(0, key.indexOf('.')))) cards[key] = text
+    else core[key] = text
+  }
+  return { core: { version: 1, locale: pack.locale, messages: core }, cards: { version: 1, locale: pack.locale, messages: cards } }
+}
 
 export function compileLanguagePack(locale: string, source: unknown, english: unknown, cards: CardsManifest): LanguagePack {
   const own = flattenDictionary(source)
@@ -50,15 +67,22 @@ export function buildLanguagePacks(root = resolve('.')): LanguageManifest {
     if (!source || typeof source !== 'object' || !('$name' in source) || typeof source.$name !== 'string') {
       throw new Error(`Language ${locale} needs a $name`)
     }
-    const text = JSON.stringify(compileLanguagePack(locale, source, english, cards)) + '\n'
-    const sha256 = createHash('sha256').update(text).digest('hex')
-    const filename = `${locale}.${sha256.slice(0, 16)}.json`
-    writeFileSync(resolve(output, filename), text)
-    return { id: locale, name: source.$name, file: filename, sha256, sourceSha256: createHash('sha256').update(readFileSync(resolve(input, file))).digest('hex') }
+    const parts = splitLanguagePack(compileLanguagePack(locale, source, english, cards))
+    const write = (pack: LanguagePack, stem: string): PackFile => {
+      const text = JSON.stringify(pack) + '\n'
+      const sha256 = createHash('sha256').update(text).digest('hex')
+      const name = `${stem}.${sha256.slice(0, 16)}.json`
+      writeFileSync(resolve(output, name), text)
+      return { file: name, sha256 }
+    }
+    return {
+      id: locale, name: source.$name, core: write(parts.core, locale), cards: write(parts.cards, `${locale}-cards`),
+      sourceSha256: createHash('sha256').update(readFileSync(resolve(input, file))).digest('hex'),
+    }
   })
-  const manifest: LanguageManifest = { version: 1, defaultLocale: 'zh', languages }
+  const manifest: LanguageManifest = { version: 2, defaultLocale: 'zh', languages }
   writeFileSync(resolve(output, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
-  console.log(`[build-language-packs] wrote ${languages.length} standalone language packs`)
+  console.log(`[build-language-packs] wrote ${languages.length} languages as core and card text packs`)
   return manifest
 }
 
