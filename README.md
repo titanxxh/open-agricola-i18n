@@ -3,9 +3,10 @@
 Open Agricola 的独立语言仓库。游戏代码仓库只固定版本和消费语言包。
 
 - `locales/<语言>.json`：每种语言唯一的译文维护入口；`$name` 是语言选择器中的名称。
-- `packs/manifest.json`：可用语言、语言包文件名与 SHA-256。
-- `packs/<语言>.<内容哈希>.json`：完整、独立的运行时语言包，包含 UI、行动、卡面、父母牌与提示文本。浏览器只加载所选语言。
-- `scripts/build-language-packs.ts`：从英文底稿和当前语言生成完整包；缺失译文在构建时用英文补齐。
+- `packs/manifest.json`（`version: 2`）：可用语言，每种语言列出 `core` 与 `cards` 两个文件及各自的 SHA-256。
+- `packs/<语言>.<内容哈希>.json`：核心语言包，包含 UI、行动、日志等首屏所需文本；应用启动只等待它。
+- `packs/<语言>-cards.<内容哈希>.json`：卡牌文本包，包含 `cardFaces`、`occupations`、`minorImprovements`、`improvements`、`cards`、`parentFaces`。应用在启动时并行下载，展示卡牌的页面等它到达后再渲染。两个文件合起来是该语言完整、独立的运行时文本；浏览器只加载所选语言。
+- `scripts/build-language-packs.ts`：从英文底稿和当前语言生成两个包；缺失译文在构建时用英文补齐。长卡牌文本只保留在 `cardFaces`，`occupations` / `minorImprovements` / `improvements` 只发布名称等运行时引用的键。
 - `scripts/import-bga-card-translations.ts`：按英文来源核对 BGA 中文，并检查名称冲突、图标、资源数量、参数和卡牌引用。
 
 ```sh
@@ -16,7 +17,7 @@ AGRICOLA_GAME_DIR=../open-agricola pnpm exec tsx scripts/import-bga-card-transla
 ```
 
 游戏目录需要先生成 `public/cards-manifest.json`。生成器只读取该纯数据投影，不执行游戏规则。
-新增语言只需增加一个 `locales/<语言>.json`（包含 `$name`），重新构建并发布；游戏端更新 `i18n.ref`，无需增加语言分支。每个运行时包已经补齐英文，浏览器不再额外下载英文包。
+新增语言只需增加一个 `locales/<语言>.json`（包含 `$name`），重新构建并发布；游戏端更新 `i18n.ref`，无需增加语言分支。运行时包已经补齐英文，浏览器不再额外下载英文包。
 
 工坊未发布内容的翻译属于用户卡牌数据；在预览、房间或回放的展示入口转换为同样的文本结构，不能覆盖全局官方包。
 
