@@ -56,8 +56,10 @@ const token = (label: string, rule: Rule | undefined) => rule?.ids
 /** One-time migration, safe to rerun. Runtime lookup never guesses from translated names. */
 export function annotateActionReferences(root = '.') {
   const manifest = JSON.parse(readFileSync(`${root}/packs/manifest.json`, 'utf8'))
-  const packs = new Map<string, Record<string, string>>(manifest.languages.map((language: { id: string; file: string }) =>
-    [language.id, JSON.parse(readFileSync(`${root}/packs/${language.file}`, 'utf8')).messages]))
+  // A language ships as a core and a card text pack; references live in both.
+  const read = (file: string): Record<string, string> => JSON.parse(readFileSync(`${root}/packs/${file}`, 'utf8')).messages
+  const packs = new Map<string, Record<string, string>>(manifest.languages.map((language: { id: string; core: { file: string }; cards: { file: string } }) =>
+    [language.id, { ...read(language.core.file), ...read(language.cards.file) }]))
   const en = packs.get('en')!
   const zh = packs.get('zh')!
   const sources: Record<string, Record<string, Record<string, Record<string, string>>>> = {
