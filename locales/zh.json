@@ -1605,23 +1605,6 @@
         "attention": "需要你操作",
         "backToGame": "返回对局",
         "close": "关闭百科"
-      },
-      "offline": {
-        "title": "离线百科",
-        "open": "打开离线百科",
-        "save": "保存离线百科",
-        "update": "更新离线百科",
-        "switchLanguage": "保存为当前语言",
-        "remove": "删除离线百科",
-        "saving": "正在保存离线百科…",
-        "details": "{language} · 版本 {version} · 保存于 {savedAt} · {size}",
-        "updateAvailable": "有新版离线百科可供更新。",
-        "saveFailed": "保存离线百科失败，之前保存的版本仍可使用。",
-        "removeFailed": "无法删除离线百科。",
-        "downloadRequired": "请从在线百科重新下载离线百科。",
-        "search": "按编号、名称或正文搜索卡牌",
-        "noResults": "没有匹配的卡牌。",
-        "openOnline": "打开在线百科"
       }
     },
     "actionReference": {
