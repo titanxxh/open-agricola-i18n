@@ -1605,23 +1605,6 @@
         "attention": "Your action is needed",
         "backToGame": "Back to game",
         "close": "Close encyclopedia"
-      },
-      "offline": {
-        "title": "Offline encyclopedia",
-        "open": "Open offline encyclopedia",
-        "save": "Save for offline reading",
-        "update": "Update offline encyclopedia",
-        "switchLanguage": "Save in this language",
-        "remove": "Delete offline encyclopedia",
-        "saving": "Saving offline encyclopedia…",
-        "details": "{language} · Version {version} · Saved {savedAt} · {size}",
-        "updateAvailable": "A newer offline version is available.",
-        "saveFailed": "Could not save the offline encyclopedia. Any previous copy is still available.",
-        "removeFailed": "Could not delete the offline encyclopedia.",
-        "downloadRequired": "Download the offline encyclopedia again from the online encyclopedia.",
-        "search": "Search cards by number, name, or text",
-        "noResults": "No matching cards.",
-        "openOnline": "Open online encyclopedia"
       }
     },
     "actionReference": {
