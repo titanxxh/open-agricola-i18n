@@ -1426,9 +1426,9 @@
       "actionRevealed": "Action revealed: {action}",
       "actionReserved": "Action reserved: {action}",
       "actionReservationCleared": "Action reservation cleared: {action}",
-      "futureWorkerQueued": "Future worker queued: {card}",
-      "futureWorkerRemoved": "Future worker removed: {card}",
-      "futureWorkerResolved": "Future worker resolved: {card}",
+      "futureWorkerQueued": "Placed on round spaces: {card}",
+      "futureWorkerRemoved": "Removed from round spaces: {card}",
+      "futureWorkerResolved": "Round space resolved: {card}",
       "newbornPromoted": "Newborn worker promoted: {worker}",
       "cardNote": "Card note: {card}: {text}",
       "cardResources": "Card resources: {card} {sign} {resources}",
@@ -1638,7 +1638,21 @@
     "harvestRequirementsHint": "Based on your current family, house and played cards.",
     "interactionChooseFamilyGrowth": "Choose how to grow your family",
     "interactionGrowNewborn": "Add a newborn family member",
-    "roomOfflineMessage": "Unable to open the room right now. Check your connection and try again."
+    "roomOfflineMessage": "Unable to open the room right now. Check your connection and try again.",
+    "cardCounters": {
+      "default": "count {count}",
+      "usage": "{count} usage counters",
+      "uses": "{count} uses left",
+      "reserved": "{count} family members reserved",
+      "trades": "{count} trades made",
+      "discards": "{count} wood discarded",
+      "fences": "{count} fences",
+      "held": "{count} animals held",
+      "counter": "count {count}",
+      "woodPlaced": "{count} wood placed",
+      "foodCount": "{count} food",
+      "cards": "{count} cards"
+    }
   },
   "moor": {
     "specialActions": {
@@ -2092,7 +2106,7 @@
         "name": "Consume pending extra turns"
       },
       "remove-future-meeples": {
-        "name": "Remove future workers"
+        "name": "Remove round-space entries"
       },
       "promote-first-newborn": {
         "name": "Ready newborn for action"
@@ -3097,7 +3111,7 @@
     },
     "CI097_Slaughterhouse": {
       "name": "Slaughterhouse",
-      "description": "Whenever another player converts at least 1 animal into <food>, you receive 1 <food>. During the feeding phase of each harvest, you feed after the other players.",
+      "description": "Whenever another player converts at least 1 animal into <FOOD>, you receive 1 <FOOD>. During the feeding phase of each harvest, you feed after the other players.",
       "rules": "If both __Slaughterman__ and __Slaughterhouse__ are in play, their owners feed in their normal relative turn order.",
       "prerequisite": ""
     }
@@ -3791,7 +3805,7 @@
     },
     "CE203_Shepherd": {
       "name": "Shepherd",
-      "description": "During each breeding phase, if you have at least 4 <sheep>, your <sheep> produce 2 offspring instead of 1, as long as you have room for them.",
+      "description": "During each breeding phase, if you have at least 4 <SHEEP>, your <SHEEP> produce 2 offspring instead of 1, as long as you have room for them.",
       "rules": "",
       "prerequisite": ""
     }
@@ -3886,8 +3900,8 @@
     "farmCropRemoved": "{player} removes {crops}",
     "farmFenceConsumed": "{player} spends {count} fence(s)",
     "farmAnimalMoved": "{player} moves {animals}",
-    "futureMeepleRemoved": "{player} removes future worker entries from {cardId} ({rounds})",
-    "futureMeepleResolved": "{player} resolves future worker from {cardId} in round {round}{roomType}{resources}",
+    "futureMeepleRemoved": "{player} removes {cardId} entries from round spaces ({rounds})",
+    "futureMeepleResolved": "{player} resolves {cardId} on round space {round}{roomType}{resources}",
     "guestGranted": "{player} receives a Guest from {card} for round {round}",
     "guestDispatched": "{player} dispatches a Guest to {space}",
     "guestVoided": "{player}'s Guest from {card} expires unused",
@@ -3936,7 +3950,8 @@
     "partnerRoomsBuiltClay": "{player} builds {count} clay rooms for {owner}",
     "partnerRoomsBuiltStone": "{player} builds {count} stone rooms for {owner}",
     "partnerStablesBuilt": "{player} builds {count} stables for {owner}",
-    "partnerFencesBuilt": "{player} builds {count} fences for {owner}"
+    "partnerFencesBuilt": "{player} builds {count} fences for {owner}",
+    "cardEffectAction": "{card} effect"
   },
   "platform": {
     "cardEditionLabel": "Card edition",

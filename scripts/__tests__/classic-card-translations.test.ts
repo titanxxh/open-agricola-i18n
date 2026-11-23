@@ -19,6 +19,21 @@ describe('classic translation sources', () => {
     }
   })
 
+  it.each(['en', 'zh'])('writes every %s icon marker in the uppercase form the game renders', locale => {
+    const lowercase = [...flattenDictionary(source(locale))].flatMap(([key, text]) =>
+      [...text.matchAll(/<([A-Za-z0-9_-]+)>/g)].filter(([, token]) => token !== token.toUpperCase()).map(([marker]) => `${key}: ${marker}`))
+    expect(lowercase).toEqual([])
+  })
+
+  it('names every retained classic card in Chinese', () => {
+    const chinese = source('zh')
+    const untranslated = ['occupations', 'minorImprovements'].flatMap(group =>
+      Object.entries(chinese[group] as Record<string, { name?: string }>)
+        .filter(([id, face]) => /^C[A-Z]+\d{3}_/.test(id) && !/[\u3400-\u9fff]/.test(face.name ?? ''))
+        .map(([id, face]) => `${id}: ${face.name}`))
+    expect(untranslated).toEqual([])
+  })
+
   it('retains Chinese card faces while deferring unverified English instead of shipping Chinese as English', () => {
     const english = source('en')
     const chinese = source('zh')
@@ -41,7 +56,7 @@ describe('classic translation sources', () => {
     expect(zh['cardFaces.CE203_Shepherd.name']).toBe('牧羊人')
     expect(en['cardFaces.CI097_Slaughterhouse.name']).toBe('Slaughterhouse')
     expect(zh['cardFaces.CI097_Slaughterhouse.name']).toBe('屠宰场')
-    expect(en['cardFaces.CI097_Slaughterhouse.description']).toContain('1 <food>')
+    expect(en['cardFaces.CI097_Slaughterhouse.description']).toContain('1 <FOOD>')
     expect(zh['cardFaces.CI097_Slaughterhouse.rules']).toContain('相对顺序')
   })
 })

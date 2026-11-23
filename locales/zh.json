@@ -1426,9 +1426,9 @@
       "actionRevealed": "行动格已揭示：{action}",
       "actionReserved": "行动格被保留：{action}",
       "actionReservationCleared": "行动格保留已清除：{action}",
-      "futureWorkerQueued": "已安排未来工人：{card}",
-      "futureWorkerRemoved": "移除未来工人：{card}",
-      "futureWorkerResolved": "未来工人执行：{card}",
+      "futureWorkerQueued": "已放到回合格：{card}",
+      "futureWorkerRemoved": "移除回合格上的安排：{card}",
+      "futureWorkerResolved": "回合格结算：{card}",
       "newbornPromoted": "新生工人成年：{worker}",
       "cardNote": "卡牌标记：{card}：{text}",
       "cardResources": "卡牌资源：{card} {sign} {resources}",
@@ -1638,7 +1638,21 @@
     "harvestRequirementsHint": "按当前家庭成员、房屋和已打出的卡牌计算。",
     "interactionChooseFamilyGrowth": "选择生育方式",
     "interactionGrowNewborn": "生育一名新家庭成员",
-    "roomOfflineMessage": "暂时无法打开房间，请检查网络后重试"
+    "roomOfflineMessage": "暂时无法打开房间，请检查网络后重试",
+    "cardCounters": {
+      "default": "计数 {count}",
+      "usage": "{count} 个使用标记",
+      "uses": "剩余 {count} 次",
+      "reserved": "预留 {count} 名家庭成员",
+      "trades": "已兑换 {count} 次",
+      "discards": "已弃 {count} 木材",
+      "fences": "{count} 个栅栏",
+      "held": "容纳 {count} 只动物",
+      "counter": "计数 {count}",
+      "woodPlaced": "已放 {count} 木材",
+      "foodCount": "{count} 食物",
+      "cards": "{count} 张牌"
+    }
   },
   "moor": {
     "specialActions": {
@@ -2092,7 +2106,7 @@
         "name": "消耗待处理额外回合"
       },
       "remove-future-meeples": {
-        "name": "移除未来工人"
+        "name": "移除回合格上的安排"
       },
       "promote-first-newborn": {
         "name": "让新生家庭成员可行动"
@@ -6385,7 +6399,7 @@
     },
     "CI097_Slaughterhouse": {
       "name": "屠宰场",
-      "description": "每次其他玩家将至少1只动物转化为<food>时，你获得1<food>。每个丰收时节的喂养阶段，你最后进行结算。",
+      "description": "每次其他玩家将至少1只动物转化为<FOOD>时，你获得1<FOOD>。每个丰收时节的喂养阶段，你最后进行结算。",
       "rules": "若屠宰工和屠宰场同时在场，其拥有者按照正常的相对顺序进行喂养结算。",
       "prerequisite": ""
     },
@@ -7110,7 +7124,7 @@
       "prerequisite": ""
     },
     "CPI018_LandscapeDesign": {
-      "name": "Landscape Design",
+      "name": "景观设计",
       "description": "你的田地板块不必相邻。但在1个轮次内放置的田地板块必须相邻。游戏结束时，如果你有3/4/5块不与其他田相邻的田地版块，则你额外获得1/2/3分。",
       "rules": "",
       "prerequisite": ""
@@ -10095,7 +10109,7 @@
     },
     "CE203_Shepherd": {
       "name": "牧羊人",
-      "description": "每个繁殖阶段，如果你有至少4<sheep>，你的<sheep>能繁殖2只后代而不是1只，只要你有空间安置它们。",
+      "description": "每个繁殖阶段，如果你有至少4<SHEEP>，你的<SHEEP>能繁殖2只后代而不是1只，只要你有空间安置它们。",
       "rules": "",
       "prerequisite": ""
     },
@@ -12110,31 +12124,31 @@
       "prerequisite": ""
     },
     "CPI002_Altruist": {
-      "name": "Altruist",
+      "name": "利他主义者",
       "description": "每局游戏限2次：你可以在“翻修”行动中花费1芦苇+每间屋子1木将你的石屋翻修回木屋。若你如此做，你翻修的每间房屋获得3分并同时获得3砖。",
       "rules": "",
       "prerequisite": ""
     },
     "CPI007_MarriageCounselor": {
-      "name": "Marriage Counselor",
+      "name": "婚姻顾问",
       "description": "每回合开始时，如果有玩家的家庭成员比你多2名或以上，或所有其他玩家的家庭成员都比你多，你可以支付1<FOOD>并在本回合使用1名食客。",
       "rules": "",
       "prerequisite": ""
     },
     "CPI010_Professor": {
-      "name": "Professor",
+      "name": "教授",
       "description": "打出此卡后，你必须将手中未打出的职业牌弃掉，并从牌库中随机抽7张，并可以支付2<FOOD>打出一张职业卡。",
       "rules": "",
       "prerequisite": ""
     },
     "CPI011_SunriseHerder": {
-      "name": "Sunrise Herder",
+      "name": "日出牧人",
       "description": "每回合限1次：你可以你可以跳过你的第一个轮次，支付0/0/1<FOOD>获得1羊/猪/牛。你可以在后续的轮次继续派遣他。",
       "rules": "",
       "prerequisite": ""
     },
     "CPI026_NaturalPhilosopher": {
-      "name": "Natural Philosopher",
+      "name": "自然哲学家",
       "description": "每回合开始时，如果你农场中未使用的空格数等于之后的完整回合数，你可以抽一张职业卡或次发卡并可以将其打出（职业卡需1食物，次发卡需支付资源）",
       "rules": "",
       "prerequisite": ""
@@ -12812,8 +12826,8 @@
     "farmCropRemoved": "{player} 移除 {crops}",
     "farmFenceConsumed": "{player} 消耗 {count} 根栅栏",
     "farmAnimalMoved": "{player} 移动 {animals}",
-    "futureMeepleRemoved": "{player} 移除 {cardId} 的未来工人记录（{rounds}）",
-    "futureMeepleResolved": "{player} 结算 {cardId} 在第 {round} 回合的未来工人{roomType}{resources}",
+    "futureMeepleRemoved": "{player} 移除 {cardId} 在回合格上的安排（{rounds}）",
+    "futureMeepleResolved": "{player} 结算 {cardId} 在第 {round} 回合格上的安排{roomType}{resources}",
     "guestGranted": "{player}获得来自{card}的食客，可在第 {round} 回合派遣",
     "guestDispatched": "{player}派遣食客到{space}",
     "guestVoided": "{player}来自{card}的食客因未派遣而作废",
@@ -12862,7 +12876,8 @@
     "partnerRoomsBuiltClay": "{player} 替 {owner} 建了 {count} 间泥房间",
     "partnerRoomsBuiltStone": "{player} 替 {owner} 建了 {count} 间石房间",
     "partnerStablesBuilt": "{player} 替 {owner} 建了 {count} 个畜栏",
-    "partnerFencesBuilt": "{player} 替 {owner} 建了 {count} 段围栏"
+    "partnerFencesBuilt": "{player} 替 {owner} 建了 {count} 段围栏",
+    "cardEffectAction": "{card}的效果"
   },
   "platform": {
     "cardEditionLabel": "卡牌版本",

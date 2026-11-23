@@ -6,27 +6,27 @@
       "id": "en",
       "name": "English",
       "core": {
-        "file": "en.9d0ab57e3ae21b09.json",
-        "sha256": "9d0ab57e3ae21b09f6d5145a150ad57abe18c79c385ea8bedbd418aed4e76342"
+        "file": "en.35e5db17805724b3.json",
+        "sha256": "35e5db17805724b378d6eb2db2d3e94daa49e8acadf4b42c056b4193e64871b0"
       },
       "cards": {
-        "file": "en-cards.fdd9df1d632ca154.json",
-        "sha256": "fdd9df1d632ca154232323c4decd3089a11aed4f2ba57d70054ae7d846a2ca4e"
+        "file": "en-cards.a7dcc9b1f7b90675.json",
+        "sha256": "a7dcc9b1f7b90675d0d5f40f1a14faa17077560636b3fcd6e2f4c53de1f4afb6"
       },
-      "sourceSha256": "40ec038a1f1036f95fc9730d4505831385574e455732378dd0eb5d30720370ce"
+      "sourceSha256": "8b2bb131209f1674f49727175829ffa3ce97debcd69d36d9de7c9b3a6d90ff83"
     },
     {
       "id": "zh",
       "name": "简体中文",
       "core": {
-        "file": "zh.28c988d2a7675201.json",
-        "sha256": "28c988d2a7675201254bc3fc728328049fc5d270416479d04b13b20181528945"
+        "file": "zh.1ed502b5ff5460fc.json",
+        "sha256": "1ed502b5ff5460fc7200d16f4b02dff8920a8b78a439ac57a1f69acfde1c059f"
       },
       "cards": {
-        "file": "zh-cards.285f00d1f1855fb5.json",
-        "sha256": "285f00d1f1855fb52fcf531a7bdc24106c2a9a5873171e9b8a35cfd97f0c83dd"
+        "file": "zh-cards.c7237a0cf3c1e47b.json",
+        "sha256": "c7237a0cf3c1e47b89ecc0a9b60266d815532da7c185cb187bc210953fa569b9"
       },
-      "sourceSha256": "368d888e9d69f128ff75bb4e67a87627e72005f77acb61c55d31a61253e89167"
+      "sourceSha256": "1def0487c7bd4ae1b931f8e86bf69b7f2570475902ba834c676dc6242ef32cd5"
     }
   ]
 }
