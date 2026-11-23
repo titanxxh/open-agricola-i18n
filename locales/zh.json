@@ -1652,6 +1652,10 @@
       "woodPlaced": "已放 {count} 木材",
       "foodCount": "{count} 食物",
       "cards": "{count} 张牌"
+    },
+    "preferences": {
+      "autoResolveReactions": "自动结算无需选择的同时机效果",
+      "autoResolveReactionsHint": "只影响本局，从下一个时机开始生效。"
     }
   },
   "moor": {
@@ -13485,7 +13489,13 @@
     "sandboxExecutionMode": "运行方式",
     "sandboxBrowserMode": "在此浏览器中",
     "sandboxServerMode": "在服务器上",
-    "publicSandboxPaused": "本次测试已暂停。请复核访问资格与卡牌状态后再继续。"
+    "publicSandboxPaused": "本次测试已暂停。请复核访问资格与卡牌状态后再继续。",
+    "gamePreferences": {
+      "title": "对局设置",
+      "autoResolveReactions": "自动结算无需选择的同时机效果",
+      "autoResolveReactionsHint": "同一时机有多个效果触发时，不需要你做选择的效果（例如直接获得资源）会先自动结算，你只为其余效果选择顺序。关闭后，所有效果都由你选择顺序。只影响之后新开的对局；对局中可以在菜单里单独修改。",
+      "failed": "对局设置读取或保存失败，请稍后重试。"
+    }
   },
   "cards": {
     "D051_Archway": {

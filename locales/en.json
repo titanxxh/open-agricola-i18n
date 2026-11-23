@@ -1652,6 +1652,10 @@
       "woodPlaced": "{count} wood placed",
       "foodCount": "{count} food",
       "cards": "{count} cards"
+    },
+    "preferences": {
+      "autoResolveReactions": "Resolve same-timing effects that need no choice automatically",
+      "autoResolveReactionsHint": "Applies to this game only, from the next timing on."
     }
   },
   "moor": {
@@ -4559,7 +4563,13 @@
     "sandboxExecutionMode": "Run game",
     "sandboxBrowserMode": "In this browser",
     "sandboxServerMode": "On the server",
-    "publicSandboxPaused": "This playtest is paused. Check access and card availability before continuing."
+    "publicSandboxPaused": "This playtest is paused. Check access and card availability before continuing.",
+    "gamePreferences": {
+      "title": "Game settings",
+      "autoResolveReactions": "Resolve same-timing effects that need no choice automatically",
+      "autoResolveReactionsHint": "When several effects trigger at the same time, the ones that need no decision from you, such as simply gaining goods, resolve first and you order only the rest. Turn this off to order every effect yourself. This applies to games started afterwards; you can change it for a running game in its menu.",
+      "failed": "Could not load or save your game settings. Please try again later."
+    }
   },
   "cards": {
     "D051_Archway": {
