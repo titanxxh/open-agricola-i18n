@@ -5202,7 +5202,7 @@
     "installIos": "Add Open Agricola to your Home Screen and open it there to enable notifications.",
     "failed": "Could not update notifications. Try again.",
     "notificationUnavailable": "This notification is no longer available.",
-    "draftNotification": "You have cards to draft",
-    "inboxNotification": "You have a new inbox message"
+    "draftNotification": "It's your turn to pick cards in the draft.",
+    "inboxNotification": "Your Bug Report has a new reply. Open it to view."
   }
 }
