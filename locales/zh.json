@@ -14128,7 +14128,7 @@
     "installIos": "请将 Open Agricola 添加到主屏幕，再从主屏幕打开并启用通知。",
     "failed": "无法更新通知设置，请重试。",
     "notificationUnavailable": "这条通知已不可用。",
-    "draftNotification": "有新牌可选",
-    "inboxNotification": "你有一条新的站内信"
+    "draftNotification": "轮到你在轮抽中选牌了",
+    "inboxNotification": "你的 Bug Report 有新回复，点开查看"
   }
 }
