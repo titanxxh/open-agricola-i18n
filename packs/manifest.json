@@ -6,27 +6,27 @@
       "id": "en",
       "name": "English",
       "core": {
-        "file": "en.d6cc0d043229a9ce.json",
-        "sha256": "d6cc0d043229a9ce0bb2b9365993d3fdc9d387cd5a73dc3c826eada8b5e84071"
+        "file": "en.0c940b8453a3988a.json",
+        "sha256": "0c940b8453a3988ae83894a38bd23f673eee700bcc2c535de747172580e1ba78"
       },
       "cards": {
         "file": "en-cards.689bdcd6072dc244.json",
         "sha256": "689bdcd6072dc2449bc91c7cc2bb4fc58f0614e7f8dded88b447513f58059957"
       },
-      "sourceSha256": "1f7f1d6664fac55e494e16c653a1c0790b939493db461e52e519052d86cc0c90"
+      "sourceSha256": "ae00ac905d6146623b5fbc1ae6d8e18515d385e4bc5c7947a1b81cb28bf31943"
     },
     {
       "id": "zh",
       "name": "简体中文",
       "core": {
-        "file": "zh.9252c9d2687e69be.json",
-        "sha256": "9252c9d2687e69be55b878f803b644a8866a069b48609b0fcf783252fb2c9ab0"
+        "file": "zh.bac94f98341841e6.json",
+        "sha256": "bac94f98341841e63c36d1fe42d01520a030c8c115e7d2d0744b743cba77a92c"
       },
       "cards": {
         "file": "zh-cards.ddacb009aa535486.json",
         "sha256": "ddacb009aa5354863ac3fe4d022b4dcfa6a3325f0e49378aed97ee9172cc8b00"
       },
-      "sourceSha256": "9d7cdbd3801501dfe47f49fb057d638add9ea139c0b51775ef94e623b9a94845"
+      "sourceSha256": "d0ace82439bd6db9c12cd98bb7a7be4445105ed8755554db7a973f94467a3191"
     }
   ]
 }

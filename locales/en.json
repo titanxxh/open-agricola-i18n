@@ -562,7 +562,7 @@
     "interactionHaydryer": "Pay food to gain 1 cattle",
     "interactionEarthenwarePotter": "Pay 1 clay per family member to gain that many bonus VP",
     "interactionFodderPlanterSow": "{card:D115_FodderPlanter}: Sow once per newborn animal?",
-    "interactionSowSelect": "Select crops for each empty field",
+    "interactionSowSelect": "Choose crops to sow",
     "interactionSowConfirm": "Confirm sowing",
     "interactionSowCancel": "Cancel",
     "interactionOccupationHand": "Select {maxSelections} occupation(s) from hand",
