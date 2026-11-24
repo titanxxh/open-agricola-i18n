@@ -14145,6 +14145,9 @@
   "cards.CI236_HideFarmer.markSpaces.invalid": "食物数量非法",
   "webPush": {
     "title": "浏览器通知",
+    "turn": "行动提醒",
+    "deviceCount": "已开启推送的设备数：{count}",
+    "turnNotification": "轮到你行动了",
     "draft": "轮抽提醒",
     "inbox": "Bug Report 站内信通知",
     "deviceOnly": "这些设置仅适用于当前浏览器。",
