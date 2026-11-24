@@ -5219,6 +5219,9 @@
   "cards.CI236_HideFarmer.markSpaces.invalid": "Invalid food count",
   "webPush": {
     "title": "Browser notifications",
+    "turn": "Turn reminders",
+    "deviceCount": "Devices with notifications enabled: {count}",
+    "turnNotification": "It’s your turn to act.",
     "draft": "Draft reminders",
     "inbox": "Bug Report inbox notifications",
     "deviceOnly": "These settings apply to this browser.",
