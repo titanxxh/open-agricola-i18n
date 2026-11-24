@@ -562,7 +562,7 @@
     "interactionHaydryer": "支付食物获得 1 牛",
     "interactionEarthenwarePotter": "每名家庭成员支付 1 黏土并获得对应加分",
     "interactionFodderPlanterSow": "{card:D115_FodderPlanter}：每只新生动物均可播种一次？",
-    "interactionSowSelect": "为每块空田选择播种作物",
+    "interactionSowSelect": "选择要播种的作物",
     "interactionSowConfirm": "确认播种",
     "interactionSowCancel": "取消",
     "interactionOccupationHand": "从手牌选 {maxSelections} 张职业",
