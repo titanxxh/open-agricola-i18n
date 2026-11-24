@@ -1651,7 +1651,8 @@
       "counter": "count {count}",
       "woodPlaced": "{count} wood placed",
       "foodCount": "{count} food",
-      "cards": "{count} cards"
+      "cards": "{count} cards",
+      "borrowedVegetables": "Vegetables owed: {count}"
     },
     "preferences": {
       "autoResolveReactions": "Resolve same-timing effects that need no choice automatically",
@@ -4689,6 +4690,14 @@
     },
     "CI223_HarvestHelper": {
       "field": "{player}: take one grain from field ({row}, {col}) {card}"
+    },
+    "CFL013_GiftTable": {
+      "buy": "Buy the top good",
+      "exchange": "Exchange the gift sheep for 2 food"
+    },
+    "CFL036_VegetableSeller": {
+      "borrow": "Borrow a vegetable for 2 food",
+      "repay": "Return borrowed vegetables"
     }
   },
   "fence": {
